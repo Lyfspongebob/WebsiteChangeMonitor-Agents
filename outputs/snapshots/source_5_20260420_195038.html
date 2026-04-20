@@ -1,0 +1,2394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="dns-prefetch" href="https://i.tq121.com.cn" />
+    <meta charset="utf-8" />
+    <title>å¤©æ°ç½</title>
+    <link rel="icon" href="https://www.weather.com.cn/m2/i/favicon.ico?v=3" type="image/x-icon" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' https://*.weather.com.cn; script-src 'self' http://*.tq121.com.cn http://*.i8tq.com http://*.weather.com.cn http://*.baidu.com http://3gimg.qq.com   'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' http://*.tq121.com.cn http://*.i8tq.com http://*.weather.com.cn; img-src 'self' http://*.tq121.com.cn http://*.i8tq.com http://*.weather.com.cn http://*.baidu.com http://*.tianqi.cn https://weizui-weather.oss-cn-beijing.aliyuncs.com; child-src 'none'; object-src 'none';frame-ancestors 'self' http://*.weather.com.cn">
+   <meta http-equiv="Permissions-Policy" content="geolocation=(), fullscreen=(), microphone=(), camera=(), clipboard-read=()">
+    <meta name="keywords" content="å¤©æ°é¢æ¥,å¤©æ°,å¤©æ°é¢æ¥æ¥è¯¢ä¸å¨,å¤©æ°é¢æ¥15å¤©æ¥è¯¢,å¤©æ°é¢æ¥40å¤©æ¥è¯¢,å¤©æ°é¢æ¥æ¥è¯¢,åäº¬å¤©æ°,å¤©æ°å¨çº¿,æ°å,æ°è±¡" />
+    <meta name="description" content="å®æ¹æå¨åå¸å¤©æ°é¢æ¥,éä¸å°æ¶å¤©æ°é¢æ¥,æä¾å¤©æ°é¢æ¥æ¥è¯¢ä¸å¨,å¤©æ°é¢æ¥15å¤©æ¥è¯¢,å¤©æ°é¢æ¥40å¤©æ¥è¯¢,å¤©æ°èµè®¯,ç©ºæ°è´¨é,çæ´»ææ°,ææ¸¸åºè¡,äº¤éå¤©æ°ç­æ¥è¯¢æå¡" />
+    <script type="text/javascript" src="https://j.i8tq.com/weather2020/weatherMap/wyJsonList.js"></script> 
+    <script type="text/javascript" src="https://i.tq121.com.cn/j/core.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://c.i8tq.com/index/main_0814.css?20240308" />  
+    <!--<link rel="stylesheet" href="https://i.tq121.com.cn/c/wap2016/news/swiper.css" />-->
+    <link rel="stylesheet" href="https://c.i8tq.com/index/idangerous.swiper.css" />
+    <link rel="stylesheet" type="text/css" href="https://c.i8tq.com/index/wyMsg.css">
+     <script type="text/javascript" src="https://i.tq121.com.cn/j/jquery.js"></script>
+      
+     <style>
+     .announcement #announce9 i { background: url(https://i.i8tq.com/index/uv.png);background-size: 68px 68px;}
+       .announcement #announce10 i { background: url(https://i.i8tq.com/index/lgyb.png);width: 72px;height: 71px;}
+         .announcement #announce11 i { background: url(https://i.i8tq.com/index/ssd.png);width: 68px;height: 68px;}
+         .announcement #announce12 i { background: url(https://i.i8tq.com/index/gwjk.png);background-size: 68px 68px;}
+         .announcement #announce13 i { background: url(https://i.i8tq.com/index/gwzs.png);background-size: 68px 68px;}
+    .swiper-button-prev {
+      background: url(https://i.i8tq.com/newzixun/pre.png) no-repeat left top;
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      margin-top: -15px;
+      width: 27px;
+      height: 44px;
+      z-index:999;
+      cursor: pointer;
+    }
+    .swiper-button-next {
+      background: url(https://i.i8tq.com/newzixun/next.png) no-repeat left bottom;
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      margin-top: -15px;
+      width: 27px;
+      height: 44px;
+      z-index:999;
+      cursor: pointer;
+    }
+    .tgSwiper {
+      width: 420px;
+      height: 100px;
+      margin-top:10px;
+      float: left;
+    }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- ç»é -->
+    <style>
+        .w_email{display: block;float: right;width: 30px;text-align:right;}
+.li_wd{width:50px;float:left;}
+.nav_li{overflow:inherit;}
+.top-list-hidden a{color:#000;}
+.login-icon{padding-right:10px; height:30px; color:#fff; line-height:30px; background: url(https://i.tq121.com.cn/i/weather2015/user/icon-hui.png) 7px 6px no-repeat; padding-left:30px; margin-right:10px;}
+.login-icon:hover{  background:url(https://i.tq121.com.cn/i/weather2015/user/icon-hui1.png) 7px 6px no-repeat;}
+.login-zhuce:hover{ color:#ee842f;}
+.head-right{ float:right; display:block; cursor:pointer; position:relative;width:80px;height:30px;}
+.head-right img.head-imgs{  width:20px; height:20px;border:0;border-radius:25px;margin-top:5px;vertical-align: top;position:relative;left:10px;}
+.top-list-hidden{ position:absolute; width:80px; background:#fff; border:1px solid #e6e6e6; border-top:none; visibility:hidden; box-shadow:1px 1px 3px #ddd; top:30px; left:0;z-index: 999999;}
+.top-list-hidden li{ padding-left:12px;text-align: left;font-size:12px;}
+.top-list-hidden li:hover{ background:#f2f2f2;color:#ee842f;}
+
+.head-right i{ float:left; margin-top:12px; margin-left:3px;display:none;}
+.head-right .email-img{ padding-top:5px;vertical-align: top;width:20px;height:20px;border:none;}
+.head-right em{ font-style:normal; color:#252525; font-size:12px; padding-left:3px;}
+.top_list_title{ display:block; float:left; width:50px; height:30px; padding-left:0px;text-align:left;background: url(https://i.tq121.com.cn/i/ucenter/pc/jt.png) no-repeat 37px center;padding-right:5px;}
+.top_list_title:hover{background: url(https://i.tq121.com.cn/i/ucenter/pc/jt.png) no-repeat 37px center #001e3c;}
+.weather-login{ float:right;margin-left:6px;}
+.weather-login a{ display:inline-block; cursor:pointer;color: #fff;font-size: 12px;}
+.weather-login a:hover{color:#ee842f;}
+.arrow {border-color: #acacac transparent transparent;border-style: solid dashed dashed; border-width: 6px; display: block; height: 0; overflow: hidden;width: 0;}
+li{ list-style:none;}
+        .search-box {
+            left: 863px !important;
+            top: 83px;
+        }
+    </style>
+
+
+
+    <!-- ç»éend -->
+    <div class="xyn-bjbox">
+        <div class="nav_fa">
+<div class="nav_fa">
+            <style type="text/css">
+                li.agriculture:hover a {
+                    color: #ee842f;
+                }
+            </style>
+            
+            <link rel="stylesheet" href="https://c.i8tq.com/index/searchCityList.css">
+            <div class="header-box">
+                <div style="margin: 0 auto;width: 1200px;">
+                    <div class="jierititle" style="margin: 0 auto;"></div>
+                     
+    <div class="nav_li_left"  >
+                        <span>
+                            2026å¹´04æ20æ¥<i style="padding-right:10px;"></i>ææä¸
+                        </span>
+                        
+                       
+                        <a href="http://e.weather.com.cn">ææºæ¥å¤©æ°</a>
+                        <a title="English Version" target="_blank" href="http://en.weather.com.cn">English</a>
+                    </div>
+                    <div class="header">
+                        <div class="w_logo fl"><a href="http://www.weather.com.cn/" target="_blank" style="background:none;">
+                            <img src="https://i.i8tq.com/index/logo2.png" style="width:149px;">
+                        </a></div>
+
+                        
+                        <div class="clear"></div>
+                        <div class="search-box fl">
+                        <div class="search clearfix">
+                            
+                            <input type="text" value="è¾å¥åå¸ãä¹¡éãè¡éãæ¯ç¹åç§° æ¥å¤©æ°" id="txtZip" class="textinput text"
+                                autocomplete="off">
+
+                            <div class="input-btn"><img src="https://i.i8tq.com/index/search.png" ></div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="inforesult"></div>
+                        <div id="show">
+                            <ul></ul>
+                            <dl class="qcode"><a href="http://p.weather.com.cn/#search" target="_blank"
+                                    style="width:100%;"><img src="https://i.i8tq.com/weather2020/search/rbAd.jpg"
+                                        style="width:100%;"></a></dl>
+                        </div>
+                        <div class="city-box">
+                            <div class="city-tt">
+                                <a href="javascript:void(0)" class="cur">å½å</a>
+                                <a href="javascript:void(0)">æ¬å°</a>
+                                <a href="javascript:void(0)">å½é</a>
+                            </div>
+                            <div class="w_city city_guonei" style="display:block; padding-bottom:0">
+                                <dl>
+                                    <p class="category">ç­é¨åå¸</p>
+                                    <dd>
+                                        <a href="http://www.weather.com.cn/weather1d/101010100.shtml#search" title="åäº¬"
+                                            target="_blank">åäº¬</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101020100.shtml#search" title="ä¸æµ·"
+                                            target="_blank">ä¸æµ·</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101270101.shtml#search" title="æé½"
+                                            target="_blank">æé½</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101210101.shtml#search" title="æ­å·"
+                                            target="_blank">æ­å·</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101190101.shtml#search" title="åäº¬"
+                                            target="_blank">åäº¬</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101030100.shtml#search" title="å¤©æ´¥"
+                                            target="_blank">å¤©æ´¥</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101280601.shtml#search" title="æ·±å³"
+                                            target="_blank">æ·±å³</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101040100.shtml#search" title="éåº"
+                                            target="_blank">éåº</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101110101.shtml#search" title="è¥¿å®"
+                                            target="_blank">è¥¿å®</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101280101.shtml#search" title="å¹¿å·"
+                                            target="_blank">å¹¿å·</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101120201.shtml#search" title="éå²"
+                                            target="_blank">éå²</a>
+                                        <a href="http://www.weather.com.cn/weather1d/101200101.shtml#search" title="æ­¦æ±"
+                                            target="_blank">æ­¦æ±</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <p class="category">ç­é¨æ¯ç¹</p>
+                                    <dd class="jind">
+                                        <a href="http://www.weather.com.cn/weather1d/10101010018A.shtml#search"
+                                            title="æå®«" target="_blank">æå®«</a>
+                                        <a href="http://www.weather.com.cn/weather1d/10130051008A.shtml#search"
+                                            title="é³ææ¼æ±" target="_blank">é³ææ¼æ±</a>
+                                        <a href="http://www.weather.com.cn/weather1d/10118090107A.shtml#search"
+                                            title="é¾é¨ç³çª" target="_blank">é¾é¨ç³çª</a>
+                                        <a href="http://www.weather.com.cn/weather1d/10109022201A.shtml#search"
+                                            title="éä¸å¡" target="_blank">éä¸å¡</a>
+                                        <a href="http://www.weather.com.cn/weather1d/10101020015A.shtml#search"
+                                            title="é¢åå­" target="_blank">é¢åå­</a>
+                                        <a href="http://www.weather.com.cn/weather1d/10127190601A.shtml#search"
+                                            title="ä¹å¯¨æ²" target="_blank">ä¹å¯¨æ²</a>
+                                        <a href="http://www.weather.com.cn/weather1d/10102010007A.shtml#search"
+                                            title="ä¸æ¹æç " target="_blank">ä¸æ¹æç </a>
+                                        <a href="http://www.weather.com.cn/weather1d/10125150503A.shtml#search"
+                                            title="å¤å°å¤å" target="_blank">å¤å°å¤å</a>
+                                        <a href="http://www.weather.com.cn/weather1d/10111010119A.shtml#search"
+                                            title="ç§¦å§çéµ" target="_blank">ç§¦å§çéµ</a>
+                                        <a href="http://www.weather.com.cn/weather1d/10125060301A.shtml#search"
+                                            title="æ¡è±æº" target="_blank">æ¡è±æº</a>
+                                    </dd>
+                                </dl>
+                                <dl id="searchCityProvince" style="margin-bottom:5px;border:none;">
+                                    <p class="category">éæ©çå¸</p>
+                                    <dd id="searchCityList"></dd>
+                                </dl>
+                                <dl style="margin-bottom:5px;border:none;display:none;">
+                                    <dt>é«ç</dt>
+                                    <dd>
+                                        <a href="http://www.sportsweather.cn/weather/10102090003F.shtml#search"
+                                            title="ä½å±±" target="_blank">ä½å±±</a>
+                                        <a href="http://www.sportsweather.cn/weather/10129010601F.shtml#search"
+                                            title="æ¥åæ¹ç" target="_blank">æ¥åæ¹ç</a>
+                                        <a href="http://www.sportsweather.cn/weather/10101070004F.shtml#search"
+                                            title="åå½¬åºå­" target="_blank">åå½¬åºå­</a>
+                                        <a href="http://www.sportsweather.cn/weather/10128060113F.shtml#search"
+                                            title="è§æ¾æ¹" target="_blank">è§æ¾æ¹</a>
+                                        <a href="http://www.sportsweather.cn/weather/10131010107F.shtml#search"
+                                            title="ä¾å¿æ" target="_blank">ä¾å¿æ</a>
+                                        <a href="http://www.sportsweather.cn/weather/10102080001F.shtml#search"
+                                            title="æ­å®" target="_blank">æ­å®</a>
+                                        <a href="http://www.sportsweather.cn/weather/10131021101F.shtml#search"
+                                            title="åé³" target="_blank">åé³</a>
+                                        <a href="http://www.sportsweather.cn/weather/10129140501F.shtml#search"
+                                            title="çé¾éªå±±" target="_blank">çé¾éªå±±</a>
+                                        <a href="http://www.sportsweather.cn/weather/10128010103F.shtml#search"
+                                            title="çªç¦ºåæ²" target="_blank">çªç¦ºåæ²</a>
+                                        <a href="http://www.sportsweather.cn/weather/10101040001F.shtml#search"
+                                            title="ä¸æ¹æç " target="_blank">ä¸æ¹æç </a>
+                                    </dd>
+                                </dl>
+                                <div class="city-box-province">
+                                    <div class="province-top">
+                                        <p class="proGoback">
+                                            <span class="province-back">
+                                                <<è¿å</span> <span class="province-level" data-level="1">å¨å½
+                                            </span>
+                                        </p>
+                                        <span class="province-area"><span>æ²³å</span>ä¸è¾åºå</span>
+                                    </div>
+                                    <div class="w_city_province">
+                                        <dl>
+                                            <dd id="cityList_city">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <dl class="qcode"><a href="http://p.weather.com.cn/#search" target="_blank"
+                                        style="width:376px;"><img src="https://i.i8tq.com/weather2020/search/rbAd.jpg"
+                                            style="width:78.5%;"></a></dl>
+                            </div>
+                            <div class="w_city city_guonei gn">
+                                <dl>
+                                    <p class="category">å¨è¾¹åå¸</p>
+                                    <dd class="diq"></dd>
+                                </dl>
+                                <dl>
+                                    <p class="category">å¨è¾¹æ¯ç¹</p>
+                                    <dd class="jind"></dd>
+                                </dl>
+                                <dl>
+                                    <p class="category">æ¬å°ä¹¡é</p>
+                                    <dd class="jind"></dd>
+                                </dl>
+
+                                <dl class="qcode"><a href="http://p.weather.com.cn/#search" target="_blank"
+                                        style="width:376px;"><img src="https://i.i8tq.com/weather2020/search/rbAd.jpg"
+                                            style="width:78.5%;"></a></dl>
+                            </div>
+                            <div class="w_city city_guonei gj">
+                                <dl>
+                                    <p class="category">ç­é¨åå¸</p>
+                                    <dd class="jind">
+                                        <a href="http://www.weather.com.cn/weather1d/106010100.shtml#search" title="æ¼è°·"
+                                            target="_blank">æ¼è°·</a>
+                                        <a href="http://www.weather.com.cn/weather1d/103010100.shtml#search" title="ä¸äº¬"
+                                            target="_blank">ä¸äº¬</a>
+                                        <a href="http://www.weather.com.cn/weather1d/102010100.shtml#search" title="é¦å°"
+                                            target="_blank">é¦å°</a>
+                                        <a href="http://www.weather.com.cn/weather1d/105010100.shtml#search" title="åéå¡"
+                                            target="_blank">åéå¡</a>
+                                        <a href="http://www.weather.com.cn/weather1d/104010100.shtml#search" title="æ°å å¡"
+                                            target="_blank">æ°å å¡</a>
+                                        <a href="http://www.weather.com.cn/weather1d/202010100.shtml#search" title="å·´é»"
+                                            target="_blank">å·´é»</a>
+                                        <a href="http://www.weather.com.cn/weather1d/401169100.shtml#search" title="ç½é©¬"
+                                            target="_blank">ç½é©¬</a>
+                                        <a href="http://www.weather.com.cn/weather1d/201010100.shtml#search" title="ä¼¦æ¦"
+                                            target="_blank">ä¼¦æ¦</a>
+                                        <a href="http://www.weather.com.cn/weather1d/218010100.shtml#search" title="éå¸"
+                                            target="_blank">éå¸</a>
+                                        <a href="http://www.weather.com.cn/weather1d/203010101.shtml#search" title="ææ"
+                                            target="_blank">ææ</a>
+                                        <a href="http://www.weather.com.cn/weather1d/401110101.shtml#search" title="çº½çº¦"
+                                            target="_blank">çº½çº¦</a>
+                                        <a href="http://www.weather.com.cn/weather1d/404430100.shtml#search" title="æ¸©å¥å"
+                                            target="_blank">æ¸©å¥å</a>
+                                        <a href="http://www.weather.com.cn/weather1d/411010100.shtml#search"
+                                            title="å¢¨è¥¿å¥å" target="_blank">å¢¨è¥¿å¥å</a>
+                                        <a href="http://www.weather.com.cn/weather1d/406010100.shtml#search" title="åç¦é£"
+                                            target="_blank">åç¦é£</a>
+                                        <a href="http://www.weather.com.cn/weather1d/427020100.shtml#search" title="å£ä½å¡"
+                                            target="_blank">å£ä½å¡</a>
+                                        <a href="http://www.weather.com.cn/weather1d/502866100.shtml#search"
+                                            title="å·´è¥¿å©äº" target="_blank">å·´è¥¿å©äº</a>
+                                        <a href="http://www.weather.com.cn/weather1d/501010100.shtml#search"
+                                            title="å¸å®è¯ºæ¯è¾å©æ¯" target="_blank">å¸å®è¯ºæ¯è¾å©æ¯</a>
+                                        <a href="http://www.weather.com.cn/weather1d/401040102.shtml#search"
+                                            title="å£å°äºå¥" target="_blank">å£å°äºå¥</a>
+                                        <a href="http://www.weather.com.cn/weather1d/510070100.shtml#search" title="å©é©¬"
+                                            target="_blank">å©é©¬</a>
+                                        <a href="http://www.weather.com.cn/weather1d/513010100.shtml#search" title="åºå¤"
+                                            target="_blank">åºå¤</a>
+                                        <a href="http://www.weather.com.cn/weather1d/601020101.shtml#search" title="æå°¼"
+                                            target="_blank">æå°¼</a>
+                                        <a href="http://www.weather.com.cn/weather1d/601060101.shtml#search" title="å¢¨å°æ¬"
+                                            target="_blank">å¢¨å°æ¬</a>
+                                        <a href="http://www.weather.com.cn/weather1d/606010100.shtml#search" title="æ çµé¡¿"
+                                            target="_blank">æ çµé¡¿</a>
+                                        <a href="http://www.weather.com.cn/weather1d/606020100.shtml#search" title="å¥¥åå°"
+                                            target="_blank">å¥¥åå°</a>
+                                        <a href="http://www.weather.com.cn/weather1d/610010100.shtml#search" title="èç¦"
+                                            target="_blank">èç¦</a>
+                                        <a href="http://www.weather.com.cn/weather1d/301010101.shtml#search" title="å¼ç½"
+                                            target="_blank">å¼ç½</a>
+                                        <a href="http://www.weather.com.cn/weather1d/317010100.shtml#search" title="åç½æ¯"
+                                            target="_blank">åç½æ¯</a>
+                                        <a href="http://www.weather.com.cn/weather1d/302010100.shtml#search" title="å¼æ®æ¦"
+                                            target="_blank">å¼æ®æ¦</a>
+                                        <a href="http://www.weather.com.cn/weather1d/502330100.shtml#search"
+                                            title="ç»´å¤å©äº" target="_blank">ç»´å¤å©äº</a>
+                                        <a href="http://www.weather.com.cn/weather1d/321030100.shtml#search" title="æå·´ç¹"
+                                            target="_blank">æå·´ç¹</a>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <p class="category">éæ©æ´²é</p>
+                                    <dd class="zhouj">
+                                        <a href="http://www.weather.com.cn/forecast/world.shtml?search=area0#search"
+                                            title="äºæ´²" target="_blank">äºæ´²</a>
+                                        <a href="http://www.weather.com.cn/forecast/world.shtml?search=area1#search"
+                                            title="æ¬§æ´²" target="_blank">æ¬§æ´²</a>
+                                        <a href="http://www.weather.com.cn/forecast/world.shtml?search=area2#search"
+                                            title="åç¾æ´²" target="_blank">åç¾æ´²</a>
+                                        <a href="http://www.weather.com.cn/forecast/world.shtml?search=area3#search"
+                                            title="åç¾æ´²" target="_blank">åç¾æ´²</a>
+                                        <a href="http://www.weather.com.cn/forecast/world.shtml?search=area4#search"
+                                            title="éæ´²" target="_blank">éæ´²</a>
+                                        <a href="http://www.weather.com.cn/forecast/world.shtml?search=area5#search"
+                                            title="å¤§æ´æ´²" target="_blank">å¤§æ´æ´²</a>
+                                    </dd>
+                                </dl>
+                                <dl class="qcode"><a href="http://p.weather.com.cn/#search" target="_blank"
+                                        style="width:376px;"><img src="https://i.i8tq.com/weather2020/search/rbAd.jpg"
+                                            style="width:78.5%;"></a></dl>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- tong0903 end-->
+
+            <div class="nav_addr">
+                <div style="width:1200px;margin: 0 auto;">
+                    <ul style="width: 268px;">
+                        <li><a href="http://www.weather.com.cn/forecast/" target="_blank">é¢æ¥</a></li>
+                        <li><a href="http://www.weather.com.cn/alarm/" target="_blank">é¢è­¦</a></li>
+                        <li><a href="http://www.weather.com.cn/radar/" target="_blank">å¤©æ°å°å¾</a></li>
+                        <li style="padding-right: 15px;"><a href="http://typhoon.weather.com.cn/" target="_blank">å°é£è·¯å¾</a>  </li>
+                        <li><a href="http://www.weather.com.cn/radar/index2021.shtml" target="_blank">é·è¾¾</a></li>
+                        <li><a href="http://www.weather.com.cn/satellite/" target="_blank">äºå¾</a></li>
+                        <li><a href="http://products.weather.com.cn/yb.html?page=YB&type=YB_TQQS_3D" target="_blank">ä¸ä¸äº§å</a></li>
+                        <li><a href="http://www.weather.com.cn/space/" target="_blank">ç©ºé´å¤©æ°</a></li>
+                    </ul>
+                    <div style="float:left;width: 1px;height: 27px;margin-top: 20px;background:#fff;opacity:0.4;"></div>
+                    <ul style="width: 107px;padding-left: 33px;padding-right: 6px;">
+                        <li style="width:30px;"><a href="https://news.weather.com.cn/" target="_blank">èµè®¯</a></li>
+                        <li style="width:30px;"><a href="http://p.weather.com.cn/" target="_blank">å¾ç</a></li>
+                        <li style="width:30px;"><a href="http://www.weather.com.cn/zt/index.shtml" target="_blank">ä¸é¢</a></li>
+                        <li style="width:30px;"><a href="http://www.weather.com.cn/video/index.shtml" target="_blank">è§é¢</a></li>
+                    </ul>
+                    <div style="float:left;width: 1px;height: 27px;margin-top: 20px;background:#fff;opacity:0.4;"></div>
+                    <ul style="width: 108px;padding-left: 34px;padding-right: 4px;">
+                         <li style="width:30px;"><a target="_blank" href="http://www.weather.com.cn/life/">èæ°</a></li>
+                        <li style="width:30px;"><a href="http://www.weather.com.cn/air/" target="_blank">ç¯å¢</a></li>
+                        <li style="width:30px;"><a href="http://www.weather.com.cn/trip/"target="_blank">ææ¸¸</a></li>
+                        <li style="width:45px;padding-right: 10px;"><a href="http://www.weather.com.cn/climate/" target="_blank">ç¢³ä¸­å</a></li>
+                    </ul>
+                    <div style="float:left;width: 1px;height: 27px;margin-top: 20px;background:#fff;opacity:0.4;"></div>
+                    <ul style="width: 88px;padding-left: 33px;">
+                        <li><a target="_blank" href="http://www.weather.com.cn/science/">æ°è±¡ç§æ®</a></li>
+                        <li> <a href="http://www.weather.com.cn/beltroad/" target="_blank">ä¸å¸¦ä¸è·¯</a></li>
+                    </ul>
+                    <div style="float:left;width: 1px;height: 27px;margin-top: 20px;background:#fff;opacity:0.4;"></div>
+                    <ul style="width: 88px;padding-left: 29px;padding-right: 6px;border-right:none;">
+                        <li style="width:67px;text-align:center;margin-bottom: 7px;"><a href="http://www.weatherdt.com/"
+                                target="_blank">äº§åå¹³å°</a></li>
+                        <li style="width:67px;text-align:center;"> <a
+                                href="http://www.weather.com.cn/weatherMap/indexSky.html?defaultCaseType=mySky"
+                                target="_blank" class="sheng_first"
+                                style="display:block;margin-bottom:5px;background:none;">æçå¤©ç©º</a></li>
+
+                    </ul>
+                    
+                </div>
+               
+            </div>
+            <!-- å¯¼èªæ end -->
+
+<div class="jiejiari"></div>
+            <!-- æ ·å¼ -->
+            <style>
+body {
+                    overflow-x: hidden;
+                    width: 100%;
+                }
+
+                .xyn-bjbox {
+                    position: relative;
+                }
+
+                .page {
+                    width: 100%;
+                    clear: both;
+                     /*background: #f3f4f5 url(https://i.i8tq.com/index/s100/dang.png) no-repeat center top;*/
+                        background-size: 100%;
+                }
+
+                .content {
+                    padding-top: 10px;
+                }
+.w_logo a{
+    /*background: url(https://i.i8tq.com/index/s100/logo.png) no-repeat;*/
+}
+.w_logo a {
+    /* background: url(https://i.tq121.com.cn/i/weather2015/city/iconall_index.png?04) no-repeat scroll 0 -836px; */
+    background: url(https://i.i8tq.com/index/logo2.png) no-repeat;
+    background-size: 149px;
+    display: block;
+    height: 44px;
+    width: 172px;
+    position: absolute;
+    top: 30px;
+}
+.jiejiari {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 99px;
+                        /*background: none url(https://i.i8tq.com/index/s100/dangup.png) no-repeat center top;*/
+                        /*background: url(https://i.i8tq.com/index/s100/dangup.png) no-repeat center top;*/
+                        background-size: 100% 100%;
+                        min-width: 1200px;
+                    }
+
+                    .jierititle {
+                        /*background: none url(https://i.i8tq.com/index/s100/dangtitle.png?01) no-repeat center -10px;*/
+                        /*background: url(https://i.i8tq.com/index/s100/dangtitle.png?01) no-repeat center -10px;*/
+                        width: 1200px;
+                        height: 99px;
+                        position: absolute;
+                    }
+                    .nav_addr {
+    width: 100%;
+    height: 66px;
+    color: #fff;
+    /* border-bottom: 1px solid #dee8f2; */
+    margin: 0 auto;
+    position: absolute;
+    background:#0a5bac;
+    left: 0;
+    right: 0;
+    z-index: 10
+}
+.nav_li_left {
+    float: right;
+    color: #252525;
+    font-size: 12px;
+    width: 350px;
+    margin-top: 14px;
+}
+
+.nav_li_left a {
+    color: #252525;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    font-size: 12px;
+    position: relative;
+    z-index: 1114
+}
+                    
+                .header-box {
+                    padding: 0;
+                    height:99px;
+                }
+                .w_logo .fl {
+                    display: none;
+                }
+
+                .nav_addr {
+                    position: relative;
+                }
+
+                .nav_fa {
+                    height: auto;
+                }
+.qm {
+                    position: absolute;
+                    top: 0;
+                    left: 50%;
+                    margin-left: -385px;
+                    width: 770px;
+                    height: 100px;
+                    background: url(https://i.i8tq.com/jieri/tongyong/guyu.gif?20250122) no-repeat;
+                    
+                }
+        .qmHref {position: absolute;top: 0;left: 64%;margin-left: -590px;width: 720px;height: 100px;z-index: 99999999999999;cursor: pointer;}
+            .nav_li_left{
+                position: relative;
+                left: 30px;
+            }
+            
+                
+            </style>
+            <!--<img src="https://i.i8tq.com/jieri/20201001/2.png" style="left: 50%; margin-left: -354.5px; position: absolute; top: 60px;">-->
+            
+            <a href="https://e.weather.com.cn/mtqzt/4597073.shtml" target="_blank" class="qmHref"></a>
+            <div class="qm"></div>
+        </div>
+
+        <div class="page">
+
+            <div class="content">
+               <div style="margin-bottom: 10px;">
+                <a target="_blank" href="https://e.weather.com.cn/zhinengti.shtml" ><img src="https://i.i8tq.com/adImg/pc_index.png" style="display: block;width: 1180px;marign-bottom: 10px;"></a>
+                </div>
+                <div class="pLeft">
+                    <div class="styleOne" style="margin-top:0;">
+                        <div class="styleOneLeft">
+                            <div class="picShowOne">
+                                <div class="focusImg">
+                                    <ul style="width: 1500px;">
+                                        <!--æ»å¨å¾start-->
+      
+<li><a href="http://www.weather.com.cn/satellite/" target="_blank"><img src="http://pi.weather.com.cn/i//product/pic/l/sevp_nsmc_wxbl_fy4b_etcc_achn_lno_py_20260420110000000.jpg" /><b>FY4Bä¸­å½åå¨è¾¹åºåçå½©å¾</b></a></li>
+
+       
+
+<li><a href="http://p.weather.com.cn/2026/04/4601015.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2026/04/20/52F638AAE43707DF3A9A921E0CD456CE.jpg" /><b>åäº¬çæ¸æ½­ç´«è¤å¦å¸éæ¥é£</b></a></li><li><a href="http://p.weather.com.cn/2026/04/4601084.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2026/04/20/6C91EDA70D8AD3B9D1A0538F8B956404.jpg" /><b>è¾½å®æ¬æºªéªè½è±æ å±±é¡¶è¦ç½</b></a></li><li><a href="http://p.weather.com.cn/2026/04/4601571.shtml" target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2026/04/20/8EE04BD303E561AAFDD832916EFB8F83.jpg" /><b>éå²è¶å­ï¼è¶ç»¿æ æ¨±ç²æ··æ­åºæç¾æ¥è²</b></a></li>
+
+       
+<li style="background: #eee;"><a href="http://products.weather.com.cn/sk.html?page=YB&type=YB_JSL_024" target="_blank" ><img style="height:236px;width:auto;margin-left: 25%;" src="http://pi.weather.com.cn/i//product/pic/m/sevp_nmc_stfc_sfer_er24_achn_l88_p9_20260420130002400.jpg" /><b style="background: #0A5BAC;">å¨å½24å°æ¶éæ°´éé¢æ¥</b></a></li>
+
+                                        <!--æ»å¨å¾end-->
+                                    </ul>
+                                     <span><i class="on">1</i><i class="">2</i><i class="">3</i><i class="">4</i><i
+                                            class="">5</i></span>
+                                </div>
+                            </div>
+                            <div class="newsShowVideo">
+
+
+
+            <div class="topVideo">
+                    <div class="showVideoPic">
+                        <a href="https://www.weather.com.cn/video/2026/04/4601767.shtml" target="_blank">
+                            <img src="https://i.weather.com.cn/images/cn/video/lssj/2026/04/20/14FA90DB502FDBFAE8A2308533939137_m.png" alt="ä¼æ¥æ¡¦æ æ±" title="ä¼æ¥æ¡¦æ æ±" width="200" height="113">
+                        </a>
+                    </div>
+                    <div class="showVideoTime"></div>
+                    <a href="https://www.weather.com.cn/video/2026/04/4601767.shtml" target="_blank" alt="ä¼æ¥æ¡¦æ æ±" title="ä¼æ¥æ¡¦æ æ±">ä¼æ¥æ¡¦æ æ±</a>
+                </div>
+
+
+
+            <div class="topVideo">
+                    <div class="showVideoPic">
+                        <a href="https://www.weather.com.cn/video/2026/04/4601471.shtml" target="_blank">
+                            <img src="https://i.weather.com.cn/images/cn/video/lssj/2026/04/20/5D8B5D414A4940D59CBBE1DC7A7606ED_m.png" alt="æ´æè¿è°·é¨ äº¬åå¥½é£å" title="æ´æè¿è°·é¨ äº¬åå¥½é£å" width="200" height="113">
+                        </a>
+                    </div>
+                    <div class="showVideoTime"></div>
+                    <a href="https://www.weather.com.cn/video/2026/04/4601471.shtml" target="_blank" alt="æ´æè¿è°·é¨ äº¬åå¥½é£å" title="æ´æè¿è°·é¨ äº¬åå¥½é£å">æ´æè¿è°·é¨ äº¬åå¥½é£å</a>
+                </div>
+
+
+
+</div>
+
+                                     
+                            
+<a href="https://e.weather.com.cn/mtqzt/4597073.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/index/2026/04/19/F7B911A720D84A203B81B2D19C1BC88E.jpg" style="margin-top:10px;width: 420px;height: 100px;"></a>
+    
+
+
+
+                            
+                        </div>
+                        
+                       
+                        <!--è¦ç¹æ°é»-->
+                        <div class="styleOneRight">
+
+                                
+  
+  
+  
+  
+<div class="mainContent">
+<h2 class="mainContentTitle alignL" data-img="http://i.weather.com.cn/images/cn/news/2026/04/20/E933FD430E74F85BB3F03183B977D2A1.jpg" ><a href="http://news.weather.com.cn/" target="_blank" style="color:">åæ¹è¾å¼ºéé¨ååº¦åå± å·ç­åå·®ææ¾</a></h2><div class="mainContentList" id="mainContentList0"><p style="white-space: normal;"><img src="http://www.weather.com.cn/2026/04/11/6A8F5A170C0BB21CEF6A3CB96DE88EAD.jpg" alt="æ±åéé¨éå¿ä¸ç§» ååçç­å¤©æ°æç»­"/><a href="https://news.weather.com.cn/2026/04/4601760.shtml" target="_blank">æ´é¨é¢è­¦</a>&nbsp;<img src="http://www.weather.com.cn/2026/04/15/C9E7ADF2BF3AD5852F01DF68149A31BD.jpg" alt="åæ¹éé¨æç»­ åæ¹å¤å°æ°æ¸©æ³¢å¨ä¸­ä¸å" width="31" height="13" style="width: 31px; height: 13px;"/><a href="https://news.weather.com.cn/2026/04/4601761.shtml" target="_blank">å¤§é£é¢è­¦</a>&nbsp;<a href="https://www.weather.com.cn/life/2022/05/3537408.shtml" target="_blank" textvalue="æ¶å¥½è¿ä»½æ´é¨é¿é©æå">æ¶å¥½è¿ä»½æ´é¨é¿é©æå</a></p><p style="white-space: normal;"><a href="http://news.weather.com.cn/2026/04/4600093.shtml" target="_blank" textvalue="ä¸­å½æ°è±¡å±å¯å¨å¤§é£å¼ºå¯¹æµåçº§åºæ¥ååº" style="white-space: normal;">å¤§é£å¼ºå¯¹æµåçº§åºæ¥ååº</a>&nbsp;<a href="https://www.weather.com.cn/life/2026/01/4481689.shtml" target="_blank" style="white-space: normal;">å¿½å·å¿½ç­å¦ä½å¥åº·é²æ¤ï¼</a></p></div><h2 class="mainContentTitle alignL" data-img="http://i.weather.com.cn/images/cn/news/2026/04/20/9E39C5AEF24F1F6224182EDDFEE2EF1C.jpg" ><a href="http://news.weather.com.cn/2026/04/4601625.shtml" target="_blank" style="color:">è´µå·æ¹åç­å°é¨éç ´çºªå½ åæ¹ä½æ¶é¨å</a></h2><div class="mainContentList" id="mainContentList1" ><p><a href="https://news.weather.com.cn/2026/04/4601528.shtml" target="_blank">åæ¹å¤§èå´éé¨æç»­ äºåè´µå·åºç°4æé¦åºå¤§æ´é¨</a></p><p><a href="https://www.weather.com.cn/life/2022/05/3536835.shtml" target="_blank">ä¸å¾äºè§£å¼ºå¯¹æµé¿é©æå</a> <a href="https://www.weather.com.cn/life/2022/05/3537111.shtml" target="_blank">ä¸å¾çæå°é¹åºæ²¡è§å¾</a></p></div><h2 class="mainContentTitle alignL" data-img="http://i.weather.com.cn/images/cn/news/2026/04/08/FB57C048CCE1D518B64C05FCA979203A.jpg" ><a href="http://news.weather.com.cn/2026/04/4575779.shtml" target="_blank" style="color:">è°·é¨æ¥å°å°½ å¨å½ç¡ä¸¹è§èµå°å¾æ¥äº</a></h2> 
+  
+   </div>
+
+                            <div class="newsList">
+                                
+
+<ul>
+  <li><i></i><a href="http://news.weather.com.cn/2026/04/4600330.shtml"  target="_blank" style="color:">è°·é¨èæ°é¦æ¥åäº¬å¤©æ°è½¬æ´ ç½å¤©éµé£å¯è¾¾6çº§å·¦å³</a></li><li><i></i><a href="http://news.weather.com.cn/2026/04/4600786.shtml"  target="_blank" style="color:">å¹¿è¥¿å¤é¨æ¨¡å¼æç»­ ä»å¤©æ¡ææ³å·ç­å°å±å°ææ´é¨</a></li><li><i></i><a href="http://news.weather.com.cn/2026/04/4601009.shtml"  target="_blank" style="color:">æ±è¥¿éé¨åå±å¢å¤ ä»å¤å®æ¥æ°ä½ç­å°å±å°ææ´é¨</a></li><li><i></i><a href="http://news.weather.com.cn/2026/04/4601579.shtml"  target="_blank" style="color:">å¹¿ä¸åå¤©èµ·é¨å¢å¼º é¶å³æ¸è¿å±å°ææ´é¨æå¤§æ´é¨</a></li><li><i></i><a href="http://news.weather.com.cn/2026/04/4601640.shtml"  target="_blank" style="color:">åèå¤æå¤©å±å°æä¸­å°å¤§éª å¤å°å°åºç°å¼ºé£å¤©æ°</a></li><li><i></i><a href="http://news.weather.com.cn/2026/04/4601724.shtml"  target="_blank" style="color:">æ¹åæåå¤©ä¸­é¨åé¨å±å°æå¤§æ´é¨ å¤å°æ°æ¸©ä¸é</a></li>
+</ul>
+<span class="more"><a href="http://news.weather.com.cn/" target="_blank">æ´å¤>></a></span>
+
+                            </div>
+                        </div>
+                        <!--è¦ç¹æ°é»-->
+                    </div>
+
+                   <div class="styleOne tl_ad">
+                         <a target="_blank" href="https://lwf.weather.com.cn/"><img src="https://i.i8tq.com/adImg/yby2026.jpg"></a>
+                       </div>
+                    <div class="styleOne">
+                        <div class="styleOneLeft">
+                            <div class="title">
+                                <div class="titleInfo">
+                                    <a href="http://www.weather.com.cn/video/index.shtml" target="_blank">å¤©æ°é¢æ¥</a>
+                                </div>
+                                <div class="titleMore">
+                                    <a target="_blank" href="http://www.weather.com.cn/video/index.shtml">&gt;&gt;</a>
+                                </div>
+                            </div>
+                            <div class="video">
+                                <div class="video">
+                                    <dl>
+                                        
+
+                                        <dd>
+                                            <div class="jq22-container">
+                                                <a target="_blank" href="http://www.weather.com.cn/video/ylist.shtml">
+                                            <img src="https://i.i8tq.com/video/index_spring.jpg" alt="" style="width: 420px;height: 236px;">
+                                                                    <div class="weather-video"></div>
+                                                                   
+                                                                </a>
+                                        </dd>
+                                    </dl>
+                                </div>
+
+                                <style type="text/css">
+                                    .weather-video {
+                                        height: 169px;
+                                        background: url(https://i.tq121.com.cn/i/weather2015/index/tianqiyubao.png) no-repeat center center;
+                                    }
+
+                                    .video dl {
+                                        height: 236px;
+                                    }
+
+                                    .video dl dd i {
+                                        top: 67px;
+                                    }
+                                </style>
+
+                                
+                                
+                            </div>
+                            <!--ä¸»æäººstart-->
+         <div class="compere"> 
+  <h1><a target="_blank" style="font-weight: normal;font-size: 14px;" href="http://www.weather.com.cn/index/tqybzcr/index.shtml">>></a>å¤©æ°é¢æ¥ä¸»æäºº</h1> 
+  <p>
+    <a href="http://www.weather.com.cn/index/2016/10/2664929.shtml" target="_blank" title="å®è±æ°" class="weather-host8"></a>
+    <span  class="person">å®è±æ°</span>
+    <span  class="personOverlay"></span>
+  </p> 
+  <p>
+    <a href="http://www.weather.com.cn/index/2016/10/2664928.shtml" target="_blank" title="æ¨ä¸¹" class="weather-host9"></a>
+    <span  class="person">æ¨ä¸¹</span>
+    <span  class="personOverlay"></span>
+  </p> 
+  <ul> 
+   <li><a href="http://www.weather.com.cn/index/2016/10/2664926.shtml" target="_blank" title="å¯æ®">
+     <div class="weather-host weather-host3"></div></a></li> 
+   <li><a href="http://www.weather.com.cn/index/2016/10/2664927.shtml" target="_blank" title="çèä¸">
+     <div class="weather-host weather-host4"></div></a></li> 
+   <li><a href="http://www.weather.com.cn/index/2016/10/2664945.shtml" target="_blank" title="å¼ æ³°æº">
+     <div class="weather-host weather-host5"></div></a></li> 
+   <li><a href="http://www.weather.com.cn/index/2016/10/2664921.shtml" target="_blank" title="å¤é¯">
+     <div class="weather-host weather-host6"></div></a></li> 
+  
+  </ul> 
+</div>
+<style>
+.weather-host8 { background: url(https://i.i8tq.com/index/syj2024.png); display: block; height: 160px; width: 130px; opacity: .9 }
+.weather-host8:hover { filter: alpha(opacity=100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1 }
+.weather-host9 { background: url(https://i.i8tq.com/index/yd2024.png); display: block; height: 160px; width: 130px; opacity: .9 }
+.weather-host9:hover { filter: alpha(opacity=100); -moz-opacity: 1; -khtml-opacity: 1; opacity: 1 }
+.compere p { float: left; width: 130px; position: relative }
+.compere .person { height: 25px; line-height: 25px; position: absolute; text-align: left; bottom: 0px; color: #fff; margin-left: 50px; z-index: 9 }
+.compere .personOverlay { height: 25px; line-height: 25px; position: absolute; text-align: center; width: 130px; bottom: 0px; background: #000; filter: alpha(opacity=60); -moz-opacity: .6; -khtml-opacity: .6; opacity: .6 }
+.compere ul { float: right; width: 160px }
+.compere ul li { display: inline; float: left; height: 80px; margin-bottom: 0px; overflow: hidden; width: 80px }
+</style>
+
+        <!--ä¸»æäººend-->
+        <a href="https://e.weather.com.cn/mtqzt/4453011.shtml" target="_blank"><img src="https://i.i8tq.com/jieri/fbh_2021.png" style="margin-top:10px;width:420px;"></a>
+    
+<a href="http://www.weather.com.cn/zt/tqzt/3641555.shtml#p=1" target="_blank"><img src="http://i.weather.com.cn/images/cn/index/2024/03/18/202403181336470A7F03D1DA389C5AC74DDB7AC0745065.jpg" style="margin-top:10px;width: 420px;height: 100px;"></a>
+    
+
+                        </div>
+                        <div class="styleOneRight">
+                            <div class="title">
+                                <div class="titleInfo">
+                                    <a href="http://products.weather.com.cn/yb.html?page=YB&type=YB_TQQS_3D" target="_blank">ææ°æ°è±¡å¬å</a>
+                                </div>
+                                <div class="titleMoreM">
+                                    <a href="http://products.weather.com.cn/yb.html?page=YB&type=YB_TQQS_3D" target="_blank">>></a>
+                                </div>
+                            </div>
+                            <div class="announcement">
+                                <ul>
+                                    <!--ææ°æ°è±¡å¬åstart-->
+                                   <!--ææ°æ°è±¡å¬åstart-->
+                                   <li id="announce2"><h4><a target="_blank" href="http://products.weather.com.cn/yb.html?page=YB&type=YB_TQQS_3D">04æ20æ¥ï¼æªæ¥ä¸å¤©å¨å½å¤©æ°é¢æ¥</a></h4><p>ä¸­å¤®æ°è±¡å°2026å¹´04æ20æ¥18æ¶åå¸æªæ¥ä¸å¤©å¨å½å¤©æ°é¢æ¥ã<a target="_blank" title="04æ20æ¥ï¼æªæ¥ä¸å¤©å¨å½å¤©æ°é¢æ¥" href="http://products.weather.com.cn/yb.html?page=YB&type=YB_TQQS_3D">è¯¦ç»</a></p><i></i></li>
+
+      <li id="announce3"><h4><a target="_blank" href="http://products.weather.com.cn/yb.html?page=YB&type=YB_TQQS_10D">04æ20æ¥ï¼æªæ¥åå¤©å¨å½å¤©æ°é¢æ¥</a></h4><p>ä¸­å¤®æ°è±¡å°2026å¹´04æ20æ¥10æ¶åå¸æªæ¥åå¤©å¨å½å¤©æ°è¶å¿é¢æ¥ã<a target="_blank" title="04æ20æ¥ï¼æªæ¥åå¤©å¨å½å¤©æ°é¢æ¥" href="http://products.weather.com.cn/yb.html?page=YB&type=YB_TQQS_10D">è¯¦ç»</a></p><i></i></li>
+
+      <li id="announce6"><h4><a target="_blank" href="http://products.weather.com.cn/yb.html?page=YB&type=YB_JT_24">04æ20æ¥ï¼å¨å½ä¸»è¦å¬è·¯æ°è±¡é¢æ¥</a></h4><p>ä¸­å½æ°è±¡å±ä¸äº¤éè¿è¾é¨2026å¹´04æ20æ¥20æ¶èååå¸å¨å½ä¸»è¦å¬è·¯æ°è±¡é¢æ¥ã<a target="_blank" title="04æ20æ¥ï¼å¨å½ä¸»è¦å¬è·¯æ°è±¡é¢æ¥" href="http://products.weather.com.cn/yb.html?page=YB&type=YB_JT_24">è¯¦ç»</a></p><i></i></li>
+
+<!--include virtual="/index/zxqxgg/qgzdqwyb_new_index.htm"-->
+<li id="announce8"><h4><a target="_blank" href="http://products.weather.com.cn/yb.html?page=YB&type=JB_ZYTQ_SLHXDJ">04æ20æ¥ï¼æ£®æç«é©æ°è±¡é¢æ¥</a></h4><p>ä¸­å¤®æ°è±¡å°2026å¹´04æ20æ¥18æ¶åå¸æ£®æç«é©æ°è±¡é¢æ¥ã<a target="_blank" title="04æ20æ¥ï¼æ£®æç«é©æ°è±¡é¢æ¥" href="http://products.weather.com.cn/yb.html?page=YB&type=JB_ZYTQ_SLHXDJ">è¯¦ç»</a></p><i></i></li>
+
+<!--include virtual="/index/zxqxgg1/jkqxyb_index.htm"-->
+<!--include virtual="/index/zxqxgg1/qdltqyb_index.htm"-->
+<!--include virtual="/index/zxqxgg/qxgh_index.htm"-->
+      <!--include virtual="/index/zxqxgg1/hjqxgb_index.htm"-->
+      <!--include virtual="/index/zxqxgg/kqwrqxtj_new_index.htm"--> <!--ç©ºæ°æ±¡æ-->
+     <!--include virtual="/index/zxqxgg1/jkqxyb_index.htm"-->
+     <!--include virtual="/index/zxqxgg1/YB_HLHFC_HESTK_24H_XML.htm"-->
+    <!--<li id="announce12" style="display:none"></li>-->
+     
+<li id="announce10"><h4><a target="_blank" href="http://products.weather.com.cn/yb.html?page=YB&type=YB_FLU_RISK_24H_XML">04æ20æ¥ï¼æµææ°è±¡é£é©é¢æ¥</a></h4><p>ä¸­å½æ°è±¡å±å¬å±æ°è±¡æå¡ä¸­å¿2026å¹´04æ20æ¥18æ¶åå¸æµææ°è±¡é£é©é¢æ¥ã<a target="_blank" title="æµææ°è±¡é£é©é¢æ¥" href="http://products.weather.com.cn/yb.html?page=YB&type=YB_FLU_RISK_24H_XML">è¯¦ç»</a></p><i></i></li>
+
+          
+<li id="announce11"><h4><a target="_blank" href="http://products.weather.com.cn/sk.html?page=YB&type=YB_CO_24H_JPG">04æ20æ¥ï¼å¨å½æ°åèéåº¦é¢æ¥</a></h4><p>ä¸­å½æ°è±¡å±å¬å±æ°è±¡æå¡ä¸­å¿2026å¹´04æ20æ¥08æ¶åå¸å¨å½æ°åèéåº¦é¢æ¥ã<a target="_blank" title="å¨å½æ°åèéåº¦é¢æ¥" href="http://products.weather.com.cn/sk.html?page=YB&type=YB_CO_24H_JPG">è¯¦ç»</a></p><i></i></li>
+
+                                    <!--ææ°æ°è±¡å¬åend-->
+                                   
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                  <div class="styleOne tl_ad">
+                        <div class="goodLife">
+                            <div id="adpos_lm01" class="l_ad">
+                                <a href="http://www.news.cn/finance/zthd/tlwl/index.html" target="_blank"><img src="https://i.i8tq.com/shengtai/tzh202501.jpg" title="" alt="" border="0"></a>
+
+                            </div>
+                        </div>
+                    </div> 
+
+                    <div class="styleOne">
+                        <div class="title">
+                            <div class="titleInfo">
+                                <a href="http://www.weather.com.cn/life/" target="_blank">çæ´»ææ¸¸</a>
+                            </div>
+                            <div class="titleMoreL">
+                                <a href="http://www.weather.com.cn/life/" target="_blank">>></a>
+                            </div>
+                        </div>
+
+                        <div class="travel">
+                            <!--çæ´»ææ¸¸å·¦éå¸¦åå¸start-->
+                            <div id="fsD1" class="focus tragdt">
+  <div id="D1pic1" class="fPic tq121">
+
+    <ul>     
+    <li class="fcon"><a href="http://www.weather.com.cn/life/2026/04/4597658.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/shrd/2026/04/16/B0ABAA67CD0E4E9FDCE53C5995EF861D.jpg" width="400" height="224" /></a><div class="jfs"><h2>çæ´»</h2><h1><a href="http://www.weather.com.cn/life/2026/04/4597658.shtml" target="_blank">è°·é¨è¿æ ·è¿ï¼èµ°è°·é¨èµç¡ä¸¹ ééåå³æ¥å¤©çå³é</a></h1><p>æ°é´å¨è°·é¨è¿å¤©ä¼éè¿èµ°è°·é¨ãç¥­æµ·ãåè°·é¨......</p><p><a href="http://www.weather.com.cn/life/2026/04/4597658.shtml" target="_blank">è¯¦ç»</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2026/04/4597655.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/shrd/2026/04/17/38F95B41C0725656691FBFB30314AB70.jpg" width="400" height="224" /></a><div class="jfs"><h2>çæ´»</h2><h1><a href="http://www.weather.com.cn/life/2026/04/4597655.shtml" target="_blank">è°·é¨å»çéå»è æ¸æ·¡å»çè¿åå¤</a></h1><p>è°·é¨æ­£å¼æ¥æ«å¤åä¹äº¤ï¼åºæä½æå©æ¶æºï¼å»......</p><p><a href="http://www.weather.com.cn/life/2026/04/4597655.shtml" target="_blank">è¯¦ç»</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2026/04/4597657.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/shrd/2026/04/16/8E1F0F859C63F6F3388879554E927DA9.jpg" width="400" height="224" /></a><div class="jfs"><h2>çæ´»</h2><h1><a href="http://www.weather.com.cn/life/2026/04/4597657.shtml" target="_blank">è°·é¨é¥®è¶å»èº«å¿ è¿äºäºé¡¹éæ³¨æ</a></h1><p>é¥®è¶æ¹æ³ä¸å½ï¼ä¼å½±åç¡ç ãæä¼¤è¾èï¼ä»¥ä¸......</p><p><a href="http://www.weather.com.cn/life/2026/04/4597657.shtml" target="_blank">è¯¦ç»</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2026/04/4597656.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/shrd/2026/04/16/724EC60A1461BCCDBDA63BC65E1C14A8.jpg" width="400" height="224" /></a><div class="jfs"><h2>çæ´»</h2><h1><a href="http://www.weather.com.cn/life/2026/04/4597656.shtml" target="_blank">æ¥å¤ä¹äº¤é¿å¼è¿äºå»çè¯¯åº å®ç¨³æ¢å­£</a></h1><p>æ³è¦å®ç¨³æ¢å­£ï¼è¿å ä¸ªå¸¸è§è¯¯åºéè¦æ³¨æã</p><p><a href="http://www.weather.com.cn/life/2026/04/4597656.shtml" target="_blank">è¯¦ç»</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2026/04/4577412.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/shrd/2026/03/27/AD1EB147B8BA97E9BD93FF4BF7F60165.jpg" width="400" height="224" /></a><div class="jfs"><h2>çæ´»</h2><h1><a href="http://www.weather.com.cn/life/2026/04/4577412.shtml" target="_blank">åå°é£çµ®å­£ åæå©ä½ å¨æ¹ä½é²æ¤</a></h1><p>é£çµ®ä¸ä»å½±ååºè¡è§æï¼è¿æèå¥åº·é£é©ï¼å¯......</p><p><a href="http://www.weather.com.cn/life/2026/04/4577412.shtml" target="_blank">è¯¦ç»</a></p></div></li><li class="fcon"><a href="http://www.weather.com.cn/life/2026/04/4577411.shtml" target="_blank"><img src="http://i.weather.com.cn/images/cn/life/shrd/2026/03/26/400A300C8EC77C30BB531AA70B020670.jpg" width="400" height="224" /></a><div class="jfs"><h2>çæ´»</h2><h1><a href="http://www.weather.com.cn/life/2026/04/4577411.shtml" target="_blank">å«æè±ç²è¿æå½æå ä¸ææä½ åæ¸</a></h1><p>äºèçç¶å®¹æè¢«æ··æ·ï¼å­¦ä¼æ­£ç¡®åºåãç§å­¦æ¤......</p><p><a href="http://www.weather.com.cn/life/2026/04/4577411.shtml" target="_blank">è¯¦ç»</a></p></div></li> 
+    </ul>
+  </div>
+  <div class="fbg">
+    <div class="D1fBt" id="D1fBt"> <a href="javascript:void(0)" hidefocus="true" target="_self" class="current"><i>1</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>2</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>3</i></a> <a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>4</i></a><a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>5</i></a><a href="javascript:void(0)" hidefocus="true" target="_self" class=""><i>6</i></a> </div>
+  </div>
+  <span class="prev"></span> <span class="next"></span> </div>
+
+                            <!--çæ´»ææ¸¸å·¦éå¸¦åå¸start-->
+                            <!--çæ´»ææ¸¸å³éå¸¦åå¸ä¸start-->
+                            <div class="trayin"> 
+<a target="_blank" href="http://www.weather.com.cn/life/2020/07/3364520.shtml"> <img src="http://i.weather.com.cn/images/cn/sjztj/2020/07/20/20200720142523B5F07D41B4AC4336613DA93425B35B5E_xm.jpg"> <em>ææ¸¸</em><b style="display: none;">é¨åå³¨çæ²å£å°½æ¾ éé¡¶æ¾çå®¹<br><span>å³¨çå±±é£åç§ç¾ï¼ä½äºæé«å¤çå³¨çå±±éé¡¶ï¼ä¸å¹´ä¸­æ300å¤©......</span></b><i style="display: none;"></i></a><a target="_blank" href="http://www.weather.com.cn/life/2019/10/3253319.shtml"> <img src="http://pic.weather.com.cn/images/cn/photo/2019/10/28/20191028144048D58023A73C43EC6EEB61610B0AB0AD74_xm.jpg"> <em>ææ¸¸</em><b style="display: none;">ç§ææµ èå¤©æ è¡¬ä¸çåå°æ»¨ä¼å°å åºå­<br><span>10æ27æ¥ï¼æ­£å¤äºæ·±ç§æ¶èçåå°æ»¨å¸ä¼å°å åºå­ãèèç......</span></b><i style="display: none;"></i></a>
+</div>
+
+                            <!--çæ´»ææ¸¸å³éå¸¦åå¸start-->
+                        </div>
+                    </div>
+                     
+                    <div class="styleOne">
+                        <!--çæ´»ææ¸¸åè¡¨start-->
+                        <div class="tralife">
+                            <!--çæ´»ææ¸¸åè¡¨-->
+                            <ul>
+    <li><i></i><a href="http://www.weather.com.cn/life/" target="_blank">çæ´»</a>|<a href="http://www.weather.com.cn/life/2025/04/4149502.shtml" target="_blank"  >éé¨å¢å¤æ¹¿æ°å é ç¥æ¹¿æçªé¨</a></li><li><i></i><a href="http://www.weather.com.cn/life/" target="_blank">çæ´»</a>|<a href="http://www.weather.com.cn/life/2025/04/4129681.shtml" target="_blank"  >è¸éåºæ¸¸ æ¾é£ç­å®å¨éæ£è¦åè®°</a></li><li><i></i><a href="http://www.weather.com.cn/life/" target="_blank">çæ´»</a>|<a href="http://www.weather.com.cn/life/2025/03/4110332.shtml" target="_blank"  >è±ç²å­£ è¿äºé²è¿æç¥è¯éç¥é</a></li><li><i></i><a href="http://www.weather.com.cn/life/" target="_blank">çæ´»</a>|<a href="http://www.weather.com.cn/life/2025/02/4076279.shtml" target="_blank"  >æ°æ¸©èµ·ä¼å¤å 5æè¿ç¦»å¼å¸éçæ¯</a></li>
+  </ul>
+
+
+                            <ul class="tranone">
+                              <!--çæ´»ææ¸¸å³éå¸¦åå¸ä¸start-->
+                              <li><i></i><a href="http://www.weather.com.cn/trip/index.shtml" target="_blank">ææ¸¸</a>|<a target="_blank"  href="http://www.weather.com.cn/life/2019/10/3253318.shtml">å¤§ç¾æ°çâå¸ç±³å°é«åå¥½é£å</a></li><li><i></i><a href="http://www.weather.com.cn/trip/index.shtml" target="_blank">ææ¸¸</a>|<a target="_blank"  href="http://www.weather.com.cn/life/2019/10/3253317.shtml">æ¹åç¥åæ¶æ¨é¾ç¼­ç» ç§è²è¿·äºº</a></li><li><i></i><a href="http://www.weather.com.cn/trip/index.shtml" target="_blank">ææ¸¸</a>|<a target="_blank"  href="http://www.weather.com.cn/life/2019/10/3253316.shtml">ç´«èæ»¡å±±å¡ é»å±±å¡å±±æç§è²æ­£å¥½</a></li><li><i></i><a href="http://www.weather.com.cn/trip/index.shtml" target="_blank">ææ¸¸</a>|<a target="_blank"  href="http://www.weather.com.cn/life/2019/10/3253315.shtml">å±±æ°´æé¢ï¼ç§çº¢ç¹ç¼é¢åå­è¥¿å ¤</a></li>
+
+                              <!--çæ´»ææ¸¸å³éå¸¦åå¸start-->
+                            </ul>
+                        </div>
+                        <!--çæ´»ææ¸¸åè¡¨start-->
+
+                    </div>
+                    
+
+                    <div class="styleOne">
+                        <div class="title">
+                            <div class="titleInfo">
+                                <a href="http://p.weather.com.cn/" target="_blank">é«æ¸å¾é</a>
+                            </div>
+                            <div class="titleMoreL">
+                                <a href="http://p.weather.com.cn/" target="_blank">>></a>
+                            </div>
+                        </div>
+                        <div class="hdImgs">
+
+                            <a id="img1" href="http://p.weather.com.cn/2026/04/4600071.shtml"  title="åäº¬é£æ²éé¨æ¥è¸µèè³ å¤å°éè·¯æ¹¿æ»"  target="_blank"><img src="http://pic.weather.com.cn/images/cn/photo/2026/04/19/8869AF251F3B9A785B3871B3D9F4B216.jpg" title="åäº¬é£æ²éé¨æ¥è¸µèè³ å¤å°éè·¯æ¹¿æ»"  width="190"  height="110"/><b>åäº¬é£æ²éé¨æ¥è¸µèè³ å¤å°éè·¯æ¹¿æ»</b><i style="height: 26px; width: 190px;"></i></a>
+
+    <a id="img2" href="http://p.weather.com.cn/2026/04/4601571.shtml"  target="_blank" title="éå²ä¸äº©è¶å­æ¨±è±çå¼ è¶ç»¿æ æ¨±ç²æ··æ­åºæç¾æ¥è²"><img src="http://pic.weather.com.cn/images/cn/photo/2026/04/20/8EE04BD303E561AAFDD832916EFB8F83.jpg" title="éå²ä¸äº©è¶å­æ¨±è±çå¼ è¶ç»¿æ æ¨±ç²æ··æ­åºæç¾æ¥è²" width="190"  height="110"/><b>éå²ä¸äº©è¶å­æ¨±è±çå¼ è¶ç»¿æ æ¨±ç²æ··æ­åºæç¾æ¥è²</b><i style="height: 26px; width: 190px;"></i></a>
+
+    <a id="img3" href="http://p.weather.com.cn/2026/04/4601084.shtml"  target="_blank" title="è¾½å®æ¬æºªéªè½è±æ å±±é¡¶è¦ç½"><img src="http://pic.weather.com.cn/images/cn/photo/2026/04/20/6C91EDA70D8AD3B9D1A0538F8B956404.jpg" title="è¾½å®æ¬æºªéªè½è±æ å±±é¡¶è¦ç½" width="422"  height="239"/><b>è¾½å®æ¬æºªéªè½è±æ å±±é¡¶è¦ç½</b><i style="height: 34px;"></i></a>
+
+    <a id="img4" href="http://p.weather.com.cn/2026/04/4575706.shtml"  target="_blank" title="æ²³åé©»é©¬åºä¸ç©ºç°æ¥ææ¯è§"><img src="http://pic.weather.com.cn/images/cn/photo/2026/04/02/98121AFEF1E0A0588CCA228F67CDD0DA.jpg" title="æ²³åé©»é©¬åºä¸ç©ºç°æ¥ææ¯è§" width="190"  height="110"/><b>æ²³åé©»é©¬åºä¸ç©ºç°æ¥ææ¯è§</b><i style="height: 26px; width: 190px;"></i></a>
+
+    <a id="img5" href="http://p.weather.com.cn/2026/04/4596006.shtml"  target="_blank" title="å±±è¥¿å¹³éæ¥é¨æ¶¦éº¦ç° ä¸çéç¿ æ¾çæº"><img src="http://pic.weather.com.cn/images/cn/photo/2026/04/16/D53BD255118A50EA2792D7E77EC02766.jpg" title="å±±è¥¿å¹³éæ¥é¨æ¶¦éº¦ç° ä¸çéç¿ æ¾çæº" width="190"  height="110"/><b>å±±è¥¿å¹³éæ¥é¨æ¶¦éº¦ç° ä¸çéç¿ æ¾çæº</b><i style="height: 26px; width: 190px;"></i></a>
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="styleOne">
+                        <div class="title">
+                            <div class="titleInfo">
+                                <a href="http://www.weather.com.cn/science/" target="_blank">æ°è±¡æ¢ç´¢</a>
+                            </div>
+                            <div class="titleMoreL">
+                                <a href="http://www.weather.com.cn/science/" target="_blank">>></a>
+                            </div>
+                        </div>
+                        <div class="exploration">
+                            <!--æ°è±¡æ¢ç´¢å·¦ä¾§é¡µé¢æ¨èstart-->
+      <div class="exleft">
+    <ul>
+         
+<li class="active"> æ·±å¥ä½éªé·æ´äºéæ¯ä»ä¹æåï¼
+          <div style="display:block;" class="jj">
+           <a target="_blank" href="http://news.weather.com.cn/2021/05/3464628.shtml"><img width="388" height="218" src="http://i.weather.com.cn/images/cn/news/2021/05/14/20210514192548638D53A47159C5D97689A921C03B6546.jpg" /></a>
+           <div class="exbg"> 
+            <b>æ·±å¥ä½éªé·æ´äºéæ¯ä»ä¹æåï¼</b>
+            <i></i> 
+           </div>
+          </div></li>
+
+<li> ä¸å¾çææ£è±äº§å°å¨åªé
+          <div style="display:none;" class="jj">
+           <a target="_blank" href="http://news.weather.com.cn/2021/03/3451886.shtml"><img width="388" height="218" src="http://i.weather.com.cn/images/cn/news/2021/03/26/20210326150416454FB344B92EC8BD897FA50DF6AD15E8.jpg" /></a>
+           <div class="exbg"> 
+            <b>ä¸å¾çææ£è±äº§å°å¨åªé</b>
+            <i></i> 
+           </div>
+          </div></li>
+
+<li> æµ·æ´å¨åç§å¤©æ°åæ®æ¼äºä»ä¹è§è²
+          <div style="display:none;" class="jj">
+           <a target="_blank" href="http://news.weather.com.cn/2021/03/3449741.shtml"><img width="388" height="218" src="http://i.weather.com.cn/images/cn/news/2021/03/19/20210319155915527B7F1E763A8D9C65581C8A4873D2B0.png" /></a>
+           <div class="exbg"> 
+            <b>æµ·æ´å¨åç§å¤©æ°åæ®æ¼äºä»ä¹è§è²</b>
+            <i></i> 
+           </div>
+          </div></li>
+
+<li> æä¸æä½ ä¸ç¥éçæ²å°é£äºäº
+          <div style="display:none;" class="jj">
+           <a target="_blank" href="http://www.weather.com.cn/science/2019/05/3190106.shtml"><img width="388" height="218" src="http://i.weather.com.cn/images/cn/science/2020/07/28/202007281001285C97A5D6CAD3BC4DD74F98B5EA5187BF.jpg" /></a>
+           <div class="exbg"> 
+            <b>æä¸æä½ ä¸ç¥éçæ²å°é£äºäº</b>
+            <i></i> 
+           </div>
+          </div></li>
+
+    
+    </ul>
+  </div>
+
+      <!--æ°è±¡æ¢ç´¢å·¦ä¾§é¡µé¢æ¨èend-->
+      <!--æ°è±¡æ¢ç´¢åè¡¨start-->
+      <div class="exright"> 
+
+<h2><a target="_blank" href="http://news.weather.com.cn/2026/01/4492357.shtml">æ¥è¿åºè¡å¨åºæ¯å¤©æ°æå</a></h2><div class="exiang"><p>åå¤§åºè¡åºæ¯å¤©æ°æååå®ç¨è£å¤ï¼æ¿ä½ çæ¥è¿ä¹æå¤ä¸ä»½ä»å®¹ä¸å¹³å®ã</p><p class="details"><a target="_blank" href="http://news.weather.com.cn/2026/01/4492357.shtml">è¯¦ç»</a></p></div><ul><li><i></i><a target="_blank" href="http://news.weather.com.cn/2025/09/4320725.shtml">å¤©æ°æ¡£æ¡é¦ï¼æ°æ®æ­ç§ååçé¨æå¤ç</a></li><li><i></i><a target="_blank" href="http://news.weather.com.cn/2025/08/4310393.shtml">ç§æ®ï¼ä¸æäºè§£æ´é¨å¤©å¦ä½é¿é©èªæ</a></li><li><i></i><a target="_blank" href="http://news.weather.com.cn/2025/08/4294532.shtml">ç§æ®ï¼ä¸å¾äºè§£ç­ç¸å³ç¾çä¹ç­å°ç</a></li><li><i></i><a target="_blank" href="http://news.weather.com.cn/2025/08/4294527.shtml">ç§æ®ï¼ä¸å¾äºè§£ç­ç¸å³ç¾çä¹ç­è¡°ç«­</a></li><li><i></i><a target="_blank" href="http://news.weather.com.cn/2025/06/4229287.shtml">æ¢é¨å­£å¼å¯ï¼ä¸å¾ç»æ°æ¢é¨é£äºäºå¿</a></li><li><i></i><a target="_blank" href="http://news.weather.com.cn/2025/06/4216199.shtml">ç§æ®ï¼ä¸æçæä¸åé¢è²çå°é£é¢è­¦</a></li><li><i></i><a target="_blank" href="http://news.weather.com.cn/2022/11/3575206.shtml">å¤©æ°æ¡£æ¡é¦ï¼æå°¼å¨å¹´ä¸å®ææå¯å¬å¤©ï¼</a></li>
+</ul>
+  </div>
+
+      <!--æ°è±¡æ¢ç´¢åè¡¨é¡µé¢æ¨èend-->
+                        </div>
+                    </div>
+                    <div class="styleOne qixiangfuwu"  style="padding-bottom: 20px;">
+                        <div class="title">
+                        <div class="titleInfo">
+                            <a href="http://products.weather.com.cn/" target="_blank">æ°è±¡æå¡äº§å</a>
+                        </div>
+                        <div class="titleMoreLs" style="width:705px;">
+        <a href="http://products.weather.com.cn/" target="_blank">&gt;&gt;</a>
+       </div>
+       </div>
+                        <div class="qxfw-box">
+                             <div class="qxfw-item">
+                                <h3>æå¡åºç¨äº§å</h3>
+                                <p><a href="http://www.weather.com.cn/live/" target="_blank"><img
+                                            src="https://i.tq121.com.cn/i/weather2019/qxfw_01.png" alt="" height="120"></a></p>
+                                <a class="qxfw-link" href="http://www.weather.com.cn/live/" target="_blank">ä¸´è¿é¢æ¥</a>
+                                <a class="qxfw-link" href="http://typhoon.weather.com.cn/" target="_blank">å°é£è·¯å¾</a>
+                                <a class="qxfw-link" href="http://www.weather.com.cn/beltroad/" target="_blank">æºåºå¤©æ°</a>
+                            </div>
+                            <div class="qxfw-item">
+                                <h3>é¢æ¥äº§å</h3>
+                                
+                                <p><a href="http://products.weather.com.cn/sk.html?page=YB&type=YB_JSL_024"
+                                        target="_blank"><img src="http://pi.weather.com.cn/i//product/pic/m/sevp_nmc_stfc_sfer_er24_achn_l88_p9_20260420130002400.jpg"
+                                            alt="" height="120"></a></p>
+                                <a class="qxfw-link"
+                                    href="http://products.weather.com.cn/sk.html?page=YB&type=YB_JSL_024"
+                                    target="_blank">å¨å½éæ°´éé¢æ¥</a>
+                                <a class="qxfw-link"
+                                    href="http://products.weather.com.cn/yb.html?page=YB&type=YB_QDLWD_XML"
+                                    target="_blank">å¼ºå¯¹æµå¤©æ°å¬æ¥</a>
+                                <a class="qxfw-link"
+                                    href="http://products.weather.com.cn/yb.html?page=YB&type=YB_DZZH_24"
+                                    target="_blank">å¨å½å°è´¨ç¾å®³é¢æ¥</a>
+                            </div>
+                            <div class="qxfw-item">
+                                <h3>çæµäº§å</h3>
+                                
+                                <p><a href="http://products.weather.com.cn/sk.html?page=NY"
+                                        target="_blank"><img src="http://pi.weather.com.cn/i//product/pic/m/sevp_ncc_zki_shlsk_eci_achn_l88_pb_20260420000000000.png"
+                                            alt=""></a></p>
+                                <a class="qxfw-link"
+                                    href="http://products.weather.com.cn/sk.html?page=NY"
+                                    target="_blank">å¨å½æ°è±¡å¹²æ±ç»¼åçæµ</a>
+                                <a class="qxfw-link"
+                                    href="http://products.weather.com.cn/sk.html?type=JC_NQ_TRSFL10&page=NY"
+                                    target="_blank">åå£¤æ°´åçæµ</a>
+                                <a class="qxfw-link"
+                                    href="http://products.weather.com.cn/yb.html?page=TFHY"
+                                    target="_blank">ç­å¸¦æ°æçæµå¬æ¥</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+
+                    <!-- </div> -->
+                   
+                </div>
+                <div class="pRight" style="margin-top:0;">
+                    <div class="rightContent">
+                        <div class="myWeather">
+                            <div class="myWeatherTop">
+                                <span>æçå¤©æ°</span>
+                                <span class="ewmInfo">
+
+                                    ææºéèº«ç
+
+                                </span>
+                                <div class="imgIcon img"
+                                    style="background:url(https://i.i8tq.com/index/ewm.png) no-repeat;background-size:70px 70px;background-position:5px 5px;">
+                                </div>
+                                
+                            </div>
+                            <div class="myWeatherMain">
+                                <div class="cityBar">
+                                    <i class="imgIcon dingwei"></i>
+                                    <span class="province" id="cityName"></span>
+                                    <a id="cityNameHref" href="javascript:void(0);"></a>
+                                    <img src="https://i.tq121.com.cn/i/weather2017/selectCityBtnCur.png" class="dis">
+                                    <div class="updataTimeDiv"><span class="updataTime" id="updataTime"></span><span
+                                            class="updataTimeW">æ´æ°</span></div>
+                                </div>
+
+                                <div id="loadingImg" style="position: absolute; top: 80px; left: 123px;">
+                                    <img src="https://i.tq121.com.cn/i/weather2015/index/loading.gif" height="20"
+                                        width="20">
+                                </div>
+                                <div class="selectCity dis">
+                                    <div class="cityTop">
+                                        <div class="cityTopL">åæ¢åå¸</div>
+                                        <div class="goHostCity">è¿å<i></i></div>
+                                        <div class="cityTopR">Ã</div>
+                                    </div>
+                                    <div class="cityM">
+                                        <div class="showBoxImg searchIcon"></div>
+                                        <input type="text" value="è¯·è¾å¥åå¸åç§°" id="cityInput">
+                                        <div class="showCityList dis">
+                                            <ul></ul>
+                                        </div>
+
+                                    </div>
+                                    <a class="saveBtn">ä¿å­</a>
+                                </div>
+
+                                <div class="coverAlarm dis"
+                                    style="height: 28px;margin-top: 2px;width: 100%;position:absolute;"></div>
+                                <div id="alarmScr">
+                                    <div id="alarmScr1">
+                                    </div>
+                                    <div id="alarmScr2">
+                                    </div>
+                                </div>
+                                <div class="skInfo">
+
+                                    <div class="temp">
+                                        <span class="tempNum" id="temp"></span>
+                                        <span class="tempDu"></span>
+
+                                    </div>
+                                    <div class="otherWeather">
+                                        <!--<div class="weatherRow aaa" style="margin-top: 0px;left:0;">
+                                            <a class="zdwr" href="http://www.weather.com.cn/air/" target="_blank">
+                                                <span id="aqi"></span><span id="aqis"></span>
+                                            </a>
+                                        </div>-->
+                                        <div class="weatherRow">
+                                            <i class="imgIcon feng"></i>
+                                            <img class="skimgsm" src="https://i.i8tq.com/mysky/skwind.png" alt="">
+                                            <span id="windD"></span>
+                                            <span id="windS"></span>
+                                        </div>
+                                        <div class="weatherRow">
+                                            <i class="imgIcon sd"></i>
+                                            <img class="skimgsm" src="https://i.i8tq.com/mysky/sksd.png" alt="">
+                                            <span>ç¸å¯¹æ¹¿åº¦</span>
+                                            <span id="sd"></span>
+                                        </div>
+                                        <div class="indexMySky"><a href="./list.html"
+                                                target="_blank"><i></i><span>æå®å¶çå¤©ç©º</span></a></div>
+                                    </div>
+                                </div>
+                                <div class="trend">
+                                    <div class="dataRow">
+                                        <div class="dataLi todayLi" id="dayInfo0"></div>
+                                        <div class="dataLi" id="dayInfo1"></div>
+                                        <div class="dataLi" id="dayInfo2"></div>
+                                        <div class="dataLi" id="dayInfo3"></div>
+                                        <div class="dataLi" id="dayInfo4"></div>
+                                    </div>
+                                    <div class="dataRow" style="margin-top: 10px;">
+                                        <div class="dataImg"><big class="" id="dayDImg0"></big></div>
+                                        <div class="dataImg"><big class="" id="dayDImg1"></big></div>
+                                        <div class="dataImg"><big class="" id="dayDImg2"></big></div>
+                                        <div class="dataImg"><big class="" id="dayDImg3"></big></div>
+                                        <div class="dataImg"><big class="" id="dayDImg4"></big></div>
+                                    </div>
+                                    <div class="tqzsDiv">
+                                        <div id="topTemp"></div>
+                                        <div id="lowTemp" style="margin-top: -20px;"></div>
+                                    </div>
+                                    <div class="dataRow">
+                                        <div class="dataImg"><big class="" id="dayNImg0"></big></div>
+                                        <div class="dataImg"><big class="" id="dayNImg1"></big></div>
+                                        <div class="dataImg"><big class="" id="dayNImg2"></big></div>
+                                        <div class="dataImg"><big class="" id="dayNImg3"></big></div>
+                                        <div class="dataImg"><big class="" id="dayNImg4"></big></div>
+                                    </div>
+                                    <div class="dataRow">
+                                        <div class="weatherLi" id="cloud0"></div>
+                                        <div class="weatherLi" id="cloud1"></div>
+                                        <div class="weatherLi" id="cloud2"></div>
+                                        <div class="weatherLi" id="cloud3"></div>
+                                        <div class="weatherLi" id="cloud4"></div>
+                                    </div>
+                                    <div class="dataRow" style="margin-top: 0px;">
+                                        <div class="weatherLi" id="cloudLevel0"></div>
+                                        <div class="weatherLi" id="cloudLevel1"></div>
+                                        <div class="weatherLi" id="cloudLevel2"></div>
+                                        <div class="weatherLi" id="cloudLevel3"></div>
+                                        <div class="weatherLi" id="cloudLevel4"></div>
+                                    </div>
+                                </div>
+                                <a href="" target="_blank" id="showCalendar">
+                                    <div class="showCalendar">40å¤©é¢æ¥</div>
+                                </a>
+                                <div class="zsList">
+                                    <div class="zsLi">
+                                        <div class="zsDiv imgIcon zwxIcon"></div>
+                                        <p>ç´«å¤çº¿ææ°</p>
+                                        <span id="zwxInfo"></span>
+                                    </div>
+
+                                    <div class="zsLi hot" id="chuanyi">
+                                        
+                                            
+                                            <div class="zsDiv imgIcon cyIcon"></div>
+                                            <p>ç©¿è¡£ææ°</p>
+                                            <span id="cyInfo"></span>
+                                        
+                                    </div>
+                                    <div class="zsLi">
+                                        <div class="zsDiv imgIcon xcIcon"></div>
+                                        <p>æ´è½¦ææ°</p>
+                                        <span id="xcInfo"></span>
+                                    </div>
+                                    <div class="zsLi lastLi">
+                                        <div class="zsDiv imgIcon gmIcon"></div>
+                                        <p>æåææ°</p>
+                                        <span id="gmInfo"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                     
+                <div class="defaultDiv">
+    <a href="http://p.weather.com.cn/2026/03/4532470.shtml" target="_blank"><img src="https://i.i8tq.com/weather2018/poster2026/ad.jpg" style="width: 300px;"></a>
+    </div>
+                        
+                        <div class="defaultDiv alarmtable">
+                            <div class="newstop">
+                                <span class="zxtitle left"><a href="http://www.weather.com.cn/alarm/alarm_list.shtml" target="_blank">ææ°é¢è­¦ä¿¡æ¯</a></span>
+                                <span class="zxtitle2"> <a href="http://www.weather.com.cn/alarm/alarm_list.shtml" target="_blank">
+                                        &gt;&gt;</a></span>
+                            </div>
+                            <div class="alarmtablebox">
+                                <ul>
+
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="defaultDiv card">
+                            </div>
+                            <style>
+                            .card {
+        width: 300px;
+        margin-bottom: 20px;
+        background-color: white;
+        color: #252525;
+      }
+
+      .card-title {
+       font-size: 20px;
+font-family: Microsoft YaHei;
+font-weight: bold;
+display: block;
+padding: 10px 10px;
+color: #043567;
+      }
+
+      .image-container {
+        width: 300px;
+        height: 150px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 14px;
+        cursor: pointer;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .bottom-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 30px;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        padding: 0 10px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .text-content {
+        line-height: 1.6;
+        color: #000000;
+      }
+     .card ul {
+        list-style: disc;
+       padding-left: 8px;
+      }
+
+      .card li {
+        margin-bottom: 10px;
+        padding-left:15px;
+        background: url(https://i.tq121.com.cn/i/weather2014/city/c8.jpg) no-repeat scroll -1px 13px transparent;
+      }
+      .card li a {
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: block;
+      }
+
+      /* å è½½ç¶ææ ·å¼ */
+      .loading {
+        text-align: center;
+        padding: 10px 0;
+      }
+                                </style>
+                        <script>
+      const BaseUrl = 'https://cy.weather.com.cn';
+      const channelId = 2;
+      // PC é¦é¡µID      3
+      // PC 7å¤©é¢æ¥é¡µID  4
+      // PC 15å¤©é¢æ¥é¡µID 5
+      // PC 40å¤©é¢æ¥é¡µID 6
+      const apiUrl = `${BaseUrl}/api/v1/promo_pos?ids=3`;
+
+      function hideCard() {
+        const card = document.querySelector('.card');
+        if (card) {
+          card.style.display = 'none';
+        }
+      }
+
+      function fetchWithXHR() {
+        return new Promise((resolve, reject) => {
+          const xhr = new XMLHttpRequest();
+          xhr.open('GET', apiUrl, true);
+          xhr.timeout = 10000;
+          xhr.responseType = 'json';
+          xhr.onload = function () {
+            if (xhr.status >= 200 && xhr.status < 300) {
+              let data;
+              if (xhr.response) {
+                data = xhr.response;
+              } else {
+                try {
+                  data = JSON.parse(xhr.responseText);
+                } catch (e) {
+                  reject(new Error('JSONè§£æå¤±è´¥: ' + e.message));
+                  return;
+                }
+              }
+              resolve(data);
+            } else {
+              reject(new Error(`è¯·æ±å¤±è´¥ï¼ç¶æç : ${xhr.status}`));
+            }
+          };
+          xhr.onerror = function () {
+            reject(new Error('ç½ç»éè¯¯'));
+          };
+          xhr.ontimeout = function () {
+            reject(new Error('è¯·æ±è¶æ¶'));
+          };
+          xhr.send();
+        });
+      }
+      function renderClothingList(data) {
+        if (!data || data.length === 0) return hideCard();
+
+        const firstItem = data[0];
+
+        const remainingData = data.slice(1);
+        const listItems =
+          remainingData.length > 0
+            ? remainingData
+                .map(
+                  (item) => `
+            <li>
+              <a href="${item.href}" title="${item.copywriting}" target="_blank">
+                ${item.copywriting}
+              </a>
+            </li>`,
+                )
+                .join('')
+            : '';
+
+        const cardHTML = `
+  <div class="card">
+      <a class="card-title" href="${BaseUrl}?channel=${channelId}" target="_blank">å¤©æ°è¡£æ©±
+        <span>&gt;&gt</span>
+      </a>
+      <a href="${firstItem.href}" target="_blank">
+          <div class="image-container">
+             <img id="cover-image" src="${firstItem.url || ''}" alt="è¡£ç©å±ç¤ºå¾">
+             <div class="bottom-text">${firstItem.copywriting || ''}</div>
+         </div>
+     </a>
+     <div class="text-content">
+       <ul id="clothingList">${listItems}</ul>
+     </div>
+ </div>`;
+
+        $('.card').html(cardHTML);
+      }
+
+      async function getData() {
+        try {
+          let res = await fetchWithXHR();
+          const rawData = res.data?.list[0]?.content?.popularize;
+
+          if (!rawData || !Array.isArray(rawData) || rawData.length === 0) {
+            return hideCard();
+          }
+
+          const processedData = rawData
+            .filter((item) => item.outfit_id !== null)
+            .map((item) => {
+              let href;
+              if (item.outfit_id === '0') {
+                href = `${BaseUrl}?channel=${channelId}`;
+              } else if (
+                item.outfit_id &&
+                (item.outfit_id.startsWith('http://') || item.outfit_id.startsWith('https://'))
+              ) {
+                href = item.outfit_id;
+              } else {
+                href = `${BaseUrl}/details/${item.outfit_id}?channel=${channelId}`;
+              }
+              return {
+                ...item,
+                href: href,
+              };
+            });
+          if (processedData.length === 0) return hideCard();
+          renderClothingList(processedData);
+        } catch (error) {
+          console.log(error);
+          hideCard();
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', getData);
+      } else {
+        getData();
+      }
+    </script>
+                        <div class="defaultDiv">
+                            
+
+                            
+                            
+                            
+                            <div class="tqld" style="display: block;">
+                                <div class="title2">
+                                    <h1> <a class="on" href="http://www.weather.com.cn/radar/index2021.shtml" target="_blank">é·è¾¾</a>
+                                        <em>|</em>
+                                        <a href="http://www.weather.com.cn/satellite/" target="_blank">äºå¾</a> </h1>
+                                </div>
+                                <a id="large" href="http://www.weather.com.cn/radar/index2021.shtml" target="_blank">
+                                    <img src="http://pi.weather.com.cn/i//product/pic/m/z_rada_c_babj_20260420113701_p_dor_achn_cref_20260420_113000.png"                                        width="430"></a>
+                                <a id="yuntu" href="http://www.weather.com.cn/satellite/" target="_blank" style="display: none;">
+                                	<img src="http://pi.weather.com.cn/i//product/pic/m/sevp_nsmc_wxbl_fy4b_etcc_achn_lno_py_20260420110000000.jpg"
+                                        width="335" height="253"></a>
+                            </div>
+
+                        </div>
+
+                        
+                            <div class="sortDiv">
+                                <!--æè¡start-->
+                                <div class="rank">
+                                    <h3><a>å®åµæè¡</a>
+                                        <div id="live_select">
+                                            <div id="sort_type"><select>
+                                                    <option value="1h">éå°æ¶</option>
+                                                    <!-- <option value="6h">é6å°æ¶</option> -->
+                                                    <option value="24h">24å°æ¶</option>
+                                                </select></div>
+                                            <div id="sort_sub_type">
+                                                <select id="1h_list" style="">
+                                                    <!-- <option value="202208091700">09æ¥09æ¶</option> -->
+                                                </select>
+                                                <!-- <select id="6h_list" style="display: none;">
+                                                    <option value="2022080815">08æ¥15æ¶</option>
+                                                </select> -->
+                                                <input type="hidden" id="r08_js_ymdh" value="202208080800"
+                                                    style="display: none;">
+                                                <input type="hidden" id="r20_js_ymdh" value="202208072000"
+                                                    style="display: none;">
+                                                <input type="hidden" id="ht_qw_ymdh" value="202208080200"
+                                                    style="display: none;">
+                                                <input type="hidden" id="lt_qw_ymdh" value="202208081400"
+                                                    style="display: none;">
+                                            </div>
+                                        </div>
+                                        <!-- <span class="rankNav">
+                                            <a class="on">ä»æ¥æé«æ°æ¸©</a>
+                                            <a class="">æ¼å¤æ¸©å·®</a>
+                                            <a class="">24å°æ¶éæ°´</a>
+                                        </span> -->
+                                    </h3>
+                                    <div class="hb" id="realBody" style="height:455px;">
+                                        <div id="live_sort">
+                                            <div>
+                                                <div id="1h" class="hour_1 live_sort_content" style="">
+                                                    <div id="content_type" class="row hitem">
+                                                        <div class="col-xs-4 hour_1 content_type_select"
+                                                            data-id="1h_qw">
+                                                            <span>æ°æ¸©</span>
+                                                        </div>
+                                                        <div class="col-xs-4 hour_1 " data-id="1h_js">
+                                                            <span>éæ°´</span>
+                                                        </div>
+                                                        <div class="col-xs-4 hour_1" data-id="1h_fs">
+                                                            <span>é£é</span>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div id="1h_qw" style="display: block;">
+                                                            <div id="content_type_desc">
+                                                                <!-- <div id="station_desc"><span>æ¥æºäº2418ä¸ªå½å®¶çº§æ°è±¡è§æµç«</span>
+                                                                </div> -->
+                                                                <div id="1h_qw_date_desc" class="date_desc">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div id="data_detail">
+
+                                                            </div>
+                                                        </div>
+                                                        <div id="1h_js" style="display: none;">
+                                                            <div id="content_type_desc">
+                                                                <!-- <div id="station_desc"><span>æ¥æºäº2418ä¸ªå½å®¶çº§æ°è±¡è§æµç«</span>
+                                                                </div> -->
+                                                                <div id="1h_js_date_desc" class="date_desc">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div id="data_detail">
+                                                            </div>
+                                                        </div>
+                                                        <div id="1h_fs" style="display: none;">
+                                                            <div id="content_type_desc">
+                                                                <!-- <div id="station_desc"><span>æ¥æºäº2418ä¸ªå½å®¶çº§æ°è±¡è§æµç«</span>
+                                                                </div> -->
+                                                                <div id="1h_fs_date_desc" class="date_desc">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div id="data_detail">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- <div id="6h" class="hour_6 live_sort_content" style="display: none;">
+                                                    <div id="content_type" class="row hitem">
+                                                        <div class="col-xs-6 hour_6 content_type_select"
+                                                            data-id="6h_js"><span>6å°æ¶éæ°´</span></div>
+                                                        <div class="col-xs-6 hour_6" data-id="6h_qw"><span>6å°æ¶æ°æ¸©</span>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div id="6h_js"></div>
+                                                        <div id="6h_qw" style="display: none;"></div>
+                                                    </div>
+                                                </div> -->
+                                                <div id="24h" class="hour_24 live_sort_content" style="display: none;">
+                                                    <div id="content_type" class="row hitem">
+                                                        <div class="col-xs-3 hour_24 content_type_select"
+                                                            data-id="r08_js"><span>08æ¶éæ°´</span></div>
+                                                        <div class="col-xs-3 hour_24" data-id="r20_js">
+                                                            <span>20æ¶éæ°´</span>
+                                                        </div>
+                                                        <div class="col-xs-3 hour_24" data-id="ht_qw"><span>æé«æ°æ¸©</span>
+                                                        </div>
+                                                        <div class="col-xs-3 hour_24" data-id="lt_qw"><span>æä½æ°æ¸©</span>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div id="r08_js">
+                                                            <div id="content_type_desc">
+                                                                <!-- <div id="station_desc"><span>æ¥æºäº2418ä¸ªå½å®¶çº§æ°è±¡è§æµç«</span>
+                                                                </div> -->
+                                                                <div id="r08_js_date_desc" class="date_desc">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div id="data_detail">
+
+                                                            </div>
+                                                        </div>
+                                                        <div id="r20_js" style="display: none;">
+                                                            <div id="content_type_desc">
+                                                                <!-- <div id="station_desc"><span>æ¥æºäº2418ä¸ªå½å®¶çº§æ°è±¡è§æµç«</span>
+                                                                </div> -->
+                                                                <div id="r20_js_date_desc" class="date_desc">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div id="data_detail">
+
+                                                            </div>
+                                                        </div>
+                                                        <div id="ht_qw" style="display: none;">
+                                                            <div id="content_type_desc">
+                                                                <!-- <div id="station_desc"><span>æ¥æºäº2418ä¸ªå½å®¶çº§æ°è±¡è§æµç«</span>
+                                                                </div> -->
+                                                                <div id="ht_qw_date_desc" class="date_desc">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div id="data_detail">
+
+                                                            </div>
+                                                        </div>
+                                                        <div id="lt_qw" style="display: none;">
+                                                            <div id="content_type_desc">
+                                                                <!-- <div id="station_desc"><span>æ¥æºäº2418ä¸ªå½å®¶çº§æ°è±¡è§æµç«</span>
+                                                                </div> -->
+                                                                <div id="lt_qw_date_desc" class="date_desc">
+                                                                    <span></span>
+                                                                </div>
+                                                            </div>
+                                                            <div id="data_detail">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div style="color: #999; text-align: center; font-size: 12px;height: 30px;line-height: 40px;">æ°æ®æ¥æºäº2418ä¸ªå½å®¶çº§æ°è±¡è§æµç«</div> -->
+                                        <div
+                                            style="color: #999; text-align: center; font-size: 12px;height: 30px;line-height: 40px;">
+                                            æ°æ®æ¥æºäº2569ä¸ªå½å®¶çº§æ°è±¡è§æµç«</div>
+                                    </div>
+                                    <!-- <div></div> -->
+
+                                </div>
+                                <!--æè¡end-->
+                            </div>
+                            <!-- æè¡ -->
+                            <style>
+                                #live_select {
+                                    /* margin-top: 5px; */
+                                    height: 24px;
+                                    float: right;
+                                }
+
+                                #sort_type {
+                                    height: 20px;
+                                    float: left;
+                                }
+
+                                #sort_type select {
+                                    height: 20px;
+                                    /* border: 1px solid #92b2d3; */
+                                    color: #494949;
+                                    background: #fff;
+                                }
+
+                                #sort_sub_type {
+                                    height: 20px;
+                                    float: right;
+                                }
+
+                                #sort_sub_type select {
+                                    width: 100%;
+                                    height: 20px;
+                                    /* border: 1px solid #92b2d3; */
+                                    color: #494949;
+                                    background: #fff;
+                                }
+
+                                option {
+                                    height: 20px;
+                                    line-height: 20px;
+                                    padding-right: 6px;
+                                }
+
+
+                                #content_type div {
+                                    border: 0;
+                                    width: auto;
+                                    padding: 0;
+                                    margin-right: 20px;
+                                }
+
+                                #content_type div.content_type_select {
+                                    border-bottom: 2px solid #1897dd;
+                                    background: transparent;
+                                    color: #333;
+                                    width: auto;
+                                }
+
+
+
+                                #realBody {
+                                    padding-bottom: 6px;
+                                    padding-top: 6px;
+                                    height: 408px;
+                                    /* background: #fff url(/assets/img/index/bg_logo.png) no-repeat center 152px; */
+                                    background-size: 180px 180px;
+                                }
+
+                                #realBody .live_sort_content {
+                                    background-color: transparent;
+                                }
+
+                                #data_detail {
+                                    /* padding-top: 10px; */
+                                    margin: 0 10px;
+                                }
+
+                                #data_detail li {
+                                    list-style: none;
+                                }
+
+                                #data_detail span.no {
+                                    display: inline-block;
+                                    width: 25px;
+                                    text-align: center;
+                                }
+
+                                #data_detail .numitem {
+                                    border-bottom: 1px solid #f7f7f7;
+                                    padding: 5px 0;
+                                }
+
+                                #data_detail .numitem:hover {
+                                    background: #5db2ff;
+                                    color: #fff;
+                                }
+
+                                #data_detail .numitem:hover a {
+                                    color: #fff;
+                                }
+
+                                #myfocus_content,
+                                .live_sort_content {
+                                    border-top: 0;
+                                }
+
+                                #live_sort {
+                                    width: 100%;
+                                }
+
+                                #live_sort a {
+                                    font-size: 16px;
+                                }
+
+                                #live_sort #content_type {
+                                    /* background-color: #f8f8f8; */
+                                    height: 30px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    display: flex;
+                                    border-bottom: 1px solid #ddd;
+                                }
+
+                                #live_sort #content_type div {
+                                    width: 33.3333%;
+                                    margin-right: 0;
+                                    /* border: 1px solid #cccccc; */
+                                    margin-left: -1px;
+                                    float: left;
+                                }
+
+                                #live_sort #content_type div.hour_6 {
+                                    width: 50%;
+                                }
+
+                                #live_sort #content_type div.hour_24 {
+                                    width: 25%;
+                                }
+
+                                .date_desc {
+                                    height: 100%;
+                                    float: right;
+                                    margin-left: 10px;
+                                }
+
+                                .date_desc span {
+                                    line-height: 27px;
+                                    /* color: #3d56ed; */
+                                    color: #aaa;
+                                    font-size: 12px;
+                                }
+
+                                .num {
+                                    width: 30px;
+                                    height: 100%;
+                                    color: #fb201d;
+                                    text-align: center;
+                                    float: left;
+                                    /* background: rgb(244, 211, 217); */
+                                }
+
+                                .station_name {
+                                    /* width: 230px; */
+                                    width: 70px;
+                                    height: 100%;
+                                    /* color: #4a49f8; */
+                                    text-align: center;
+                                    padding-left: 10px;
+                                    float: left;
+                                    /* background: pink; */
+                                }
+
+                                .station_name2 {
+                                    /* width: 230px; */
+                                    width: 50px;
+                                    height: 100%;
+                                    /* color: #4a49f8; */
+                                    text-align: center;
+                                    padding-left: 10px;
+                                    float: left;
+                                    /* background: rgb(210, 103, 121); */
+                                }
+
+                                .temperature {
+                                    width: 90px;
+                                    padding-right: 10px;
+                                    height: 100%;
+                                    color: #2b2a2a;
+                                    text-align: right;
+                                    float: left;
+                                    /* background: rgb(218, 56, 81); */
+                                }
+
+                                #right_bottom {
+                                    width: 100%;
+                                    margin-top: 10px;
+                                }
+
+                                #myfocus_content,
+                                .live_sort_content {
+                                    border: 0;
+                                }
+
+                                .live_sort_content {
+                                    height: auto;
+                                }
+
+                                #data_detail li {
+                                    height: 35px;
+                                    line-height: 35px;
+                                    margin-left: -10px;
+                                    margin-right: -10px;
+                                    list-style: none;
+                                }
+
+                                #data_detail li:hover {
+                                    background-color: #ddefff;
+                                }
+
+                                #data_detail li div,
+                                #data_detail li div a {
+                                    height: 32px;
+                                    line-height: 32px;
+                                    display: block;
+                                }
+
+                                #data_detail li div.num {
+                                    width: 22px;
+                                    height: 22px;
+                                    line-height: 22px;
+                                    margin-top: 6px;
+                                    margin-left: 10px;
+                                    font-size: 12px;
+                                    border-radius: 50%;
+                                }
+
+                                #data_detail ul {
+                                    margin-bottom: 0;
+                                }
+
+                                #sort_sub_type {
+                                    margin-left: 5px;
+                                }
+
+                                #data_detail .num {
+                                    background-color: #85C4ED;
+                                    color: #fff;
+                                    width: 25px;
+                                }
+
+                                .temperature {
+                                    float: right;
+                                }
+
+                                #content_type {
+                                    padding: 0;
+                                    height: 30px;
+                                    margin: 0;
+                                }
+
+                                /* #content_type div{height: 30px; line-height:30px; border:1px solid #ddd; text-align: center;margin-right:-1px;} */
+                                #content_type div {
+                                    height: 30px;
+                                    line-height: 30px;
+                                    text-align: center;
+                                    margin-right: -1px;
+                                    color: #043567;
+                                }
+
+                                #content_type_desc {
+                                    height: 30px;
+                                    line-height: 30px;
+                                    width: 100%;
+                                }
+
+                                /* #content_type div.content_type_select{background-color: #2d97db; border: 0; color: #fff;} */
+                                /* #content_type div.content_type_select{background-color: #777777; border: 0; color: #fff;} */
+                                #content_type div.content_type_select {
+                                    border: 0;
+                                    color: #F68D3B;
+                                }
+
+                                #data_detail li div,
+                                #data_detail li div a {
+                                    white-space: nowrap;
+                                    overflow: hidden;
+                                    text-overflow: ellipsis;
+                                }
+
+                                #content_type {
+                                    height: 24px;
+                                    padding: 0 2px;
+                                }
+
+                                #content_type span {
+                                    line-height: 19px;
+                                    font-size: 14px;
+                                    cursor: pointer;
+                                }
+
+                                #station_desc {
+                                    height: 100%;
+                                    float: left;
+                                    margin-left: 10px;
+                                    height: 30px;
+                                    line-height: 30px;
+                                }
+
+                                #station_desc span {
+                                    line-height: 27px;
+                                    font-size: 11px;
+                                    color: #fb110e;
+                                }
+                            </style>
+
+                            <script>
+                                $('#sort_type > select').change(function () {
+                                    var divId = $(this).val();
+                                    if (divId == '24h') {
+                                        $('#1h_list,#6h_list').hide();
+                                    } else {
+                                        $('#' + divId + '_list').show().siblings().hide();
+                                    }
+                                    $('#' + divId).show().siblings().hide();
+                                    var ymdh = $('#' + divId + '_list').val();
+                                    // console.log("divId1====", divId);
+                                    // console.log("ymdh1====" , ymdh);
+                                    changeOrder2(divId, ymdh);
+                                }).change();
+                                setTimeout(function(){
+                                    changeOrder2('1h', null);
+                                },500)
+                                function changeOrder2(divId, ymdh, list) {
+                                    // console.log("changeOrder2!!!!!!!!!!!", divId, ymdh)
+                                    // console.log("divId====" , divId);
+                                    // console.log("ymdh====" , ymdh);
+                                    if (divId == '1h') {
+                                        loadRankData('1h_fs', 'winS1H', 'H1', ymdh, list);
+
+                                    } else if (divId == '6h') {
+                                        // loadRankData('6h_qw', 'maxtemp', 6, ymdh, function (v) {
+                                        //     return v >= 9999 ? '-' : (v.toFixed(1) + ' â')
+                                        // });
+
+                                        // loadRankData('6h_js', 'rain', 6, ymdh, function (v) {
+                                        //     return v >= 9999 ? '-' : (v.toFixed(1) + ' mm')
+                                        // });
+                                    } else if (divId == '24h') {
+                                        loadRankData('r08_js', 'rain1D08', 'D1', ymdh);
+                                    }
+                                }
+
+                                function handleData(result, domId, type, hour, ymdh, fun) {
+                                    // console.log(domId, type, hour, ymdh);
+                                    var html = '';
+                                    if (hour == 'H1') {
+                                        // $('#sort_type').val('1h')
+                                        // var html2 = '', keyValue = '', count = 0
+                                        // Object.keys(result.H1).map((key) => {
+                                        //     html2 += `<option value="${key.substr(0, 12)}">${key.substr(6, 2)}æ¥${key.substr(8, 2)}æ¶</option>`
+                                        //     if (count == 0) {
+                                        //         keyValue = key
+                                        //     }
+                                        //     count++
+                                        // })
+                                        // $('#1h_list').html(html2)
+
+                                        // if (ymdh == undefined) {
+                                        //     ymdh = keyValue
+                                        // }
+                                        // console.log(result[hour][ymdh][type]['tips'])
+                                        $('#' + domId + '_date_desc span').html(result[hour][ymdh][type]['tips']);
+
+                                        var array = result[hour][ymdh][type].info;
+                                        // console.log(type, result[hour])
+                                        for (var index = 0; index < array.length; index++) {
+                                            const element = array[index];
+                                            var bgColor = '', textColor = '';
+                                            if (index == 0) {
+                                                bgColor = '#FF0622';
+                                                textColor = '#fff';
+                                            } else if (index == 1) {
+                                                bgColor = '#FF5B00';
+                                                textColor = '#fff';
+                                            } else if (index == 2) {
+                                                bgColor = '#FFA500';
+                                                textColor = '#fff';
+                                            } else {
+                                                bgColor = '#FEEFC2';
+                                                textColor = '#C68F2A';
+                                            }
+                                            // html += `
+                                            //     <li class="selected">
+                                            //         <div class="num" style="background-color:${bgColor};color: ${textColor}">${index + 1}</div>
+                                            //         <div class="station_name" title="${element.city}"><a href="http://www.weather.com.cn/weather1d/${element.id}.shtml">${element.city}</a></div>
+                                            //         <div class="station_name2">${element.province}</div>
+                                            //         <div class="temperature">${fun(element.value)}</div>
+                                            //     </li>
+                                            // `
+                                            var url = ''
+                                            if (element.sid) {
+                                                url = 'href="http://www.weather.com.cn/weather1d/'+ element.sid + '.shtml"'
+                                            }
+                                            html += '<li class="selected">' +
+                                                '<div class="num" style="background-color:' + bgColor + ';color: ' + textColor + '">' + (index + 1) + '</div>' +
+                                                '<div class="station_name" title="' + element.city + '"><a '+url+' target="_blank">' + element.city + '</a></div>' +
+                                                '<div class="station_name2">' + element.province + '</div>' +
+                                                '<div class="temperature">' + fun(element.value) + '</div>' +
+                                                '</li>'
+                                        }
+                                    } else {
+                                        $('#' + domId + '_date_desc span').html(result[hour][type]['tips']);
+                                        var array = result[hour][type].info;
+                                        // console.log(type, result[hour])
+                                        for (var index = 0; index < array.length; index++) {
+                                            const element = array[index];
+                                            var bgColor = '', textColor = '';
+                                            if (index == 0) {
+                                                bgColor = '#FF0622';
+                                                textColor = '#fff';
+                                            } else if (index == 1) {
+                                                bgColor = '#FF5B00';
+                                                textColor = '#fff';
+                                            } else if (index == 2) {
+                                                bgColor = '#FFA500';
+                                                textColor = '#fff';
+                                            } else {
+                                                bgColor = '#FEEFC2';
+                                                textColor = '#C68F2A';
+                                            }
+                                            // html += `
+                                            //     <li class="selected">
+                                            //         <div class="num" style="background-color:${bgColor};color: ${textColor}">${index + 1}</div>
+                                            //         <div class="station_name" title="${element.city}"><a href="http://www.weather.com.cn/weather1d/${element.id}.shtml">${element.city}</a></div>
+                                            //         <div class="station_name2">${element.province}</div>
+                                            //         <div class="temperature">${fun(element.value)}</div>
+                                            //     </li>
+                                            // `
+                                            var url = ''
+                                            if (element.sid) {
+                                                url = 'href="http://www.weather.com.cn/weather1d/'+ element.sid + '.shtml"'
+                                            }
+                                            html += '<li class="selected">' +
+                                                '<div class="num" style="background-color:' + bgColor + ';color: ' + textColor + '">' + (index + 1) + '</div>' +
+                                                '<div class="station_name" title="' + element.city + '"><a '+url+' target="_blank">' + element.city + '</a></div>' +
+                                                '<div class="station_name2">' + element.province + '</div>' +
+                                                '<div class="temperature">' + fun(element.value) + '</div>' +
+                                                '</li>'
+                                        }
+                                    }
+                                    $('#' + domId + ' #data_detail').html(html);
+                                }
+
+                                function loadRankData(domId, type, hour, ymdh, list) {
+                                    $.ajax({
+                                        curType: 'GET',
+                                        url: 'https://d1.weather.com.cn/dataset/todayRank.html',
+                                        dataType: "jsonp",
+                                        jsonpCallback: "todayRank",
+                                        success: function (result) {
+                                            if (hour == 'H1') {
+                                                var html2 = '', keyValue = '', count = 0
+                                                
+                                                Object.keys(result.H1).map(function(key,index,arr){
+                                                    // html2 += `<option value="${key.substr(0, 12)}">${key.substr(6, 2)}æ¥${key.substr(8, 2)}æ¶</option>`
+                                                    html2 += '<option value="' +key.substr(0, 12) + '">' + key.substr(6, 2) +'æ¥' + key.substr(8, 2) +'æ¶</option>'
+                                                    if (count == 0) {
+                                                        keyValue = key;
+                                                    }
+                                                    count++;
+                                                })
+                                                // console.log(html2)
+                                                if (list != 'list2') {
+                                                    $('#1h_list').html(html2);
+                                                }
+                                                if (ymdh == undefined) {
+                                                    ymdh = keyValue;
+                                                }
+
+                                                handleData(result, '1h_qw', 'temp1H', 'H1', ymdh, function (v) {
+                                                    return v >= 9999 ? '-' : (v.toFixed(1) + ' â');
+                                                });
+
+                                                handleData(result, '1h_js', 'rain1H', 'H1', ymdh, function (v) {
+                                                    return v >= 9999 ? '-' : (v.toFixed(1) + ' mm');
+                                                });
+                                                handleData(result, '1h_fs', 'winS1H', 'H1', ymdh, function (v) {
+                                                    return v >= 9999 ? '-' : (v.toFixed(1) + ' m/s');
+                                                });
+                                            } else {
+                                                handleData(result, 'r08_js', 'rain1D08', 'D1', $('#r08_js_ymdh').val(),
+                                                    function (v) {
+                                                        return v >= 9999 ? '-' : (v.toFixed(1) + ' mm');
+                                                    });
+
+                                                handleData(result, 'r20_js', 'rain1D20', 'D1', $('#r20_js_ymdh').val(),
+                                                    function (v) {
+                                                        return v >= 9999 ? '-' : (v.toFixed(1) + ' mm');
+                                                    });
+
+                                                handleData(result, 'ht_qw', 'tMax1D02', 'D1', $('#ht_qw_ymdh').val(),
+                                                    function (v) {
+                                                        return v >= 9999 ? '-' : (v.toFixed(1) + ' â');
+                                                    });
+
+                                                handleData(result, 'lt_qw', 'tMin1D14', 'D1', $('#lt_qw_ymdh').val(),
+                                                    function (v) {
+                                                        return v >= 9999 ? '-' : (v.toFixed(1) + ' â');
+                                                    });
+                                            }
+                                        }
+                                    })
+                                }
+
+                                // ææ°å®åµæå,æ¶é´éæ©æ¹åäºä»¶
+                                $('#1h_list,#6h_list').change(function () {
+                                    var ymdh = $(this).val();
+                                    changeOrder2($('#sort_type > select').val(), ymdh, 'list2');
+                                });
+
+                                /* å®åµæåtabç¹å»äº¤äºææ */
+                                $("#content_type div").hover(
+                                    function () {
+                                        var $this = $(this);
+                                        var divId = $this.attr('data-id');
+                                        $(this).addClass("content_type_select").siblings().removeClass("content_type_select");
+                                        $('#' + divId).show().siblings().hide();
+                                    }, function () { });
+                            </script>
+
+                       
+
+                        
+      <div class="defaultDiv">
+       <!--æ°è±¡æå¡start-->
+    <div class="defaultDiv">
+                            <!--æ°è±¡æå¡start-->
+                            <div id="topics" class="rightEl">
+                                <h4>æ°è±¡æå¡</h4>
+                                
+                                <dl>
+                                    <dt><a href="http://www.weather.com.cn/wzfw/kfzx/index.shtml" target="_blank">å¤©æ°é¢æ¥çµè¯æ¥è¯¢</a></dt>
+                                    <dd>æ¨æ12121æ96121è¿è¡å¤©æ°é¢æ¥æ¥è¯¢</dd>
+                                </dl>
+                                <dl>
+                                    <dt><a href="http://e.weather.com.cn/" target="_blank">ææºæ¥è¯¢</a></dt>
+                                    <dd>éæ¶éå°éè¿ææºç»éä¸­å½å¤©æ°WAPçæ¥çåå°å¤©æ°èµè®¯</dd>
+                                </dl>
+                            </div>
+                            <img src="https://i.i8tq.com/index/img-qrcode-3.png" alt="" width="300">
+                            <!--æ°è±¡æå¡end-->
+                        </div>
+
+    <!--æ°è±¡æå¡end-->
+      </div>
+                        
+
+                       
+
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>W.use('j/weather2015/publicHead.js?2019');</script>
+<div class="footer">
+  <div class="block">
+    <div class="Lcontent" style="width:558px;">
+      <dl style="width:280px; margin-right:22px;">
+        <dt>
+          <h3>ç½ç«æå¡</h3>
+        </dt>
+        <dd>
+          <p><a href="https://www.weather.com.cn/wzfw/about.shtml" target="_blank">å³äºæä»¬</a><a href="https://www.weather.com.cn/wzfw/contact.shtml" target="_blank">èç³»æä»¬</a><a href="https://www.weather.com.cn/wzfw/feedback.shtml" target="_blank">ç¨æ·åé¦</a></p>
+          <p><a href="https://www.weather.com.cn/wzfw/banquan.shtml" target="_blank">çæå£°æ</a><a href="https://www.weather.com.cn/wzfw/lawyer.shtml" target="_blank">ç½ç«å¾å¸</a></p>
+        </dd>
+      </dl>
+      <dl style="width:150px;">
+        <dt>
+          <h3>è¥éä¸­å¿</h3>
+        </dt>
+        <dd>
+          <p><a href="http://marketing.weather.com.cn/wzhz/index.shtml" target="_blank">åå¡åä½</a><a href="http://ad.weather.com.cn/index.shtml" target="_blank">å¹¿åæå¡</a><a style="display:block" href="http://marketing.weather.com.cn/wzhz/meizi.shtml">åªèµåä½</a></p>
+        </dd>
+      </dl>
+      <div class="clear"></div>
+    </div>
+    <div class="friendLink" style="width:418px;margin-right:15px;">
+      <h3>ç¸å³é¾æ¥</h3>
+      <p><a href="http://www.cma.gov.cn/" target="_blank">ä¸­å½æ°è±¡å±</a><a href="http://www.chinamsa.org" target="_blank">ä¸­å½æ°è±¡æå¡åä¼</a> <a href="http://www.weathertv.cn/" target="_blank">ä¸­å½å¤©æ°é¢é</a></p>
+      
+    </div>
+   <div class="serviceinfo" style="position:relative;">
+<p style="height: 60px;"><span>å®¢æé®ç®±ï¼<a href="mailto:service@weather.com.cn">service@weather.com.cn</a></span><span style="width:220px;">å®¢æçµè¯ï¼<b>010-68409444</b></span><span><a href="https://beian.miit.gov.cn/" target="_blank">äº¬ICPè¯010385-2å·</a>ã<a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">äº¬å¬ç½å®å¤11041400134å·</a></span></p>
+     
+<a id="___szfw_logo___" target="_blank" href="http://www.bcpcn.com/product/pjia/da/BCP65914858F778322.html"><img src="http://i.tq121.com.cn/i/weather2017/cx_new.png" style="position:absolute;right:10px;top:25px;"></a>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div class="aboutUs"> ä¸­å½å¤©æ°ç½çæææï¼æªç»ä¹¦é¢ææç¦æ­¢ä½¿ç¨&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCopyright&copy;<a href="http://www.pmsc.cn/" target="_blank">ä¸­å½æ°è±¡å±å¬å±æ°è±¡æå¡ä¸­å¿</a> All Rights Reserved (2008-2026)</div>
+</div>
+
+
+
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F080dabacb001ad3dc8b9b9049b36d43b' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+
+
+	<script src="https://j.i8tq.com/weather1d/pcvideo.js?20190718"></script>
+<!--[if IE]>
+    <script src="http://api.html5media.info/1.2.2/html5media.min.js"></script>
+    <![endif]-->
+<!-- tong0903 top-->
+<script type="text/javascript" src="https://j.i8tq.com/weather2020/search/city.js"></script>
+<script type="text/javascript" src="https://j.i8tq.com/weather2020/search/searchCityList.js"></script>
+<!-- tong0903 end-->
+
+
+    <!-- æ¬æµ® tong -->
+    <style>
+        .r-x-box {
+            width: 50px;
+            border-left: 0;
+            border-right: 0;
+            border-bottom: 0;
+            left: 0;
+            position: fixed;
+            left: 50%;
+            margin-left: 590px;
+            position: fixed;
+            bottom: 50px;
+            z-index: 10000;
+        }
+
+        .r-x1 {
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+        }
+
+        .r-x-5 {
+            background: url(https://i.tq121.com.cn/i/news/right-d9.png) no-repeat;
+        }
+
+        .r-x-5:hover {
+            background: url(https://i.tq121.com.cn/i/news/right-d10.png) no-repeat;
+        }
+
+        .r-x-6 {
+            background: url(https://i.tq121.com.cn/i/news/right-d11.png) no-repeat;
+        }
+
+        .r-x-6:hover {
+            background: url(https://i.tq121.com.cn/i/news/right-d12.png) no-repeat;
+        }
+
+        .r-x-7 {
+            background: url(https://i.tq121.com.cn/i/news/right-d13.png) no-repeat;
+        }
+
+        .r-x-7:hover {
+            background: url(https://i.tq121.com.cn/i/news/right-d14.png) no-repeat;
+        }
+    </style>
+
+    <div class="r-x-box">
+
+
+        <a title="åå°é¡¶é¨" class="gotop" href="javascript:void(0)">
+            <div class="r-x1 r-x-7"></div>
+        </a>
+
+    </div>
+    <!-- æ¬æµ®end -->
+
+
+   
+    <!-- 20210601 -->
+    <script src="https://i.tq121.com.cn/j/data_alarm.js"></script>
+   <script src="https://j.i8tq.com/index/add_new.js"></script>
+	<link rel="stylesheet" href="https://c.i8tq.com/index/style.css?03">
+	<script type="text/javascript" src="https://j.i8tq.com/index/slide.js?01"></script>
+    <script type="text/javascript" src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js">
+    </script>
+    <script type="text/javascript" src="https://i.tq121.com.cn/j/weather2015/index/hb.js"></script>
+    <!-- 20210601 -->
+    <script type="text/javascript" src="https://i.tq121.com.cn/j/weather2015/index/main_0814.js?2024080809"></script> 
+    <!--<script src="https://i.tq121.com.cn/j/swiper.min.js?2019071220"></script>-->
+    <script src="https://j.i8tq.com/index/idangerous.swiper.js?2019071220"></script>
+    <script type="text/javascript">
+        var swiper = new Swiper('.adTopSwiper', {
+            paginationClickable: true,
+            direction: 'vertical',
+            loop: true,
+            autoplay: 5000,
+            speed: 1000
+        });
+      var mySwiper = new Swiper('.tgSwiper',{
+        loop:true,
+        grabCursor: true,
+        paginationClickable: true
+      })
+      $('.swiper-button-prev').on('click', function(e){
+        e.preventDefault()
+        mySwiper.swipePrev()
+      })
+      $('.swiper-button-next').on('click', function(e){
+        e.preventDefault()
+        mySwiper.swipeNext()
+      })
+    </script>
+
+    <!-- ç»é -->
+    <script>
+        var timeout = 100;
+        var closetimer = 0;
+        var ddmenuitem = 0;
+
+        function jsddm_open() {
+            jsddm_canceltimer();
+            jsddm_close();
+            ddmenuitem = $(this).find('ul').css('visibility', 'visible');
+        }
+
+        function jsddm_close() {
+            if (ddmenuitem) ddmenuitem.css('visibility', 'hidden');
+        }
+
+        function jsddm_timer() {
+            closetimer = window.setTimeout(jsddm_close, timeout);
+        }
+
+        function jsddm_canceltimer() {
+            if (closetimer) {
+                window.clearTimeout(closetimer);
+                closetimer = null;
+            }
+        }
+
+        $(document).ready(function () {
+            $('.top_list > li').bind('mouseover', jsddm_open);
+            $('.top_list > li').bind('mouseout', jsddm_timer);
+            $(".logined").mouseover(function () {
+                $(".top_list_title").css("background", "#fff");
+            });
+            $(".logined").mouseout(function () {
+                $(".top_list_title").css("background", "none");
+            });
+        });
+        $(function () {
+            var url = "http://tfs.weather.com.cn/ucenter/";
+            var acookie = document.cookie.split("; ");
+            var userinfo = getck("userInfo", acookie);
+            var icon = getck("session_icon", acookie);
+            var arr = icon.split(".");
+            icon = arr[0];
+            var imageSuffix = arr[1];
+            if (userinfo !== "") {
+                var userjson = eval("(" + userinfo + ")");
+                if (userjson.icon) {
+                    var imgname = icon + "_20x20." + imageSuffix;
+                    var imgUrl = url + imgname;
+                    $("#userimg").attr("src", imgUrl);
+                } else {
+                    $("#userimg").attr("src", "https://i.tq121.com.cn/i/weather2015/user/my-head.png");
+                }
+                $("#logined").show();
+                $("#unlogined").hide();
+            } else {
+                $("#logined").hide();
+                $("#unlogined").show();
+            }
+
+            $(".gotop").click(function () {
+                if ($(window).scrollTop() != 0) {
+                    $('body,html').stop().animate({
+                        scrollTop: 0
+                    }, 1000);
+                    return false;
+                }
+            });
+
+
+        });
+
+        function getck(sname, acookie) {
+            //è·ååä¸ªcookies
+            for (var i = 0; i < acookie.length; i++) {
+                var arr = acookie[i].split("=");
+                if (sname == arr[0]) {
+                    if (arr.length > 1)
+                        return unescape(arr[1]);
+                    else
+                        return "";
+                }
+            }
+            return "";
+        }
+
+        /**
+         * ç»å½
+         */
+        function login(returnUrl) {
+            window.location.href = "http://u2.weather.com.cn/web/sso/login-ui.do?returnUrl=" + returnUrl;
+        }
+
+        /**
+         * æ³¨å
+         */
+        function regist(returnUrl) {
+            window.location.href = "http://u2.weather.com.cn/web/sso/regist-ui.do?returnUrl=" + returnUrl;
+        }
+
+        /**
+         * æ³¨é
+         */
+        function logout(returnUrl) {
+            window.location.href = "http://u2.weather.com.cn/web/sso/logout.do?returnUrl=" + returnUrl;
+        }
+        /**
+         * åæ¼
+        $(function() {
+           document.onreadystatechange = function() {
+               if (document.readyState == "complete") {
+                  grayscale(document.body);
+               }
+           }
+        });
+         */
+    </script>
+    <!-- ç»éend -->
+
+    
+    
+    <script type="text/javascript" src="https://j.i8tq.com/mysky/wyMsg.js?20240725"></script>
+    <!-- <script type="text/javascript" src="https://j.i8tq.com/index/high_product.js?0822"></script>-->
+</body>
+
+</html>

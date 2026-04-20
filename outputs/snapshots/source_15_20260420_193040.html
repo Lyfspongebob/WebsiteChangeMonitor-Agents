@@ -1,0 +1,2399 @@
+<!DOCTYPE HTML>
+<!--[if IE 6 ]> <html id="ne_wrap" class="ne_ua_ie6 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 7 ]> <html id="ne_wrap" class="ne_ua_ie7 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 8 ]> <html id="ne_wrap" class="ne_ua_ie8 ne_ua_ielte8"> <![endif]-->
+<!--[if IE 9 ]> <html id="ne_wrap" class="ne_ua_ie9"> <![endif]-->
+<!--[if (gte IE 10)|!(IE)]><!--> <html id="ne_wrap"> <!--<![endif]-->
+<head>
+  <meta name="google-site-verification" content="PXunD38D6Oui1T44OkAPSLyQtFUloFi5plez040mUOc" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="model_url" content="http://tech.163.com/special/tech_2016/" />
+<title>网易科技频道_有态度的科技门户</title>
+<meta name="keywords" content="网易科技,趋势,IT,科技,教程,通信,互联网,网易,论坛,评论,IT业界,产业报道,访谈" />
+<meta name="description" content="网易科技，以独特视角呈现科技圈内大事小事，内容包括互联网、IT业界、通信、趋势、科技访谈等。" />
+<base href="" target="_blank">
+<script type="text/javascript" _keep="true">
+    var matchStr =window.location.href;
+    var reURL = /^(https):\/\/.+$/;
+    if(!reURL.test(matchStr)){
+         window.location.href = "https://tech.163.com/";
+    }
+</script>
+<!-- 手机UA跳转 -->
+<script type="text/javascript" data-type="touch/index">!function e(t,n,r){function o(c,a){if(!n[c]){if(!t[c]){var u="function"==typeof require&&require;if(!a&&u)return u(c,!0);if(i)return i(c,!0);var s=new Error("Cannot find module '"+c+"'");throw s.code="MODULE_NOT_FOUND",s}var f=n[c]={exports:{}};t[c][0].call(f.exports,function(e){var n=t[c][1][e];return o(n||e)},f,f.exports,e,t,n,r)}return n[c].exports}for(var i="function"==typeof require&&require,c=0;c<r.length;c++)o(r[c]);return o}({1:[function(e,t,n){var r=["play.163.com"];t.exports=r},{}],2:[function(e,t,n){var r=e("./pc2wap"),o={news:{c3g:"news",child:{shehui:{c3g:"society"},domestic:{c3g:"domestic"},world:{c3g:"international"},history:{c3g:"history"},air:{c3g:"air",up:1},photo:{surl:"https://m.163.com/touch/photo/subchannel/news/#adaptation=pc",c3g:"photo"}}},ent:{c3g:"ent",child:{tv:{c3g:"television"},movie:{c3g:"movie"},star_news:{c3g:"star"},music:{c3g:"music"}}},sports:{c3g:"sports",child:{nba:{surl:"https://m.163.com/touch/sport_sub.html?cid=nba&adaptation=pc",c3g:"nba"},cba:{surl:"https://m.163.com/touch/sport_sub.html?cid=cba&adaptation=pc",c3g:"cba"}}},money:{c3g:"money",child:{stock:{c3g:"shares"},fund:{c3g:"fund"}}},biz:{under:"money",c3g:"commercial"},auto:{c3g:"auto"},war:{c3g:"war"},v:{c3g:"liveshow",child:{video:{c3g:"video"},zongyi:{c3g:"video",up:1}}},fashion:{c3g:"lady"},lady:{c3g:"lady"},dy:{c3g:"dy"},mobile:{c3g:"mobile",child:{Apple:{c3g:"ios"}}},tech:{c3g:"tech",child:{vr:{c3g:"vr"},techcolumn:{c3g:"nejudge"}}},digi:{c3g:"digi"},edu:{c3g:"edu",child:{liuxue:{c3g:"aboard"},yimin:{c3g:"migrant"},en:{c3g:"foreign"}}},jiankang:{c3g:"jiankang"},travel:{c3g:"travel"},baby:{c3g:"baby"},art:{c3g:"art"},blog:{c3g:"blog"},jiu:{c3g:"jiu"}};r(function(e,t,n,r){var i=/https?:\/\/(?:.*\.)?([a-z0-9]*)\.163\.com(\/\w+)?(\/$|\/\?.*|$|\?.*|#.*|\/#.*)/.exec(t);if(i){var c=i[1],a=i[2]?i[2].substring(1):void 0;if(o.hasOwnProperty(c)){var u=o[c],s=u.c3g,f=s;if(a&&u.hasOwnProperty("child")&&"object"==typeof u.child[a]){var l=u.child[a];if(l.surl)return l.surl;var h=l.c3g;f=s+"/subchannel/"+h,l.up&&(f=h)}return u.hasOwnProperty("under")&&(f=u.under+"/subchannel/"+s),"https://m.163.com/touch/"+f+"/#adaptation=pc"+n+e}}return!1})},{"./pc2wap":3}],3:[function(e,t,n){var r=e("./utils"),o=function(e){if(!/noredirect/i.test(location.search)){var t=window.location.href,n=new r.URL(t),o=n.hostname;if(!r.blockedDomain(o)&&r.isMobile()){var i=n.search.length>0?n.search.substring(1):"",c=n.hash;i.length>0&&"&"!==i[0]&&(i="&"+i);var a=function(){var e=document.referrer;return e?"&refer="+encodeURIComponent(e):""}(),u=e&&e(a,t,i,c);u&&(window.location.href=u)}}};t.exports=o},{"./utils":4}],4:[function(e,t,n){var r=e("./domainBlocked.config"),o={URL:function(){var e,t=self.URL;try{t&&("href"in(e=new self.URL("http://m.163.com"))||(e=void 0))}catch(e){console.log(e)}return function(n){if(e)return new t(n);var r=document.createElement("a");return r.href=n,r}}(),isMobile:function(e){return/android.*?mobile|ipod|blackberry|bb\d+|phone|WindowsWechat/i.test(e||navigator.userAgent)},isPAD:function(e){return/iPad/i.test(e||navigator.userAgent)},blockedDomain:function(e){return-1!=r.indexOf(e)}};t.exports=o},{"./domainBlocked.config":1}]},{},[2]);</script>
+<script src="//static.ws.126.net/cnews/js/ntes_jslib_1.x.js" type="text/javascript"></script>
+<!-- 广告样式 -->
+<style>
+.channel_relative_2016{
+    position:relative;
+    line-height: 0px;
+}
+.channel_relative_2016_lh{
+    line-height: 0px;
+}
+.channel_ad_2016{
+    height: 17px;
+    display:none;
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+    border-radius: 0 8px 0px 0px;
+    line-height: 17px;
+    width: 30px;
+    text-align: left;
+    overflow: hidden;
+    font-size: 12px;
+    font-family: Arial;
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:3;
+}
+.channel_ad_text_2016{
+    position: absolute;
+    right: 1px;
+    bottom: -2px;
+    color: #999999;
+    z-index:3;
+    font-size: 12px;
+    font-family: Arial;
+   display:none;
+  line-height: 18px;
+}
+  .idx_main,.rg_ad {position: relative}
+.channel_relative_2016 .channel_ad_2016,.channel_relative_2016 .channel_ad_text_2016,.idx_main .channel_ad_2016,.rg_ad .channel_ad_2016{
+    display: inline-block;
+}
+</style>
+<!-- channel2019_logo样式 -->
+<style type="text/css">
+	.channel2019_logo{
+		/*  http://cms-bucket.ws.126.net/2021/0722/b7170bdfp00qwn9qz000xc0008m028kc.png */
+        background: url(http://cms-bucket.ws.126.net/2022/0401/50eee44fp00r9nl6s003mc0008m028kc.png) no-repeat !important;
+		width: 152px !important;
+		height: 37px !important;
+		display: block !important;
+		float: left!important;
+	}
+	/*新闻*/
+	.channel2019_news_logo{
+		background-position: 0px 4px !important;
+	}
+	/*科技*/
+	.channel2019_tech_logo{
+		background-position: 0px -96px !important;
+    	
+	}
+	/*手机*/
+	.channel2019_mobile_logo{
+		background-position: 0px -196px !important;
+		
+	}
+	/*数码*/
+	.channel2019_digi_logo{
+		background-position: 0px -296px !important;
+    	
+	}
+	/*新闻学院*/
+	.channel2019_college_logo{
+		background-position: 0px -396px !important;
+		width: 269px !important;
+	}
+	/*政务*/
+	.channel2019_gov_logo{
+		background-position: 0px -496px !important;
+	}
+	/*军事*/
+	.channel2019_war_logo{
+		background-position: 0px 0px !important;
+    	height: 33px !important;
+	}
+	/*航空*/
+	.channel2019_air_logo{
+		background-position: 0px 0px !important;
+    	height: 33px !important;
+	}
+   /*新闻排行榜*/
+	.channel2019_newsrank_logo{
+		background-position: 0px 0px !important;
+    	height: 33px !important;
+	}
+  	/*新闻图片*/
+	.channel2019_newsphoto_logo{
+		background-position: 0px -2200px !important;
+      	width: 213px !important;
+    	height: 33px !important;
+	}
+	/*体育*/
+	.channel2019_sports_logo{
+		background-position: 0px -796px !important;
+	}
+  	/*体育二级页*/
+	.channel2019_sportssub_logo{
+		height: 33px !important;
+		background-position: 0px -800px !important;
+	}
+	/*娱乐*/
+	.channel2019_ent_logo{
+		background-position: 0px -896px !important;
+	}
+	/*音乐*/
+	.channel2019_music_logo{
+		background-position: 0px -1000px !important;
+    	height: 32px !important;
+	}
+	/*时尚*/
+	.channel2019_fashion_logo{
+		background-position: 0px -1100px !important;
+		height: 32px !important;
+	}
+	/*女人*/
+	.channel2019_lady_logo{
+		background-position: 0px -1196px !important;
+	}
+	/*财经*/
+	.channel2019_money_logo{
+		background-position: 0px -1300px !important;
+	}
+    /*手机图片*/
+	.channel2019_mobilephoto_logo{
+		background-position: 0px -2300px !important;
+		width: 213px !important;
+    	height: 33px !important;
+	}
+	/*汽车*/
+	.channel2019_auto_logo{
+		background-position: 0px -1396px !important;
+	}
+	/*旅游*/
+	.channel2019_travel_logo{
+		background-position: 0px -1496px !important;
+	}
+	/*健康*/
+	.channel2019_jiankang_logo{
+		background-position: 0px -1596px !important;
+	}
+	/*教育*/
+	.channel2019_edu_logo{
+		background-position: 0px -1696px !important;
+	}
+	/*艺术*/
+	.channel2019_art_logo{
+		background-position: 0px -1796px !important;
+	}
+	/*亲子*/
+	.channel2019_baby_logo{
+		background-position: 0px -1896px !important;
+	}
+	/*双创*/
+	.channel2019_shuangchuang_logo{
+		background-position: 0px -1996px !important;
+	}
+	/*酒香*/
+	.channel2019_jiu_logo{
+		background-position: 0px -2096px !important;
+	}
+  	/*游戏*/
+	.channel2019_game_logo{
+		background-position: 0px -2400px !important;
+	}
+    /*房产*/
+	.channel2019_house_logo{
+		background-position: 0px -2496px !important;
+	}
+    /*家居*/
+	.channel2019_home_logo{
+		background-position: 0px -2596px !important;
+	}
+      /*家电*/
+	.channel2019_jiadian_logo{
+		background-position: 0px -2699px !important;
+	}
+	</style>
+<!-- 接口调用编码设置 -->
+<script>
+//gbk or utf-8
+window.CHANNEL_SET_API_CHARSET = "utf-8";
+</script>
+	<link rel="stylesheet" href="https://static.ws.126.net/163/f2e/tech/index2016/css/head~fa0e5475373f8.css">
+</head>
+<body>
+<div class="index2016_wrap" id="index2016_wrap">
+	<!-- 公共导航头 -->
+	<link rel="stylesheet" href="https://static.ws.126.net/163/f2e/commonnav2019/css/commonnav_headcss-fad753559b.css"/>
+<!-- urs -->
+<script _keep="true" src="https://urswebzj.nosdn.127.net/webzj_cdn101/message.js" type="text/javascript"></script>
+<div class="ntes_nav_wrap" id="js_N_NTES_wrap">
+  <div class="ntes-nav" id="js_N_nav">
+    <div class="ntes-nav-main clearfix">
+            <div class="c-fl" id="js_N_nav_left">
+        <a class="ntes-nav-index-title ntes-nav-entry-wide c-fl" href="https://www.163.com/" title="网易首页">网易首页</a>
+        <!-- 应用 -->
+        <div class="js_N_navSelect ntes-nav-select ntes-nav-select-wide ntes-nav-app  c-fl">
+          <a href="https://www.163.com/#f=topnav" class="ntes-nav-select-title ntes-nav-entry-bgblack JS_NTES_LOG_FE">应用
+            <em class="ntes-nav-select-arr"></em>
+          </a>
+          <div class="ntes-nav-select-pop">
+            <ul class="ntes-nav-select-list clearfix">
+              <li>
+                <a href="https://m.163.com/newsapp/#f=topnav">
+                  <span>
+                    <em class="ntes-nav-app-newsapp">网易新闻</em>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://open.163.com/#f=topnav">
+                  <span>
+                    <em class="ntes-nav-app-open">网易公开课</em>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://hongcai.163.com/?from=pcsy-button">
+                  <span>
+                    <em class="ntes-nav-app-hongcai">网易红彩</em>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://u.163.com/aosoutbdbd8">
+                  <span>
+                    <em class="ntes-nav-app-yanxuan">网易严选</em>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://mail.163.com/client/dl.html?from=mail46">
+                  <span>
+                    <em class="ntes-nav-app-mail">邮箱大师</em>
+                  </span>
+                </a>
+              </li>
+              <li class="last">
+                <a href="https://study.163.com/client/download.htm?from=163app&utm_source=163.com&utm_medium=web_app&utm_campaign=business">
+                  <span>
+                    <em class="ntes-nav-app-study">网易云课堂</em>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="c-fr">
+        <!-- 片段开始 -->
+        <div class="ntes-nav-quick-navigation">
+          <a rel="noreferrer"class="ntes-nav-quick-navigation-btn" id="js_N_ntes_nav_quick_navigation_btn" target="_self">
+            <em>快速导航
+              <span class="menu1"></span>
+              <span class="menu2"></span>
+              <span class="menu3"></span>
+            </em>
+          </a>
+          <div class="ntes-quicknav-pop" id="js_N_ntes_quicknav_pop">
+            <div class="ntes-quicknav-list">
+              <div class="ntes-quicknav-content">
+                <ul class="ntes-quicknav-column ntes-quicknav-column-1">
+                  <li>
+                    <h3>
+                      <a href="https://news.163.com">新闻</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://news.163.com/domestic">国内</a>
+                  </li>
+                  <li>
+                    <a href="https://news.163.com/world">国际</a>
+                  </li>
+                  <li>
+                    <a href="https://news.163.com/special/wangsansanhome/">王三三</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-2">
+                  <li>
+                    <h3>
+                      <a href="https://sports.163.com">体育</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://sports.163.com/nba">NBA</a>
+                  </li>
+                  <li>
+                    <a href="https://sports.163.com/cba">CBA</a>
+                  </li>
+                  <li>
+                    <a href="https://sports.163.com/allsports">综合</a>
+                  </li>
+                  <li>
+                    <a href="https://sports.163.com/zc">中超</a>
+                  </li>
+                  <li>
+                    <a href="https://sports.163.com/world">国际足球</a>
+                  </li>
+                  <li>
+                    <a href="https://sports.163.com/yc">英超</a>
+                  </li>
+                  <li>
+                    <a href="https://sports.163.com/xj">西甲</a>
+                  </li>
+                  <li>
+                    <a href="https://sports.163.com/yj">意甲</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-3">
+                  <li>
+                    <h3>
+                      <a href="https://ent.163.com">娱乐</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://ent.163.com/star">明星</a>
+                  </li>
+                  <li>
+                    <a href="https://ent.163.com/movie">电影</a>
+                  </li>
+                  <li>
+                    <a href="https://ent.163.com/tv">电视</a>
+                  </li>
+                  <li>
+                    <a href="https://ent.163.com/music">音乐</a>
+                  </li>
+                  <li>
+                    <a href="https://ent.163.com/special/fmgs/">封面故事</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-4">
+                  <li>
+                    <h3>
+                      <a href="https://money.163.com">财经</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://money.163.com/stock">股票</a>
+                  </li>
+                  <li>
+                    <a href="https://money.163.com/special/caijingyuanchuang/">原创</a>
+                  </li>
+                  <li>
+                    <a href="https://money.163.com/special/wycjzk-pc/">智库</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-5">
+                  <li>
+                    <h3>
+                      <a href="https://auto.163.com">汽车</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://auto.163.com/buy">购车</a>
+                  </li>
+                  <li>
+                    <a href="http://product.auto.163.com">车型库</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-6">
+                  <li>
+                    <h3>
+                      <a href="https://tech.163.com">科技</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://tech.163.com/smart/">网易智能</a>
+                  </li>
+                  <li>
+                    <a href="https://tech.163.com/special/S1554800475317/">原创</a>
+                  </li>
+                  <li>
+                    <a href="https://tech.163.com/it">IT</a>
+                  </li>
+                  <li>
+                    <a href="https://tech.163.com/internet">互联网</a>
+                  </li>
+                  <li>
+                    <a href="https://tech.163.com/telecom/">通信</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-7">
+                  <li>
+                    <h3>
+                      <a href="https://fashion.163.com">时尚</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://fashion.163.com/art">艺术</a>
+                  </li>
+                  <li>
+                    <a href="https://travel.163.com">旅游</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-8">
+                  <li>
+                    <h3>
+                      <a href="https://mobile.163.com">手机</a>
+                      <span>/</span>
+                      <a href="https://digi.163.com/">数码</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://mobile.163.com/special/jqkj_list/">惊奇科技</a>
+                  </li>
+                  <li>
+                    <a href="https://mobile.163.com/special/cpshi_list/">易评机</a>
+                  </li>
+                  <li>
+                    <a href="https://hea.163.com/">家电</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-9">
+                  <li>
+                    <h3>
+                      <a href="https://house.163.com">房产</a>
+                      <span>/</span>
+                      <a href="https://home.163.com">家居</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://bj.house.163.com">北京房产</a>
+                  </li>
+                  <li>
+                    <a href="https://sh.house.163.com">上海房产</a>
+                  </li>
+                  <li>
+                    <a href="https://gz.house.163.com">广州房产</a>
+                  </li>
+                  <li>
+                    <a href="https://xf.house.163.com/">楼盘库</a>
+                  </li>
+                  <li>
+                    <a href="https://designer.home.163.com/search">设计师库</a>
+                  </li>
+                  <li>
+                    <a href="https://photo.home.163.com/">案例库</a>
+                  </li>
+                </ul>
+                <ul class="ntes-quicknav-column ntes-quicknav-column-11">
+                  <li>
+                    <h3>
+                      <a href="https://edu.163.com">教育</a>
+                    </h3>
+                  </li>
+                  <li>
+                    <a href="https://edu.163.com/liuxue">留学</a>
+                  </li>
+                  <li>
+                    <a href="https://edu.163.com/gaokao">高考</a>
+                  </li>
+                </ul>
+                <div class="ntes-nav-sitemap">
+                  <a href="https://sitemap.163.com/">
+                    <i></i>查看网易地图</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="c-fr">
+          <div class="c-fl" id="js_N_navLoginBefore">
+            <div id="js_N_navHighlight" class="js_loginframe ntes-nav-login ntes-nav-login-normal">
+              <a href="https://reg.163.com/" class="ntes-nav-login-title" id="js_N_nav_login_title">登录</a>
+              <div class="ntes-nav-loginframe-pop" id="js_N_login_wrap">
+                <!--加载登陆组件-->
+              </div>
+            </div>
+            <div class="js_N_navSelect ntes-nav-select ntes-nav-select-wide  JS_NTES_LOG_FE c-fl">
+              <a class="ntes-nav-select-title ntes-nav-select-title-register" href="https://mail.163.com/register/index.htm?from=163navi&regPage=163">注册免费邮箱
+                <em class="ntes-nav-select-arr"></em>
+              </a>
+              <div class="ntes-nav-select-pop">
+                <ul class="ntes-nav-select-list clearfix" style="width:210px;">
+                  <li>
+                    <a href="https://reg1.vip.163.com/newReg1/reg?from=new_topnav&utm_source=new_topnav">
+                      <span style="width:190px;">注册VIP邮箱（特权邮箱，付费）</span>
+                    </a>
+                  </li>
+                  <li class="last JS_NTES_LOG_FE">
+                    <a href="https://mail.163.com/client/dl.html?from=mail46">
+                      <span style="width:190px;">免费下载网易官方手机邮箱应用</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="c-fl" id="js_N_navLoginAfter" style="display:none">
+            <div id="js_N_logined_warp" class="js_N_navSelect ntes-nav-select ntes-nav-logined JS_NTES_LOG_FE">
+              <a class="ntes-nav-select-title ntes-nav-logined-userinfo">
+                <span id="js_N_navUsername" class="ntes-nav-logined-username"></span>
+                <em class="ntes-nav-select-arr"></em>
+              </a>
+              <div id="js_login_suggest_wrap" class="ntes-nav-select-pop">
+                <ul id="js_logined_suggest" class="ntes-nav-select-list clearfix"></ul>
+              </div>
+            </div>
+            <a class="ntes-nav-entry-wide c-fl" target="_self" id="js_N_navLogout">安全退出</a>
+          </div>
+        </div>
+
+        <ul class="ntes-nav-inside">
+          <li>
+            <div class="js_N_navSelect ntes-nav-select c-fl">
+              <a href="https://www.163.com/newsapp/#f=163nav" class="ntes-nav-mobile-title ntes-nav-entry-bgblack">
+                <em class="ntes-nav-entry-mobile">移动端</em>
+              </a>
+              <div class="qrcode-img">
+                <a href="https://www.163.com/newsapp/#f=163nav">
+                  <img src="//static.ws.126.net/f2e/include/common_nav/images/topapp.jpg">
+                </a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="js_N_navSelect ntes-nav-select c-fl">
+              <a id="js_love_url" href="https://open.163.com/#ftopnav0" class="ntes-nav-select-title ntes-nav-select-title-huatian ntes-nav-entry-bgblack">
+                <em class="ntes-nav-entry-huatian">网易公开课</em>
+                <em class="ntes-nav-select-arr"></em>
+                <span class="ntes-nav-msg">
+                  <em class="ntes-nav-msg-num"></em>
+                </span>
+              </a>
+              <div class="ntes-nav-select-pop ntes-nav-select-pop-huatian">
+                <ul class="ntes-nav-select-list clearfix">
+                  <li>
+                    <a href="https://open.163.com/ted/#ftopnav1">
+                      <span>TED</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://open.163.com/cuvocw/#ftopnav2">
+                      <span>中国大学视频公开课</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://open.163.com/ocw/#ftopnav3">
+                      <span>国际名校公开课</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://open.163.com/appreciation/#ftopnav4">
+                      <span>赏课·纪录片</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://vip.open.163.com/#ftopnav5">
+                      <span>付费精品课程</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://open.163.com/special/School/beida.html#ftopnav6">
+                      <span>北京大学公开课</span>
+                    </a>
+                  </li>
+                  <li class="last">
+                    <a href="https://open.163.com/newview/movie/courseintro?newurl=ME7HSJR07#ftopnav7">
+                      <span>英语课程学习</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="js_N_navSelect ntes-nav-select c-fl">
+              <a id="js_lofter_icon_url" href="https://you.163.com/?from=web_fc_menhu_xinrukou_1" class="ntes-nav-select-title ntes-nav-select-title-lofter ntes-nav-entry-bgblack">
+                <em class="ntes-nav-entry-lofter">网易严选</em>
+                <em class="ntes-nav-select-arr"></em>
+                <span class="ntes-nav-msg" id="js_N_navLofterMsg">
+                  <em class="ntes-nav-msg-num"></em>
+                </span>
+              </a>
+              <div class="ntes-nav-select-pop ntes-nav-select-pop-lofter">
+                <ul id="js_lofter_pop_url" class="ntes-nav-select-list clearfix">
+                  <li>
+                    <a href="https://act.you.163.com/act/pub/ABuyLQKNmKmK.html?from=out_ynzy_xinrukou_2">
+                      <span>新人特价</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://you.163.com/topic/v1/pub/Pew1KBH9Au.html?from=out_ynzy_xinrukou_3">
+                      <span>9.9专区</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://you.163.com/item/newItemRank?from=out_ynzy_xinrukou_4">
+                      <span>新品热卖</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://you.163.com/item/recommend?from=out_ynzy_xinrukou_5">
+                      <span>人气好物</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://you.163.com/item/list?categoryId=1005000&from=out_ynzy_xinrukou_7">
+                      <span>居家生活</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://you.163.com/item/list?categoryId=1010000&from=out_ynzy_xinrukou_8">
+                      <span>服饰鞋包</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://you.163.com/item/list?categoryId=1011000&from=out_ynzy_xinrukou_9">
+                      <span>母婴亲子</span>
+                    </a>
+                  </li>
+                  <li class="last">
+                    <a href="https://you.163.com/item/list?categoryId=1005002&from=out_ynzy_xinrukou_10">
+                      <span>美食酒水</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="js_N_navSelect ntes-nav-select c-fl">
+              <a href="https://ecard.163.com/" class="ntes-nav-select-title
+        ntes-nav-select-title-money ntes-nav-entry-bgblack">
+                <em class="ntes-nav-entry-money">支付</em>
+                <em class="ntes-nav-select-arr"></em>
+              </a>
+              <div class="ntes-nav-select-pop ntes-nav-select-pop-temp">
+                <ul class="ntes-nav-select-list clearfix">
+                  <li>
+                    <a href="https://ecard.163.com/#f=topnav">
+                      <span>一卡通充值</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://ecard.163.com/script/index#f=topnav">
+                      <span>一卡通购买</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://epay.163.com/">
+                      <span>我的网易支付</span>
+                    </a>
+                  </li>
+                  <li class="last">
+                    <a href="https://globalpay.163.com/home">
+                      <span>网易跨境支付</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="js_N_navSelect ntes-nav-select c-fl">
+              <a id="js_mail_url" rel="noreferrer"class="ntes-nav-select-title
+        ntes-nav-select-title-mail ntes-nav-entry-bgblack">
+                <em class="ntes-nav-entry-mail">邮箱</em>
+                <em class="ntes-nav-select-arr"></em>
+                <span class="ntes-nav-msg" id="js_N_navMailMsg">
+                  <em class="ntes-nav-msg-num" id="js_N_navMailMsgNum"></em>
+                </span>
+              </a>
+              <div class="ntes-nav-select-pop ntes-nav-select-pop-mail">
+                <ul class="ntes-nav-select-list clearfix">
+                  <li>
+                    <a href="https://email.163.com/#f=topnav">
+                      <span>免费邮箱</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://vipmail.163.com/#f=topnav">
+                      <span>VIP邮箱</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://qiye.163.com/?from=NetEase163top">
+                      <span>企业邮箱</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://mail.163.com/register/index.htm?from=ntes_nav&regPage=163">
+                      <span>免费注册</span>
+                    </a>
+                  </li>
+                  <li class="last">
+                    <a href="https://mail.163.com/dashi/dlpro.html?from=mail46">
+                      <span>客户端下载</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://static.ws.126.net/163/f2e/commonnav2019/js/commonnav_headjs-8e9e7c8602.js"></script>
+	<!-- 二级导航 -->
+	
+<div class="N-nav-channel JS_NTES_LOG_FE" data-module-name="xwwzy_11_headdaohang">
+    <a class="first" href="https://news.163.com/">新闻</a><a href="https://sports.163.com/">体育</a><a href="https://sports.163.com/nba/">NBA</a><a href="https://ent.163.com/">娱乐</a><a href="https://ent.163.com/music/">音乐</a><a href="https://tech.163.com/game/">游戏</a><a href="https://money.163.com/">财经</a><a href="https://money.163.com/stock/">股票</a><a id="_link_auto" href="https://auto.163.com/">汽车</a><a href="https://tech.163.com/">科技</a><a href="https://mobile.163.com/">手机</a><a href="https://tech.163.com/smart/">智能</a><a href="https://hea.163.com/">家电</a><a href="https://fashion.163.com/">时尚</a><a href="https://v.163.com/">直播</a><a href="https://culture.163.com/">文化</a><a href="https://travel.163.com/">旅游</a><a id="houseUrl" href="https://house.163.com/">房产</a><a href="https://home.163.com/" id="homeUrl">家居</a><a href="https://edu.163.com/">教育</a><a id="_link_game" href="https://news.163.com/">本地</a><a href="https://jiankang.163.com/">健康</a><a class="last" href="https://art.163.com/">艺术</a>
+</div>
+<!-- 游戏替换为本地，并定向 0310-->
+<!-- 配置定向城市 -->
+<script type="text/javascript" _keep="true">
+var HouseNavBendiTxt = {
+    "province": [
+        {
+            "name": "北京市",
+            "shortName": "北京",
+            "url":"https://bj.news.163.com/"
+        },
+        {
+            "name": "上海市",
+            "shortName": "上海",
+            "url":"https://sh.news.163.com/"
+        },
+        {
+            "name": "天津市",
+            "shortName": "天津",
+            "url":"https://tj.news.163.com/"
+        },
+        {
+            "name": "广东省",
+            "shortName": "广东",
+            "url":"https://gd.news.163.com/"
+        },
+        {
+            "name": "江苏省",
+            "shortName": "江苏",
+            "url":"https://js.news.163.com/"
+        },
+        {
+            "name": "浙江省",
+            "shortName": "浙江",
+            "url":"https://zj.news.163.com/"
+        },
+        {
+            "name": "四川省",
+            "shortName": "四川",
+            "url":"https://sc.news.163.com/"
+        },
+        {
+            "name": "黑龙江省",
+            "shortName": "黑龙江",
+            "url":"https://hlj.news.163.com/"
+        },
+        {
+            "name": "吉林省",
+            "shortName": "吉林",
+            "url":"https://jl.news.163.com/"
+        },
+        {
+            "name": "辽宁省",
+            "shortName": "辽宁",
+            "url":"https://liaoning.news.163.com/"
+        },
+        {
+            "name": "内蒙古自治区",
+            "shortName": "内蒙古",
+            "url":"https://hhht.news.163.com/"
+        },
+        {
+            "name": "河北省",
+            "shortName": "河北",
+            "url":"https://hebei.news.163.com/"
+        },
+        {
+            "name": "河南省",
+            "shortName": "河南",
+            "url":"https://henan.163.com/"
+        },
+        {
+            "name": "山东省",
+            "shortName": "山东",
+            "url":"https://sd.news.163.com/"
+        },
+        {
+            "name": "陕西省",
+            "shortName": "陕西",
+            "url":"https://shanxi.news.163.com/"
+        },
+        {
+            "name": "甘肃省",
+            "shortName": "甘肃",
+            "url":"https://gs.news.163.com/"
+        },
+        {
+            "name": "宁夏回族自治区",
+            "shortName": "宁夏",
+            "url":"https://ningxia.news.163.com/"
+        },
+        {
+            "name": "新疆维吾尔自治区",
+            "shortName": "新疆",
+            "url":"https://xj.news.163.com/"
+        },
+        {
+            "name": "安徽省",
+            "shortName": "安徽",
+            "url":"https://ah.news.163.com/"
+        },
+        {
+            "name": "福建省",
+            "shortName": "福建",
+            "url":"https://fj.news.163.com/"
+        },
+        {
+            "name": "广西壮族自治区",
+            "shortName": "广西",
+            "url":"https://gx.news.163.com/"
+        },
+        {
+            "name": "重庆市",
+            "shortName": "重庆",
+            "url":"https://chongqing.163.com/"
+        },
+        {
+            "name": "湖北省",
+            "shortName": "湖北",
+            "url":"https://hb.news.163.com/"
+        },
+        {
+            "name": "江西省",
+            "shortName": "江西",
+            "url":"https://jx.news.163.com/"
+        },
+        {
+            "name": "海南省",
+            "shortName": "海南",
+            "url":"https://hn.news.163.com/"
+        },
+        {
+            "name": "贵州省",
+            "shortName": "贵州",
+            "url":"https://gz.news.163.com/"
+        },
+        {
+            "name": "云南省",
+            "shortName": "云南",
+            "url":"https://yn.news.163.com/"
+        },
+        {
+            "name": "山西省",
+            "shortName": "山西",
+            "url":"https://sx.news.163.com"
+        },
+        {
+            "name": "西藏自治区",
+            "shortName": "北京",
+            "url":"https://bj.news.163.com/"
+        },
+        {
+            "name": "香港特别行政区",
+            "shortName": "广东",
+            "url":"https://gd.news.163.com/"
+        },
+        {
+            "name": "澳门特别行政区",
+            "shortName": "广东",
+            "url":"https://gd.news.163.com/"
+        },
+        {
+            "name": "台湾省",
+            "shortName": "广东",
+            "url":"https://gd.news.163.com/"
+        },
+        {
+            "name": "天津市",
+            "shortName": "北京",
+            "url":"https://bj.news.163.com/"
+        },
+        {
+            "name": "青海省",
+            "shortName": "北京",
+            "url":"https://bj.news.163.com/"
+        }
+    ],
+    "city": [
+        {
+            "name": "大连市",
+            "shortName": "大连",
+            "url":"https://dl.news.163.com"
+        },
+        {
+            "name": "青岛市",
+            "shortName": "青岛",
+            "url":"https://qingdao.news.163.com"
+        },
+        {
+            "name": "宁波市",
+            "shortName": "宁波",
+            "url":"https://zj.news.163.com/ningbo/"
+        },
+        {
+            "name": "厦门市",
+            "shortName": "厦门",
+            "url":"https://xiamen.news.163.com"
+        },
+        {
+            "name": "深圳市",
+            "shortName": "深圳",
+            "url":"https://shenzhen.news.163.com/"
+        },
+        {
+            "name": "海口市",
+            "shortName": "海口",
+            "url":"https://hn.news.163.com/"
+        }
+    ],
+    "defalt": {
+            "name": "",
+            "shortName": "本地",
+            "url":"https://news.163.com/"
+        }
+};
+</script>
+<script type="text/javascript" _keep="true">
+            (function(){
+                //本地设置定向省份
+                function setBendiName(){
+                    var js_nav_bendi = document.getElementById("_link_game");
+                    var cityname = "";
+                    var cityurl = "";
+                    var _loc = window.localAddress;
+                    if(!js_nav_bendi)
+                        return;
+                    if(HouseNavBendiTxt.city && _loc){
+                        var citylist = HouseNavBendiTxt.city;
+                        var localcity = _loc.city;
+                        for(var i=0;i<citylist.length;i++){
+                            if(citylist[i].name.indexOf(localcity) != -1){
+                                cityname = citylist[i].shortName;
+                                cityurl = citylist[i].url;
+                                break;
+                            }
+                        }
+                    }
+                    if(cityname == "" && cityurl == "" && HouseNavBendiTxt.province && _loc){
+                        var provincelist = HouseNavBendiTxt.province;
+                        var localprovince = _loc.province;
+                        for(var i=0;i<provincelist.length;i++){
+                            if(provincelist[i].name.indexOf(localprovince) != -1){
+                                cityname = provincelist[i].shortName;
+                                cityurl = provincelist[i].url;
+                                break;
+                            }
+                        }
+                    }
+                    if(js_nav_bendi && cityname != "" && cityurl != ""){
+                        js_nav_bendi.innerHTML = cityname;
+                        js_nav_bendi.href = cityurl;
+                    }
+                    if(js_nav_bendi && cityname == "" && cityurl == ""){
+                        js_nav_bendi.innerHTML = "本地";
+                        js_nav_bendi.href = "https://news.163.com";
+                    }
+                }
+                
+                if(window.HouseNavBendiTxt && window.NTESCommonNavigator){
+                    var utils = NTESCommonNavigator.utils;
+                    utils.jsonp("https://ipservice.ws.126.net/locate/api/getLocByIp", {}, function(res){
+                        if(res && res.result){
+                            window.localAddress = res.result;
+                            setBendiName();
+                        }
+                    });
+                }
+            })();
+        </script>
+  <div class="index2016_content" ne-module="/tech/index2016/tech_index2016.js">
+		<!-- 项目内容 -->
+		<!-- AD 顶部通栏 begin -->
+		<div class="top-gg-area channel_relative_2016 mod_js_ad"  data-adid="tech_index_column1" ad-location="11" ad-category="tech" ad-position="0">
+			<div class="at_item common_ad_item top_ad_column" adType="topColumnAd" requestUrl="https://nex.163.com/q?app=7BE0FC82&c=tech&l=11&site=netease&affiliate=tech&cat=homepage&type=column1200x125_960x100browser&location=1"></div>
+			<span class="channel_ad_2016">广告</span>   
+		</div>
+		<!-- AD 顶部通栏 end -->
+		<!-- 科技导航 -->
+		<div class="channel" id="channel">
+  <div class="clearfix top-area">
+    <h1>
+      <a name="top" href="https://tech.163.com/" class="channel2019_logo channel2019_tech_logo"></a>
+    </h1>
+    <!--<span class="attlogo">
+      <img width="123" height="35" alt="有态度" src="http://static.ws.126.net/f2e/tech/index2016/images/taidu_logo1.png"><br>
+      有态度
+    </span>-->
+  </div>
+  <!--科技导航-->
+  <div class="nav-channel clearfix">
+    <div class="nav">
+      <a class="first current" href="https://tech.163.com/" data-letters="首页">首页<em>/</em></a> 
+      <a href="https://tech.163.com/smart/" data-letters="智能">智能<em>/</em></a>  
+      <a href="https://tech.163.com/internet/" data-letters="互联网">互联网<em>/</em></a>
+      <a href="https://tech.163.com/5g/" data-letters="5G">5G<em>/</em></a> 
+      <a href="https://tech.163.com/telecom/" data-letters="通信">通信<em>/</em></a> 
+      <a href="https://tech.163.com/it/" data-letters="IT">IT<em>/</em></a> 
+      <a href="https://tech.163.com/special/techscience/" data-letters="科学">科学<em>/</em></a>
+      <a href="https://mobile.163.com/" data-letters="手机">手机<em>/</em></a>
+      <a href="https://digi.163.com/" data-letters="数码">数码<em>/</em></a>
+      <a href="https://tech.163.com/special/metaverse_2022/" data-letters="元宇宙">元宇宙<em>/</em></a>
+      <a href="https://hea.163.com/" data-letters="家电">家电<em>/</em></a>
+      <a href="https://tech.163.com/special/S1554800475317/" data-letters="原创精选">原创精选</a>
+    </div>
+  </div>
+</div>
+		
+		<!-- 头条轮播 -->
+		<div ne-module="/tech/index2016/modules/banner_slide/banner_slide.js">
+<div class="banner_slide slide">
+    <div class="banner_slide_container">
+        <div ne-module="/tech/index2016/modules/banner_slide/slide.js" ne-state="slideMethod:left;loop:1;interval:5000;duration:400;" ne-id="left_pic">
+            <a ne-role="slide-prev" class="slide_prev">&lt;</a>
+            <a ne-role="slide-next" class="slide_next">&gt;</a>
+            <div class="slide_profile">
+                    			                                <div class="slide_page_profile" ne-role="slide-profile">
+                    <span class="top_label"></span>
+                    <h2><a href="https://www.163.com/tech/article/KQVJGCM100098IEO.html" title="华为Pura90逆周期定价，4699元起，未涨价">华为Pura90逆周期定价，4699元起，未涨价</a></h2>
+                </div>
+                                                                <div class="slide_page_profile" ne-role="slide-profile">
+                    <span class="top_label"></span>
+                    <h2><a href="https://www.163.com/tech/article/KQUVPEDG00098IEO.html" title="抛弃OpenAI，Anthropic为何成中国AI新偶像">抛弃OpenAI，Anthropic为何成中国AI新偶像</a></h2>
+                </div>
+                                                                <div class="slide_page_profile" ne-role="slide-profile">
+                    <span class="top_label"></span>
+                    <h2><a href="https://www.163.com/dy/article/KQTCEK1T05119734.html" title="高盛预言自动驾驶是十年内AI最大利润池">高盛预言自动驾驶是十年内AI最大利润池</a></h2>
+                </div>
+                                                                <div class="slide_page_profile" ne-role="slide-profile">
+                    <span class="top_label"></span>
+                    <h2><a href="https://www.163.com/tech/article/KQUNMDSK00097U7T.html" title="蓝色起源一级火箭完美回收 客户卫星未入轨">蓝色起源一级火箭完美回收 客户卫星未入轨</a></h2>
+                </div>
+                                                                                                                                                                                                                                                  
+                <!-- 广告5 -->
+                <!--科技焦点图广告-->
+                                                                                                    <div class="slide_page_profile" ne-role="slide-profile">
+              <span class="top_label"></span>
+              <h2><a href="https://www.163.com/tech/article/KQSE3MUI00098IEO.html" title="50分26秒破人类纪录！300台机器人狂飙半马">50分26秒破人类纪录！300台机器人狂飙半马</a></h2>
+              </div>
+                              
+  <!--
+   <div class="slide_page_profile" ne-role="slide-profile">
+            <span class="top_label"></span>
+            <h2><a href="https://tech.163.com/" title="广告标题">广告标题</a></h2>
+   </div>
+  -->
+            </div>
+            <div ne-role="slide-body" class="slide_body">
+                <div ne-role="slide-scroll" class="slide_list">
+                                                                                                                             <div ne-role="slide-page" class="slide_page">
+                        <div class="slide_page_pic">
+                            <a href="https://www.163.com/tech/article/KQVJGCM100098IEO.html" target="_blank">
+                                <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0420%2F83c02dc1p00tds9fd00c5c001bf00zkc.png&thumbnail=850y430&quality=100&type=jpg" alt="华为Pura90逆周期定价，4699元起，未涨价"/>
+                            </a>
+                        </div>
+                    </div>
+                                                                                                                             <div ne-role="slide-page" class="slide_page">
+                        <div class="slide_page_pic">
+                            <a href="https://www.163.com/tech/article/KQUVPEDG00098IEO.html" target="_blank">
+                                <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0420%2F3c25ae78p00tdrtgl006wc000u000gwc.png&thumbnail=850y430&quality=100&type=jpg" alt="抛弃OpenAI，Anthropic为何成中国AI新偶像"/>
+                            </a>
+                        </div>
+                    </div>
+                                                                                                                             <div ne-role="slide-page" class="slide_page">
+                        <div class="slide_page_pic">
+                            <a href="https://www.163.com/dy/article/KQTCEK1T05119734.html" target="_blank">
+                                <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0420%2Ffb9d38b2p00tdrnxb0028c000s600e3c.png&thumbnail=850y430&quality=100&type=jpg" alt="高盛预言自动驾驶是十年内AI最大利润池"/>
+                            </a>
+                        </div>
+                    </div>
+                                                                                                                             <div ne-role="slide-page" class="slide_page">
+                        <div class="slide_page_pic">
+                            <a href="https://www.163.com/tech/article/KQUNMDSK00097U7T.html" target="_blank">
+                                <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0420%2F9a7ff937p00tdrmmo003sc000s600e3c.png&thumbnail=850y430&quality=100&type=jpg" alt="蓝色起源一级火箭完美回收 客户卫星未入轨"/>
+                            </a>
+                        </div>
+                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+              		<!-- 广告5 -->
+                    
+                                                                                                                              <div ne-role="slide-page" class="slide_page">
+    <div class="slide_page_pic">
+      <a href="https://www.163.com/tech/article/KQSE3MUI00098IEO.html" target="_blank">
+        <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0419%2F48cee3dep00tdpyqt00alc000z700k8c.png&thumbnail=850y430&quality=100&type=jpg" alt="50分26秒破人类纪录！300台机器人狂飙半马"/>
+      </a>
+    </div>
+    </div>
+                                                                                                                             
+<!-- 
+<div ne-role="slide-page" class="slide_page">
+    <div class="slide_page_pic">
+      <a href="https://tech.163.com/" target="_blank">
+        <img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2024%2F0312%2Fb160bcbdp00sa7jtf003hc000s600e3c.png&thumbnail=850y430&quality=100&type=jpg" alt="广告标题"/>
+      </a>
+    </div>
+ </div>
+-->
+                </div>
+            </div>
+            <div class="slide_nav">
+                    			                                <span ne-role="slide-nav"></span>
+                                                                <span ne-role="slide-nav"></span>
+                                                                <span ne-role="slide-nav"></span>
+                                                                <span ne-role="slide-nav"></span>
+                                                                <span ne-role="slide-nav"></span>
+                                                                                                                                                                                                            </div>
+        </div>
+    </div>
+</div>
+</div>
+		<!-- 主内容区 -->
+		<div class="main-news-area clearfix">
+			<!-- 左侧最新快讯 -->
+			<div class="left_col">
+				<div ne-module="/tech/index2016/modules/lf_newest/lf_newest.js">
+<!-- 移动顶部基线 -->
+<div class="blank" id="base_top"></div>
+<div class="lf-newest clearfix" id="lf_viewer">
+	<div class="newest-top">
+		<h2>最新快讯</h2>
+		<!-- AD-LOGO start -->
+		<!--2016新版快讯冠名-->
+<!-- <span style="vertical-align: sub;"><img src="http://static.ws.126.net/f2e/tech/index2016/images/oppo.png" alt="oppo" width="60" height="20"></span> -->
+
+		<!-- AD-LOGO end -->
+	</div>
+	<div ne-role="scrollbar">
+		<div class="newest-lists">
+			<ul>
+										<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVUKDFF05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														绕开电商平台风控机制爬取知名电商平台数据 法
+							<em class="nl-time">19:26</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVUF1V80512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														华为余承东：鸿蒙6终端设备数超过5500万，坚持
+							<em class="nl-time">19:23</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVU5KVE0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														一键躺倒举腿折叠入箱，人形机器人魔性自我打包
+							<em class="nl-time">19:18</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVU5I8B0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														给服务器泡个“恒温澡”，实探算力降温黑科技，
+							<em class="nl-time">19:18</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVU21IG0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														本田将关停广州、武汉两座燃油车工厂？合资双方
+							<em class="nl-time">19:16</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVU24040512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														华为余承东：鸿蒙6终端设备数超过5500万，坚持
+							<em class="nl-time">19:16</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVTSFDB05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														京东投6.6亿元、字节砸61亿 互联网巨头掀“买地
+							<em class="nl-time">19:13</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVTE2PO0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														上海：深化拓展与全球科技管理部门、科研机构、
+							<em class="nl-time">19:05</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVRP9CU0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														周鸿祎：智能体企业应用安全是落地关键
+							<em class="nl-time">18:36</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVR6O2I0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														近20年来首次！美国对华锂电材料“双反”调查未
+							<em class="nl-time">18:26</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVQK1UR0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														MINI品牌2026北京车展参展车型数量翻倍 MINI CO
+							<em class="nl-time">18:16</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVP6IMJ0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														截至去年底我国注册无人机共328.7万架
+							<em class="nl-time">17:51</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVOPKJD05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														“小鼻嘎”萌翻半马 机器人跑进家庭还有多远？
+							<em class="nl-time">17:44</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVOEH4I05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														截至去年底我国注册无人机共328.7万架
+							<em class="nl-time">17:38</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVNOURA05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														世界最高机械参数转子模型飞逸试验成功
+							<em class="nl-time">17:26</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVNDO5U05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														华为发布全新鸿蒙电脑 售价6599元起
+							<em class="nl-time">17:20</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVNDKU40534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														华为WATCH Buds 2正式发布
+							<em class="nl-time">17:20</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVNAQ970534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														华为发布全新鸿蒙电脑，售价6599元起
+							<em class="nl-time">17:18</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVN1LHM0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														爱奇艺：入驻纳逗Pro艺人库仅代表有接洽意愿，
+							<em class="nl-time">17:13</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVMR9QS0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														从赛道内卷到品类开创：安吉尔空间大师如何重构
+							<em class="nl-time">17:10</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVMMP2N0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														华为AI眼镜发布
+							<em class="nl-time">17:07</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVMLSR905198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														华为发布全新二合一耳机表
+							<em class="nl-time">17:07</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVM9MPN05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														华为发布首款鸿蒙AI眼镜
+							<em class="nl-time">17:00</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVM7J9A0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														俞浩谈追觅为何要造最快纯电车
+							<em class="nl-time">16:59</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVLJB1R05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														丰田和宁德时代据悉将在印尼合作生产混合动力汽
+							<em class="nl-time">16:48</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQUTAKCL0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														中国AI大模型周调用量环比降23.8%，美国近两个
+							<em class="nl-time">16:45</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVL6NUR0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														华为WATCH FIT 5系列发布
+							<em class="nl-time">16:41</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVL0P4B0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														华为大阔折售价10999元起
+							<em class="nl-time">16:38</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVKTEGN05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														Mythos引发的担忧升级 亚洲监管机构敦促银行筑
+							<em class="nl-time">16:36</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVK5AEG0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														余承东：手机后期可能涨价
+							<em class="nl-time">16:23</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVJVQIE05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														摩根士丹利：代理人工智能将扩大芯片支出 从GPU
+							<em class="nl-time">16:20</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVJTEQ60534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														华为正式发布首款大阔折
+							<em class="nl-time">16:18</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVJQMIG0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														华为终端：支持HarmonyOS6的终端设备数突破5500
+							<em class="nl-time">16:17</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVJOH9G0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														超越人类半马纪录！荣耀机器人夺冠引爆供应链
+							<em class="nl-time">16:16</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVJHMI20534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														华为：搭载鸿蒙HarmonyOS 6终端设备突破5500万
+							<em class="nl-time">16:12</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVJ63TQ0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														Shopee把出海带到杭州，内贸卖家的增长有了新方
+							<em class="nl-time">16:06</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVJ4AJB0534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														机构：预估2026年全球AI光收发模块市场规模达26
+							<em class="nl-time">16:05</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVJ2M1405198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														机构：预估2026年全球AI光收发模块市场规模达26
+							<em class="nl-time">16:04</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVIHVCT0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														成都天府科创岛发布上岛政策及OPC服务包——让O
+							<em class="nl-time">15:55</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVIDUA60512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														阿里HappyHorse将于4月27日开放测试 首批邀测对
+							<em class="nl-time">15:53</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVHRV6B05198CJN.html" class="nl_detail">
+						<p class="nl-title">
+														华为余承东：手机定价压力较大 后期可能涨价
+							<em class="nl-time">15:46</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVHTQ630512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														余承东：手机定价压力较大，后期可能涨价
+							<em class="nl-time">15:44</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVHTQ8O0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														阿里发布Qwen3.6-Max预览版
+							<em class="nl-time">15:44</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVHTQMB0512B07B.html" class="nl_detail">
+						<p class="nl-title">
+														富瀚微：客户面向大众消费者的AI眼镜产品处于研
+							<em class="nl-time">15:44</em>
+						</p>
+					</a>															
+				</li>
+						<li class="list_item">
+					<span class="wai_cicle"></span>
+					<div class="animate-dot"></div>
+					<a href="https://www.163.com/dy/article/KQVHD5E10534A4SC.html" class="nl_detail">
+						<p class="nl-title">
+														阿里发布Qwen3.6-Max预览版
+							<em class="nl-time">15:35</em>
+						</p>
+					</a>															
+				</li>
+				 			</ul>
+		</div>
+		<div class="white_hover"></div>
+		<div class="blank" id="newest_bottom"></div>
+	</div>
+</div></div>
+			</div>
+			<!-- 科技信息流静态化 -->
+            <div style="display:none;">
+  <!-- 科技 信息流静态化 -->
+      <a href="https://www.163.com/tech/article/J7VCGOM600098IEO.html">俞敏洪透露董宇辉离职幕后：深陷舆论风暴</a>
+    <a href="https://www.163.com/dy/article/J7ULIOFR05118DFD.html">估值超200亿，百川智能完成50亿元A轮融资</a>
+    <a href="https://www.163.com/tech/article/J7UM9CVT00097U81.html">7月25日外媒科学网站摘要：安慰剂是如何缓解疼痛的？</a>
+    <a href="https://www.163.com/tech/article/J7U9OTHO00097U7T.html">为什么OpenAI今年可能会亏损50亿美元？</a>
+    <a href="https://www.163.com/tech/article/J7U9LG7700097U7T.html">马斯克称考虑取消投资，墨西哥总统回击：说这话太草率</a>
+    <a href="https://www.163.com/tech/article/J7U9I0D300097U7T.html">马斯克询问网友：特斯拉向xAI投50亿美元行不行</a>
+    <a href="https://www.163.com/tech/article/J7V4OLU400098IEO.html">巴黎奥运会系列报道｜商汤日日新大模型亮相</a>
+    <a href="https://www.163.com/dy/article/J7V47TFA0511B8LM.html">本田拟削减中国燃油车产能：149万辆→100万辆，关闭或停产两家工厂</a>
+    <a href="https://www.163.com/dy/article/J7V1ONQ9051481US.html">马斯克要跟扎克伯格“笼斗”！随时随地、任何规则</a>
+    <a href="https://www.163.com/tech/article/J7URIJRP00098IEO.html">抖音电商否认“上半年GMV未达预期”传闻</a>
+    <a href="https://www.163.com/dy/article/J7UQ5M2L05198NMR.html"> “最懂苹果”分析师郭明錤：苹果将停产iPhone 17 Plus</a>
+    <a href="https://www.163.com/dy/article/J7UI2RGL05476C4F.html">李斌回应蔚来“千站计划”迟缓问题：最多推迟一两个月</a>
+    <a href="https://www.163.com/dy/article/J7UHQE7O0514R9P4.html">美股七巨头一夜市值蒸发近6万亿元，创下12年以来最大单日跌幅</a>
+    <a href="https://www.163.com/tech/article/J7UFGHVC00098IEO.html">报告｜同程旅行：奥运会开幕首周巴黎酒店预订热度同比涨4倍</a>
+    <a href="https://www.163.com/dy/article/J7SP2K20051180F7.html">扎克伯格深度专访：中美AI竞争完全错误，美国别想长期领先中国</a>
+    <a href="https://www.163.com/dy/article/J7SMODLV05198NMR.html">OpenAI老板做的全民发钱实验，结果出来了！</a>
+    <a href="https://www.163.com/dy/article/J7SQBHRO0511B8LM.html">雷克萨斯将在华生产全新纯电车型，并销往日本？官方：不予置评</a>
+    <a href="https://www.163.com/dy/article/J7SU69NT051492T3.html">起步价1.5元只能骑10分钟，哈啰单车变相涨价</a>
+    <a href="https://www.163.com/dy/article/J7T2DVUB0519U3I5.html">武汉萝卜快跑涨价，基本与网约车持平？我们测了一下</a>
+    <a href="https://www.163.com/dy/article/J7T90BH20511B8LM.html">小米汽车：近年内还没有在海外市场销售汽车的计划</a>
+    <a href="https://www.163.com/dy/article/J7UDK8C00519APGA.html">网红企业家风云榜：雷军成顶流，俞敏洪反超董明珠</a>
+    <a href="https://www.163.com/dy/article/J7UC02TG05198R91.html">小红书变局：卖老股、边裁员边扩招，为上市“加速”</a>
+    <a href="https://www.163.com/dy/article/J7UBV0LU0514R9OJ.html">微软Bing搜索结果引入AI摘要功能，逐步推进智能搜索体验</a>
+    <a href="https://www.163.com/dy/article/J7UA0SUH05564B6E.html">抖音再攻图文，不止“围猎”小红书</a>
+    <a href="https://www.163.com/dy/article/J7T1CR9L0539M9HP.html">非洲之王，为何在印度栽跟头？</a>
+    <a href="https://www.163.com/dy/article/J7U6TVB60511B8LM.html">企业蒙受巨额损失，CrowdStrike向受灾客户发放10美元礼品卡，又收回了</a>
+    <a href="https://www.163.com/dy/article/J7U6MLJR0519DDQ2.html">特斯拉股价重挫12%，市值蒸发超800亿美元</a>
+    <a href="https://www.163.com/dy/article/J7U53BVN0511B8LM.html">全球最大清洁能源滚装船完成交付，上汽自营船队扩容至32艘</a>
+    <a href="https://www.163.com/dy/article/J7U465G90527822Q.html">面对价格战，马斯克也无能为力了</a>
+    <a href="https://www.163.com/dy/article/J7TBFVAI0514R9OJ.html">环球时报：美媒指责中国隐瞒超算实力毫无道理，美国才是元凶</a>
+  </div>
+			<!-- 今日热点 -->
+			<div class="hot-list">
+				<div ne-module="/tech/index2016/modules/datalist/datalist.js" ne-extend="/tech/index2016/modules/datalist/config.js">
+<div class="datalist_title">
+    <h2>今日热点</h2>
+    <h3>
+                        <a href="https://go.163.com/f2e/netease_future_2025_pc/index.html">2025网易未来大会</a>
+                <a href="https://go.163.com/f2e/20251008_future_talks_pc/index.html">未来公开课</a>
+            </h3>
+</div>
+<div class="newsdata_wrap">
+    <ul class="newsdata_list" ne-class="{{myState.fixedTop ? 'fixed_bar_padding': ''}} {{myState.bgLoading ? 'bgloading': ''}}">
+        <li class="newsdata_item">
+            <div class="ndi_main">
+                <div class="row_message" ne-hide="{{myState.message > 0 ? false : true}}" ne-click="refreshList()">
+                小易为你更新了{{myState.message}}条新消息哟~~
+                </div>                
+                <script type="text/template" ne-repeat="newrow in datalist">
+                    <%if(newrow.fixedInc){%>
+                                        <%} else if(newrow.adurl){%>
+                    <div
+                        class="at_item info_ad_item clearfix mod_js_ad"
+                        data-adid="{{newrow.adid}}"
+                        ad-location="{{newrow.location}}"
+                        ad-position="{{newrow.position}}"
+                        ad-category="tech"
+                        adType="{{newrow.adType}}"
+                        requestUrl="{{newrow.adurl}}"
+                    ></div>
+                <%} else if(newrow.imgurl && newrow.add1 && newrow.add2){%>
+                        <div class="data_row news_photoview clearfix">
+                            <div class="news_title">
+                                <h3><a href="<%=newrow.docurl%>"><%=newrow.title%></a></h3>
+                            </div>
+                            <div class="np_pic">
+                                <a href="<%=newrow.docurl%>">
+                                   <span class="p_img3">
+                                        <img src="<%=newrow.imgurl%>" width="190" height="120" onerror="javascript:this.src='http://static.ws.126.net/f2e/news/index2016_rmd/images/pic3_error0106.jpg';">
+                                    </span>
+                                    <span class="p_img3">
+                                        <img src="<%=newrow.add1%>" width="190" height="120" onerror="javascript:this.src='http://static.ws.126.net/f2e/news/index2016_rmd/images/pic3_error0106.jpg';">
+                                    </span>
+                                    <span class="p_img3">
+                                        <img src="<%=newrow.add2%>" width="190" height="120" class="pic_last" onerror="javascript:this.src='http://static.ws.126.net/f2e/news/index2016_rmd/images/pic3_error0106.jpg';">
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="np_detail clearfix">
+                                <div class="news_tag">
+                                    <%if(newrow.tlastid != ""){%>
+                                    <strong class="barlink"><%=newrow.tlastid%></strong>
+                                    <%}else{%>
+                                        <a href="<%=newrow.tlink%>" class="link">
+                                        <%=newrow.label%></a>
+                                    <%}%>
+                                    <%if(newrow.keywords.length > 0){%>
+                                        <div class="keywords">
+                                            <%if(newrow.newstype == "photoset"){%>
+                                                <%bowlder.each(newrow.keywords,function(k){%>
+                                                    <a href="javascript:;" target="_self" style="cursor:default;"><%=k.keyname%></a>
+                                                <%})%> 
+                                            <%}else{%>
+                                                <%bowlder.each(newrow.keywords,function(k){%>
+                                                    <a href="<%=k.akey_link%>"><%=k.keyname%></a>
+                                                <%})%> 
+                                            <%}%>
+                                        </div>
+                                    <%}%>
+                                    <span class="time"><%=formatTime(newrow.time)%></span>
+                                </div>
+                                <div class="share-join clearfix">
+                                    <a href="<%=newrow.commenturl%>" title="跟贴" class="join-count">
+                                        <div class="tie-wrap">
+                                            <span class="tie-icon"> <%=newrow.tienum%></span>
+                                            <span class="tie-text"><i>跟贴</i> <%=newrow.tienum%></span>
+                                        </div>
+                                    </a>
+                                    <div class="ne-shares-parent">
+                                        <span href="#share" title="分享" class="ne-shares-arr"></span>
+                                        <div class="share-join-item" ne-module="/modules/shares/shares.js" ne-state="cls.hover:ne-shares-open;title:<%=newrow.title%>;url:<%=newrow.docurl%>;pic:<%=newrow.imgurl%>" >
+<div class="ne-shares-pop6x1wrap" ne-role="share-wrap">
+<ul class="ne-shares-pop6x1">
+    <li>
+        <a ne-click="share('yixin')" href="https://yixin.im/#f=www">
+            <span class="inner">
+                <i class="ep-share-icon ep-share-yixin"></i>
+                <span class="ep-share-name">易信</span>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a ne-mouseover="initWeixin()" href="javascript:" target="_self" class="ne-shares-weixin">
+            <span class="inner">
+                <i class="ep-share-icon ep-share-weixin"></i>
+                <span class="ep-share-name">微信</span>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a ne-click="share('sina')" href="javascript:">
+            <span class="inner">
+                <i class="ep-share-icon ep-share-sina"></i>
+                <span class="ep-share-name">微博</span>
+            </span>
+        </a>
+    </li>
+    <li class="last">
+        <a ne-click="share('qzone')" href="javascript:">
+            <span class="inner">
+                <i class="ep-share-icon ep-share-qzone"></i>
+                <span class="ep-share-name">QQ空间</span>
+            </span>
+        </a>
+    </li>
+</ul>
+</div>
+<div class="ne-shares-qrwrap">
+  <div class="ne-shares-qrarr"></div>
+  <div ne-role="qrcode" class="ne-shares-qrcode"></div>
+  <p>用微信扫码二维码</p><p>分享至好友和朋友圈</p>
+</div>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <%} else if(newrow.add1){%>
+                        <div class="data_row news_special clearfix">
+                            <div class="news_title">
+                                <h3><a href="<%=newrow.docurl%>"><%=newrow.title%></a></h3>
+                                <%if(newrow.tlastid != ""){%>
+                                <strong class="barlink"><%=newrow.tlastid%></strong>
+                                <%}else{%>
+                                    <a href="<%=newrow.tlink%>" class="link">
+                                    <%=newrow.label%></a>
+                                <%}%> 
+                            </div>
+                            <a href="<%=newrow.docurl%>" class="ns_pic">
+                                <img src="<%=newrow.add1%>" alt="<%=newrow.title%>" width="600" height="300" onerror="javascript:this.src='http://static.ws.126.net/f2e/news/index2016_rmd/images/special_error0106.jpg';">
+                            </a>
+                        </div>
+                    <%} else if(newrow.newstype){%>
+                        <div class="data_row news_article clearfix"> 
+                            <%if(newrow.imgurl != ""){%>
+                            <a href="<%=newrow.docurl%>" class="na_pic">
+                                <img src="<%=newrow.imgurl%>" alt="<%=newrow.title%>" width="190" height="120" onerror="javascript:this.src='http://static.ws.126.net/f2e/news/index2016_rmd/images/pic3_error0106.jpg';">
+                            </a>
+                            <%}%> 
+                            <div class="na_detail clearfix <%if(newrow.imgurl == ""){%>no_pic<%}%>">
+                                <div class="news_title">
+                                    <h3><a href="<%=newrow.docurl%>"><%=newrow.title%></a></h3>
+                                </div>
+                                <div class="news_tag">
+                                    <%if(newrow.tlastid != ""){%>
+                                        <strong class="barlink"><%=newrow.tlastid%></strong>
+                                    <%}else{%>
+                                        <a href="<%=newrow.tlink%>" class="link">
+                                        <%=newrow.label%></a>
+                                    <%}%>
+                                    <%if(newrow.keywords.length > 0){%>
+                                        <div class="keywords">
+                                        <%bowlder.each(newrow.keywords,function(k){%>
+                                            <a href="<%=k.akey_link%>"><%=k.keyname%></a>
+                                        <%})%>
+                                        </div>
+                                     <%}%>
+                                    <span class="time"><%=formatTime(newrow.time)%></span>
+                                </div>
+                                <div class="share-join clearfix">
+                                    <a href="<%=newrow.commenturl%>" title="跟贴" class="join-count">
+                                        <div class="tie-wrap">
+                                            <span class="tie-icon"> <%=newrow.tienum%></span>
+                                            <span class="tie-text"><i>跟贴</i> <%=newrow.tienum%></span>
+                                        </div>
+                                    </a>
+                                    <div class="ne-shares-parent">
+                                        <span href="#share" title="分享" class="ne-shares-arr"></span>
+                                        <div class="share-join-item" ne-module="/modules/shares/shares.js" ne-state="cls.hover:ne-shares-open;title:<%=newrow.title%>;url:<%=newrow.docurl%>;pic:<%=newrow.imgurl%>" >
+<div class="ne-shares-pop6x1wrap" ne-role="share-wrap">
+<ul class="ne-shares-pop6x1">
+    <li>
+        <a ne-click="share('yixin')" href="https://yixin.im/#f=www">
+            <span class="inner">
+                <i class="ep-share-icon ep-share-yixin"></i>
+                <span class="ep-share-name">易信</span>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a ne-mouseover="initWeixin()" href="javascript:" target="_self" class="ne-shares-weixin">
+            <span class="inner">
+                <i class="ep-share-icon ep-share-weixin"></i>
+                <span class="ep-share-name">微信</span>
+            </span>
+        </a>
+    </li>
+    <li>
+        <a ne-click="share('sina')" href="javascript:">
+            <span class="inner">
+                <i class="ep-share-icon ep-share-sina"></i>
+                <span class="ep-share-name">微博</span>
+            </span>
+        </a>
+    </li>
+    <li class="last">
+        <a ne-click="share('qzone')" href="javascript:">
+            <span class="inner">
+                <i class="ep-share-icon ep-share-qzone"></i>
+                <span class="ep-share-name">QQ空间</span>
+            </span>
+        </a>
+    </li>
+</ul>
+</div>
+<div class="ne-shares-qrwrap">
+  <div class="ne-shares-qrarr"></div>
+  <div ne-role="qrcode" class="ne-shares-qrcode"></div>
+  <p>用微信扫码二维码</p><p>分享至好友和朋友圈</p>
+</div>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <%}%>
+                </script>
+            </div>
+        </li>
+    </ul>
+    <div class="load_more_foot" id="load_more_foot"></div>
+  <!--   <a class="load_more_btn" target="_self" ne-click="clickLoadMore();" ne-hide="{{myState.counter >= navList[myState.ndNavIndex].totalPage || myState.counter == 0}}">
+       <div class="post_addmore" ne-visible="{{myState.counter < navList[myState.ndNavIndex].totalPage && !myState.loading}}">
+           <i>+</i>
+           <span>加载更多</span>
+       </div>
+       <div class="post_adding" ne-show="{{myState.loading}}">
+           <i>+</i>
+           <span>加载中...</span>
+       </div>
+   </a> -->
+    <a href="http://tech.163.com/gd/"><div class="load_more_tip" ne-show="{{myState.counter >= myState.totalPage}}"></div></a>
+</div>
+</div>
+			</div>
+			<!-- 右侧子栏目 -->
+			<div class="rg-column">
+				<!-- 创业Club -->
+				<div class="business_club">
+					<div class="bc_topic">
+						<h2>智能</h2>
+						<!-- AD logo start-->
+						<!-- <span style="display: inline-block;width: 100px;height: 24px;background: #eee;vertical-align: top;margin-left: 10px;"><a href=""><img src="" alt=""></a></span> -->
+						<!-- AD logo end-->
+						<a href="https://tech.163.com/smart/"><em>MORE+</em></a>
+					</div>
+					<div class="bc_detail">
+						              			              			              									<a href="https://www.163.com/tech/article/KQVNT47S00099504.html">
+							<div class="img_news">
+								<img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0420%2F3bbe9c78p00tdsczc000wc0009c0070c.png&thumbnail=300y160&quality=100&type=jpg" alt="全新华为WATCH Buds 2正式发布，二" width="300" height="160">
+								<span></span>
+								<p>全新华为WATCH Buds 2正式发布，二</p>
+							</div>
+						</a>
+						 						<ul>
+							              											<li><span></span><a href="https://www.163.com/tech/article/KQVNMUSH00099504.html">所见即可拍，所问即有答：华为 AI 眼</a></li>
+														<li><span></span><a href="https://www.163.com/tech/article/KQVNJBDH00099504.html">华为WATCH FIT 5系列今日发布：潮流</a></li>
+														<li><span></span><a href="https://www.163.com/dy/article/KQUST1QB0514R9OJ.html">贵州无人机表演打造夜间经济新引擎</a></li>
+														<li><span></span><a href="https://www.163.com/dy/article/KQUUU66S0511AQHO.html">更新越频繁，Claude Code与Codex越像</a></li>
+							 						</ul>
+					</div>
+				</div>
+				<!-- AD strat -->				
+				<div class="ad_tui mod_js_ad" data-adid="tech_index_right_1" ad-location="31" ad-category="tech" ad-position="0">
+					<div class="ad300 channel_relative_2016">
+						<div class="at_item right_ad_item" adType="rightAd" requestUrl="https://nex.163.com/q?app=7BE0FC82&c=tech&l=31&site=netease&affiliate=tech&cat=homepage&type=logo300x250&location=1"></div>
+	                    <a href="javascript:;" target="_self" class="ad_hover_href"></a>
+                    </div>
+					<div class="text_ad channel_relative_2016" style="line-height:19px;">
+						<ul>
+<li><a style="font-size: 14px" href="https://hongcai.163.com/?from=pcsy-button">红彩只做专业预测</a></li>
+<li><a style="font-size: 14px" href="http://public.163.com/#/">公版影像典藏计划</a></li>
+<li><a style="font-size: 14px" href="https://money.163.com/20/0820/20/FKGICO4200259D61.html">董事长们的财经情报</a></li>
+<li><a style="font-size: 14px"href="http://renjian.163.com/special/renjian_haodu/">凿一点书墙上的光</a></li>
+</ul>
+						<span class="channel_ad_text_2016">广告</span>
+					</div>
+				</div>
+				<!-- AD end -->
+				<!-- 智能 -->
+				<div class="smart">
+					<div class="smart_topic">
+						<h2>后厂村7号</h2>
+						<a href="https://tech.163.com/special/S1554800475317/"><em>MORE+</em></a>
+					</div>
+					<div class="smart_detail">
+						              			              			              									<a href="https://www.163.com/tech/article/HTMAA02R000999C0.html">
+							<div class="smart_img">
+								<div class="hover_bg"></div>
+								<img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2023%2F0216%2F28bf3035p00rq5a2w00a7c0009c0070c.png&thumbnail=300y160&quality=100&type=jpg" alt="谁在中国“围猎”AIGC？" width="300" height="160">
+																<p>谁在中国“围猎”AIGC？</p>
+							</div>
+						</a>
+						               			              			              									<div class="another_column clearfix  border_none " style="background:#fff;">
+							<a href="https://www.163.com/tech/article/H233FE2H000999C0.html">
+								<div class="ac_title" style="background:#fff">
+									<span></span>
+									<p>薇娅倒下之后，“网红之都”的崩坏和重建</p>
+								</div>
+								<div class="img_box"><img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2022%2F0309%2Fe6eb4489p00r8h4k6004ic0009c0070c.png&thumbnail=80y80&quality=100&type=jpg" alt="薇娅倒下之后，“网红之都”的崩坏和重建" width="80" height="80"></div>
+							</a>
+						</div>
+						              			              									<div class="another_column clearfix " style="background:#fff;">
+							<a href="https://www.163.com/tech/article/GKOA7MFT000999C0.html">
+								<div class="ac_title" style="background:#fff">
+									<span></span>
+									<p>孟晚舟重获自由，华为闯过至暗关口了吗？</p>
+								</div>
+								<div class="img_box"><img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2021%2F0925%2F4f96932dj00qzz533000rc0009c0070c.jpg&thumbnail=80y80&quality=100&type=jpg" alt="孟晚舟重获自由，华为闯过至暗关口了吗？" width="80" height="80"></div>
+							</a>
+						</div>
+						 					</div>
+				</div>
+				<!-- AD img strat -->
+				<div class="ad_img ad300 channel_relative_2016 mod_js_ad" data-adid="tech_index_right_2" ad-location="32" ad-category="tech" ad-position="0">
+					<div class="at_item right_ad_item" adType="rightAd" requestUrl="https://nex.163.com/q?app=7BE0FC82&c=tech&l=32&site=netease&affiliate=tech&cat=homepage&type=logo300x250&location=2"></div>
+                    <a href="javascript:;" target="_self" class="ad_hover_href"></a>
+				</div>
+				<!-- AD img end -->
+				<!-- 原创策划 -->
+				<div class="original_plan">
+					<div class="original_topic">
+						<h2>态℃/科学大师</h2>
+						<a href="https://tech.163.com/special/S1554800475317/"><em>MORE+</em></a>
+					</div>
+					              		              		                         					<div class="another_column clearfix  border_none ">
+						<div class="ac_title" style="background:#fff">
+							<span></span>
+							<a href="https://www.163.com/tech/article/KQUVPEDG00098IEO.html"><p>“抛弃”OpenAI，为什么Anthropic成中国AI</p></a>
+						</div>
+						<div class="img_box"><a href="https://www.163.com/tech/article/KQUVPEDG00098IEO.html"><img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0420%2F3c25ae78p00tdrtgl006wc000u000gwc.png&thumbnail=80y80&quality=100&type=jpg" alt="“抛弃”OpenAI，为什么Anthropic成中国AI" width="80" height="80"></a></div>
+					</div>
+					              		                         					<div class="another_column clearfix ">
+						<div class="ac_title" style="background:#fff">
+							<span></span>
+							<a href="https://www.163.com/tech/article/KQSE3MUI00098IEO.html"><p>刚刚，人形机器人“博尔特”诞生，300台机</p></a>
+						</div>
+						<div class="img_box"><a href="https://www.163.com/tech/article/KQSE3MUI00098IEO.html"><img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0419%2F48cee3dep00tdpyqt00alc000z700k8c.png&thumbnail=80y80&quality=100&type=jpg" alt="刚刚，人形机器人“博尔特”诞生，300台机" width="80" height="80"></a></div>
+					</div>
+					              		                         					<div class="another_column clearfix ">
+						<div class="ac_title" style="background:#fff">
+							<span></span>
+							<a href="https://www.163.com/tech/article/KQNN4C2U00098IEO.html"><p>营收5年百亿，8年千亿！智元立下军令状 | </p></a>
+						</div>
+						<div class="img_box"><a href="https://www.163.com/tech/article/KQNN4C2U00098IEO.html"><img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2026%2F0417%2F1a01d9c5p00tdml42009kc000u000jzc.png&thumbnail=80y80&quality=100&type=jpg" alt="营收5年百亿，8年千亿！智元立下军令状 | " width="80" height="80"></a></div>
+					</div>
+					               		              		                         					<div class="another_column clearfix">
+						<div class="ac_title" style="background:#fff">
+							<span></span>
+							<a href="https://www.163.com/tech/article/KC7NNC53000999D9.html"><p>独家|杨振宁：最顶尖的学生不是教出来的</p></a>
+						</div>
+						<div class="img_box"><a href="https://www.163.com/tech/article/KC7NNC53000999D9.html"><img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2025%2F1019%2F975069bbp00t4cvk7005uc000s600e3c.png&thumbnail=80y80&quality=100&type=jpg" alt="独家|杨振宁：最顶尖的学生不是教出来的" width="80" height="80"></a></div>
+					</div>
+					              		                         					<div class="another_column clearfix">
+						<div class="ac_title" style="background:#fff">
+							<span></span>
+							<a href="https://www.163.com/tech/article/IU9G3N9A000999D9.html"><p>杨雄里院士：脑机接口让人拥有读心术？有可</p></a>
+						</div>
+						<div class="img_box"><a href="https://www.163.com/tech/article/IU9G3N9A000999D9.html"><img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2024%2F0327%2F5208b7c5p00sazitv001zc0009c0070c.png&thumbnail=80y80&quality=100&type=jpg" alt="杨雄里院士：脑机接口让人拥有读心术？有可" width="80" height="80"></a></div>
+					</div>
+					 				</div>
+				<!-- 线下活动 -->
+				<div class="off_line_activity">
+					<h2>线下活动</h2>
+					<div class="off_line_detail">
+						              			              			              									<a href="https://go.163.com/f2e/netease_future_2025_pc/index.html">
+							<div class="img_news">
+								<img src="https://nimg.ws.126.net/?url=http%3A%2F%2Fcms-bucket.ws.126.net%2F2025%2F1023%2F2589f6a7p00t4kpms00fpc0008c004gc.png&thumbnail=300y160&quality=100&type=jpg" alt="2025网易未来大会" width="300" height="160">
+								<span></span>
+								<p>2025网易未来大会</p>
+							</div>
+						</a>
+						 						<ul>
+							              											<li><span></span><a href="https://www.163.com/tech/article/JI86G67500099E4I.html">新一代人工智能（深圳）创业创新大赛</a></li>
+														<li><span></span><a href="https://tech.163.com/special/global_digital_2023_pc/">2023全球数字大会</a></li>
+														<li><span></span><a href="https://go.163.com/f2e/netease_future_2024_pc/index.html">2024网易未来大会</a></li>
+							 						</ul>
+					</div>
+				</div>
+				<div class="blank" id="view_bt"></div>
+				<!-- AD img strat -->
+				<div class="ad_img mod_js_ad" data-adid="tech_index_right_3" ad-location="33" ad-category="tech" ad-position="0" id="right_viewer">
+					<div class="ad300 channel_relative_2016">
+						<div class="at_item right_ad_item" adType="rightAd" requestUrl="https://nex.163.com/q?app=7BE0FC82&c=tech&l=33&site=netease&affiliate=tech&cat=homepage&type=logo300x250&location=3"></div>
+                    	<a href="javascript:;" target="_self" class="ad_hover_href"></a>
+					</div>
+
+				</div>
+				<!-- AD img end -->
+			</div>
+			
+			<!-- 右侧往期回顾 + 返回顶部 -->
+			<div class="right_module">
+				<span id="getCalendar" class="history">往期推荐</span>
+				<!-- 日历 -->
+		        <div id="calendarBox" class="calendarMain">
+		        	<div class="selectDate"> 
+		            	<a id="preMonth" href="#" target="_self">上一月</a> 
+		              	<span id="setYear"></span>年
+		              	<span id="setMonth"></span>月 
+		              	<a id="nextMonth" href="#" target="_self">下一月</a>
+		            </div>
+		            <div class="title">
+		              	<ul>
+			                <li class="endweek"> 日 </li>
+			                <li> 一 </li>
+			                <li> 二 </li>
+			                <li> 三 </li>
+			                <li> 四 </li>
+			                <li> 五 </li>
+			                <li class="endweek"> 六 </li>
+		              	</ul>
+		            </div>
+		            <div class="list">
+		              	<ul id="calendarList">
+		                	<li></li>
+		              	</ul>
+		            </div>
+		        </div>
+				<!-- 日历 end -->
+				<!-- 返回顶部 -->
+				<a class="back_top" target="_self">返回顶部</a>
+			</div>		
+		</div>	
+		<!-- 移动底部基线 -->
+		<div class="blank" id="base_bottom"></div>
+		<script type="text/javascript">
+// 尺寸适配
+(function() {
+    var isNs9 = false;
+    if(window.innerWidth < 1340) {
+        isNs9 = true;
+    }
+    window.isNs9 = isNs9;
+})();
+</script>
+<!--浮层下推代码放下面 -->
+<!--底部调用 -->
+<div id="ssid1"></div>
+<!-- 2017宽窄屏浮动log0 -->
+<!-- <script>
+    var adFloatLogo = {
+        src:"https://yt-adp.ws.126.net/channel20/037513_20270_aepr_20190526.gif",
+        url:"http://g.163.com/a?CID=68723&Values=3566627386&Redirect=http://live.163.com/room/206161.html"
+    }
+</script>
+<script src="https://img3.126.net/ntesrich/2017/0101/2017.01.19-float-logo.js"></script>  -->
+<!--弹窗代码-->
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="https://g.163.com/r?site=netease&affiliate=tech&cat=homepage&type=popwin&location=1"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript1.1" SRC="https://g.163.com/r?site=netease&affiliate=tech&cat=homepage&type=popup&location=1"></SCRIPT>
+<!--广告顺序管理开始-->
+<!--对联有广告结束-->
+<!--<script>
+var coupletTop = 80;
+var coupletLeftHref="https://g.163.com/cl?CID=73944&Values=a82f0fb45ec67a77022d4866f20d50d0&Redirect=http%3A%2F%2Ftech.163.com%2Fspecial%2F2019ntfc%2F";
+var coupletRightHref="https://g.163.com/cl?CID=73944&Values=a82f0fb45ec67a77022d4866f20d50d0&Redirect=http%3A%2F%2Ftech.163.com%2Fspecial%2F2019ntfc%2F";
+var coupletLeftUrl = 'https://yt-adp.ws.126.net/channel4/3321_20300_azsf_20191122.jpg';
+var coupletRightUrl ='https://yt-adp.ws.126.net/channel4/3321_20300_azsf_20191122.jpg';
+var coupletLeftUrlb = 'https://yt-adp.ws.126.net/channel4/110_bqao_20191122.swf';
+var coupletRightUrlb = 'https://yt-adp.ws.126.net/channel4/110_bqao_20191122.swf';
+</script> 
+<script src="https://yt-adp.ws.126.net/ntesrich/auto/js/news_dl_2015.11.18.js"></script>-->
+<!--对联有广告结束--> 
+<!-- 全屏代码贴在这里 -->
+<!--全屏下推自动投放代码结束-->
+<script language="javascript" src="https://yt-adp.ws.126.net/ntesrich/auto/adbox/adbox-v1.1.2-120705.js"></script>
+<script language="javascript" src="https://yt-adp.ws.126.net/ntesrich/auto/js/adControl-indexx-v1.0.2-131210.js"></script>
+<!--广告顺序管理结束-->
+<!-- 角标样式 勿删-->
+<style type="text/css">
+ .ad_hover_href {
+  width: 30px;
+  height: 17px;
+  position:absolute;
+  left:0;
+  bottom:0;
+  z-index:10;
+  background:url(https://yt-adp.ws.126.net/channel4/ad_3017_ajgf_20190221.png) no-repeat;
+ }
+</style>
+<!-- 角标样式 勿删-->	
+    </div>
+	<style>
+  /* 尾部 */
+.footerbg{height:270px;border-top:1px solid #dddddd;background:none repeat-x scroll 0 0 #F8F8F8;}
+.footer{margin:0 auto;width:1000px;}
+.footer-channel{width:161px;float:left;padding:20px 0 0 0;}
+.footer-content{float:left;}
+.other-info{padding:20px 0 20px 25px;}
+.news-sub{width:200px;height:270px;float:left;border-left:1px solid #dddddd;}
+.other-channels{width:360px;height:270px;float:left;border-left:1px solid #dddddd;}
+.other-info{float:left;height:230px;width:245px;border-left:1px solid #dddddd;}
+.footer-module-content h3, .footer-module-coo h3{padding:30px 0 10px 20px;color:#808080;font-weight:bold;}
+.footer-module-content h3 a, .footer-module-content h3 a:visited{color:#808080;font-weight:bold;}
+.footer-module-content h3 a:hover{color:#ba2636;}
+.footer-module-content p a,.footer-module-content p a:visited{color:#888888;float:left;height:28px;line-height:28px;padding-left:20px;width:64px;white-space:nowrap;}
+.footer-module-coo p a,.footer-module-coo p a:visited{color:#888888;display:inline-block;*display:inline;*zoom:1;height:28px;padding:0 7px;}
+.footer-module-coo{color:#888;}
+.footer-module-content p a:hover{color:#ba2636;}
+.footer-module-coo p a:hover{color:#ba2636;}
+.footer-module-coo p{padding-left:13px;line-height:28px;}
+.hot-keys a{padding:0 10px;}
+.hot-keys span, .hot-keys a, .hot-keys a:visited{color:#333333;line-height:28px;}
+.hot-keys a:hover{color:#ba2636;}
+/* 导航 -> 搜索 */
+.top_search{display:inline;float:right;margin:21px 0 9px 0;}
+.top_search .textBox{width:256px;_width:250px;color:#888888;float:left;height:28px;line-height:28px;border:0;text-indent:3px;}
+.top_search{display: inline;float: right;margin: 21px 0 9px 0;}
+.top_search .textBox{width: 205px;background: none repeat scroll 0 0 #FFFFFF;color: #888888;float: left;height: 28px;line-height:28px;border:0;text-indent:3px;}
+.search-input-area{width:230px;height:28px;background:#fff;border-color: #e8e8e8;border-left: 1px solid #e8e8e8;border-style: solid;border-width:1px;}
+.search-logo{background: url(https://static.ws.126.net/cnews/news2012/img/icons-sprites-v3.png) no-repeat scroll -350px -70px transparent;cursor:pointer;height: 28px;width: 22px;float:left;border:0;}
+</style>
+<div class="footerbg">
+  <div class="footer ">
+    <div class="footer-channel"> 
+      <a href="https://www.163.com/">
+        <img width="119" height="50" border="0" src="https://cms-bucket.nosdn.127.net/2018/10/10/686437bc4175415db44d1b3bcdf919b0.png" alt="网易" title="网易">
+      </a> 
+    </div>
+    <div class="footer-content">
+      <div class="news-sub footer-module-content">
+        <h3>科技</h3>
+        <p> 
+          <a href="https://tech.163.com/smart/">智能</a> 
+          <a href="https://tech.163.com/5g/">5G</a> 
+          <a href="https://tech.163.com/internet/">互联网</a> 
+          <a href="https://tech.163.com/telecom/">通信</a> 
+          <a href="https://tech.163.com/it/">IT</a> 
+          <a href="https://tech.163.com/special/techscience/">科学</a> 
+          <a href="https://tech.163.com/special/metaverse_2022/">元宇宙</a> 
+          <a href="https://tech.163.com/special/S1554800475317/">原创精选</a> 
+          <a href="https://mobile.163.com/">手机</a> 
+          <a href="https://digi.163.com/">数码</a> 
+          <a href="https://hea.163.com/">家电</a>
+        </p>
+      </div>
+      <div class="other-channels footer-module-coo">
+        <h3>合作网站</h3>
+        <p> 
+          <a href="http://36kr.com/" rel="nofollow">36氪</a>|
+          <a href="https://www.huxiu.com/" rel="nofollow">虎嗅网</a>|
+          <a href="http://www.geekpark.net/" rel="nofollow">极客公园</a>|
+          <a href="http://www.tmtpost.com/" rel="nofollow">钛媒体</a>|
+          <a href="http://www.imeigu.com/" rel="nofollow">i美股</a>|
+          <a href="https://cn.technode.com/" rel="nofollow">动点科技</a>| 
+          <a href="http://www.leiphone.com/">雷锋网</a>|
+          <a href="http://www.pedaily.cn/" rel="nofollow">投资界</a>|
+          <a href="http://tech.hexun.com/" rel="nofollow">和讯科技</a>|
+          <a href="https://www.iyiou.com/" rel="nofollow">亿欧网</a>|
+          <a href="http://www.qifengle.com/" rel="nofollow">起风财经</a>|
+          <a href="https://www.tuoniaox.com/" rel="nofollow">鸵鸟区块链</a>|
+        </p>
+        <h3>联系我们</h3>
+        <p>主编信箱：tech2004@corp.netease.com</p>
+      </div>
+      <div class="other-info "> 
+        <span class="blank20"></span>
+        <span class="blank12"></span>
+       <div class="passport-entry">
+	<div class="lofter left">
+		<a href="https://www.lofter.com/?act=qb163rk_20141031_03">
+		</a>
+	</div>
+	<div class="mail left">
+		<a href="https://email.163.com/">
+		</a>
+	</div>
+    <a href="https://study.163.com/?utm_source=163.com&utm_medium=web_bottomlogo&utm_campaign=business" class="ic_cloudapp_ft"></a>
+	<div class="ic_newsapp_ft">
+	    <a href="https://www.163.com/newsapp/#f=down"></a>
+	</div>
+<style type="text/css">
+.passport-entry .lofter a{background-position:-110px -116px}
+.ic_newsapp_ft{float:left;_display:inline;width: 26px;height: 30px;border-left: 1px solid #cbcbcb;padding-left: 16px;margin-left: 10px;}
+.ic_newsapp_ft a{display: block;width: 26px;height: 30px;background:url(https://static.ws.126.net/f2e/news/index2015/img/newsapp.png) no-repeat;_background:url(https://static.ws.126.net/f2e/news/index2015/img/newsapp_8.png) no-repeat;background-position: 0 0;-webkit-transition:background 0.3s cubic-bezier(.17, .67, .88, 1.25);-moz-transition:background 0.3s cubic-bezier(.17, .67, .88, 1.25);-o-transition:background 0.3s cubic-bezier(.17, .67, .88, 1.25);transition:background 0.3s cubic-bezier(.17, .67, .88, 1.25);}
+.ic_newsapp_ft a:hover{background-position: 0 -31px;}
+.ic_cloudapp_ft{float:left;width: 33px;height: 33px;background:url(https://static.ws.126.net/f2e/news/res/img/cloudapp.png) no-repeat;_background:url(https://static.ws.126.net/f2e/news/res/img/cloudapp_8.png) no-repeat;background-position: 0 0;-webkit-transition:background 0.3s cubic-bezier(.17, .67, .88, 1.25);-moz-transition:background 0.3s cubic-bezier(.17, .67, .88, 1.25);-o-transition:background 0.3s cubic-bezier(.17, .67, .88, 1.25);transition:background 0.3s cubic-bezier(.17, .67, .88, 1.25);}
+.ic_cloudapp_ft:hover{background-position: 0 -34px;}
+.passport-entry .lofter a,.passport-entry .lofter a:hover{
+display: block; height: 33px; width: 33px; background-image: url(https://static.ws.126.net/f2e/travel/international_travel_mart/images/lofter_v20160217.png); background-repeat:no-repeat;  -webkit-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear; -moz-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear; -o-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear; transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear;
+}
+.passport-entry .lofter a{ background-position:0 0; }
+.passport-entry .lofter a:hover{ background-position:0px -35px; }
+/*底部微博分享*/
+.passport-entry { float:left; padding:2px 0 0 0; }
+.passport-entry a { padding: 0 3px;}
+.passport-entry .weibo a, .passport-entry .mail a,.passport-entry .rss a,.passport-entry .weibo a:hover,.passport-entry .mail a:hover,.passport-entry .rss a:hover{  display: block; height: 33px; width: 33px;  background-image:url(https://static.ws.126.net/tech/2016/3/2/2016030216233724735.png); background-repeat:no-repeat;  -webkit-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear; -moz-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear; -o-transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear; transition: background 0.3s cubic-bezier(.17, .67, .88, 1.25), color 0.2s linear;}
+.passport-entry .weibo a{background-position:0 0;}
+.passport-entry .mail a{ background-position:-40px 0; }
+.passport-entry .rss a{ background-position:-80px 0; }
+.passport-entry .weibo a:hover{ background-position:0 -35px; }
+.passport-entry .mail a:hover{ background-position:-40px -35px; }
+.passport-entry .rss a:hover{ background-position:-80px -35px; }
+</style>
+</div>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- 底部导航条 -->
+	<div class="N-nav-bottom">
+    <div class="N-nav-bottom-main" style="min-width: 1024px;">
+        <div class="ntes_foot_link" style="min-width: 1024px;">
+            <span class="N-nav-bottom-copyright"><span class="N-nav-bottom-copyright-icon">&copy;</span> 1997-2026 网易公司版权所有</span>
+            <a href="https://corp.163.com/">About NetEase</a> |
+            <a href="https://corp.163.com/gb/about/overview.html">公司简介</a> |
+            <a href="https://corp.163.com/gb/contactus.html">联系方法</a> |
+            <a href="https://corp.163.com/gb/job/job.html">招聘信息</a> |
+            <a href="https://help.163.com/">客户服务</a> |
+            <a href="https://corp.163.com/gb/legal.html">隐私政策</a> |
+           <!--  <a ne-role="feedBackLink" ne-click="handleFeedBackLinkClick()" href="http://www.163.com/special/0077450P/feedback_window.html" class="ne_foot_feedback_link">意见反馈</a> | -->
+            <a href="https://www.163.com/special/0077jt/tipoff.html">不良信息举报 Complaint Center</a> |
+            <a href="https://jubao.163.com/">廉正举报</a> |
+            <a href="https://corp.163.com/special/008397U0/reporting_infringements.html">侵权投诉</a>
+        </div>
+    </div>
+</div>
+<script>
+if (/closetie/.test(window.location.search)) {
+  function addNewStyle(newStyle) {
+    var styleElement = document.getElementById('styles_js');
+    if (!styleElement) {
+      styleElement = document.createElement('style');
+      styleElement.type = 'text/css';
+      styleElement.id = 'styles_js';
+      document.getElementsByTagName('head')[0].appendChild(styleElement);
+    }
+    styleElement.appendChild(document.createTextNode(newStyle));
+  }
+  addNewStyle('.tie-area, .comment-wrap, .ep-tie-top {display: none !important;} .post_comment {opacity: 0;padding: 0;margin: 0;min-height: 0px !important;} .post_tie_top {opacity: 0;} .js-tielink {display: none;}');
+}
+</script>
+</div>
+<!--!include collector="foot"-->
+<!-- 蚂蚁统计-->
+<script src="//static.ws.126.net/163/frontend/libs/antanalysis.min.js"></script>
+<script src="//static.ws.126.net/163/frontend/antnest/NTM-KFGT6I8U-47.js"></script> 
+<!-- 公共尾部引用 -->
+
+<!--无障碍功能-->
+<style type="text/css">
+.ntes-nav-wza,.ntes-nav-wzapage,.ntes-nav-wza-show{float: left;padding-left: 3px;margin-left: 2px;margin-right:10px;position: relative;}
+.ntes-nav-wza,.ntes-nav-wzapage{display: none;}
+.ntes-nav-wza-show{display: block;}
+/*.ntes-nav-wza:before{background: url(https://static.ws.126.net/163/f2e/www/index20170701/images/shilaohua_v2.png) -1px 0px;width: 14px;height: 12px;content: "";position: absolute;left: 2px;top: 16px;}*/
+</style>
+<a class="ntes-nav-wza" target="_self" href="javascript:void(0)" id="cniil_wza">无障碍浏览</a>
+<a class="ntes-nav-wzapage" target="_self" href="javascript:void(0)" id="js_gowza">进入关怀版</a>
+<script type="text/javascript">
+    (function(){
+        function wzaInit(){
+            var wza_link = document.getElementById("cniil_wza");
+            var gowza_link = document.getElementById("js_gowza");
+            var nav_left = document.getElementById("js_N_nav_left");
+            var ua = navigator.userAgent.toLowerCase();
+            var wzaUrl = document.getElementsByTagName("body")[0].getAttribute("aria-url");
+            if(!/ipad/i.test(ua) && wza_link && nav_left){
+                nav_left.appendChild(wza_link);
+                wza_link.className = "ntes-nav-wza-show";
+            }
+            if(!/ipad/i.test(ua) && gowza_link && nav_left && wzaUrl){
+                nav_left.appendChild(gowza_link);	
+                gowza_link.setAttribute("href",wzaUrl);
+                gowza_link.className = "ntes-nav-wza-show";
+            }
+            wza_link.onclick = function () {
+                if(!window.ntm || !window.ntm.projectId)return;
+                var param = {
+                    "val_act": "wzanavclick",
+                    "projectid": window.ntm.projectId
+                }
+                window.NTESAntAnalysis.sendData(param);  
+            }
+            gowza_link.onclick = function () {
+                if(!window.ntm || !window.ntm.projectId)return;
+                var param = {
+                    "val_act": "wzapageclick",
+                    "projectid": window.ntm.projectId
+                }
+                window.NTESAntAnalysis.sendData(param);  
+            }
+            if ( window.addEventListener ) {
+                window.addEventListener("load", function(){wzaReport();}, false);
+            } else if ( window.attachEvent ) {
+                window.attachEvent("onload", function(){wzaReport();});
+            }
+        }
+        
+        function wzaReport(){
+            setTimeout(function(){
+                if(!window.ntm || !window.ntm.projectId || document.getElementsByTagName('body')[0].className.indexOf("ariabodytopfiexed") < 0)return;
+                var param = {
+                    "val_act": "wza-default-open",
+                    "projectid": window.ntm.projectId
+                }
+                window.NTESAntAnalysis.sendData(param); 
+            },3000);
+        }
+        wzaInit();
+    })();
+</script>
+<script type="text/javascript" src="https://static.ws.126.net/163/f2e/common/wza230620/aria.js?appid=a6655141bab6921b58446b4b806b9fbf" charset="utf-8"></script>
+<!-- 易信x -->
+<style>
+.ne-shares-pop6x1 li:first-child{display: none}
+.ne-shares-pop6x1 li {padding: 5px 0}
+</style>
+
+<script src="https://static.ws.126.net/163/f2e/libs/js/bowlder-0.9-1119.min.js" ></script>
+<!-- 当前频道章鱼统计 -->
+<!-- STAT WRating v1.0 -->
+<!-- STAT NetEase Devilfish 2006 -->
+<script type="text/javascript">
+   function neteaseTracker(){ }
+</script>
+<!-- big data statistics -->
+
+<!-- big data analysis 0628 -->
+<script src="https://static.ws.126.net/f2e/products/analysis/js/analysis0628.350ctAoOoFtN.1.js"></script>
+
+<script>!function(i){function t(){}function n(){var i=Math.round((+new Date-C)/1e3);return 0>i?0:i}function e(i){var t=i.className,n=d(i),e={script:1,style:1,link:1,img:1,hr:1,br:1},a=!0;return e[n]?a=!1:/blank\d/.test(t)&&(a=!1),a}function a(t){w||(g&&window._ntes_sendInfo?(i.each(y,function(i,t){_(t)}),w=!0):y.push(t)),w&&_(t)}function l(i){return 10>i?i.toString():i>=62?"z":String.fromCharCode(i+(36>i?55:61))}function f(i,t){if(!t)return i;var n=i.length-1,e=i.charCodeAt(n);return 58>e?e-=48:91>e?e-=55:123>e&&(e-=61),i.substr(0,n)+l(e+t)}function o(i,t,n){t&&t.setAttribute((n?"_":"")+"jcid",i)}function r(i){if(i){var t=this.getAttribute("href")||"";x++;var e="/ntes_p?"+p+"&_nct="+n()+"&_nah="+escape(t)+"&_nat={id}_"+i;a(e)}}function _(i){_ntes_sendInfo("jc",_ntes_src_addr+i.replace("{id}",g))}function c(i,t,n){if(i){for(var e={a:1,area:1},a=i,l=null;i.tagName&&i!=E;){if(e[d(i)]){l=i;break}i=i.parentNode}if(l)for(;i&&i!=t&&!(n=i.getAttribute("jcid"));)i=i.parentNode;for(;!n&&!(n=a.getAttribute("_jcid"));)if(a=a.parentNode,!a||!a.tagName||a==E)return;n&&r.call(l||i,n)}}function d(i){return i&&i.tagName?i.tagName.toLowerCase():""}function s(t,n,e){if("iframe"!=d(t))n(t,e);else{var a,l=m(t),f=function(){if("function"==typeof a&&a.call(this),l=m(t)){var f=l.body;i(f).addEvent("click",function(i){c(i.target,f)}),n(f,e)}};l&&/^http/.test(l.location.href)?f():t.attachEvent?t.attachEvent("onload",f):(a=t.onload,t.onload=f)}}function h(i){return(i.innerHTML.match(/jcid=".*?"/g)||[]).join("")}function u(t,n){var e,a;i(t).addEvent("mouseover",function(){var i=h(t),l=t.innerHTML.replace(/<.*?>/g,"").length;!t.children.length||i==e&&l==a||(n(),e=h(t),a=l)})}function b(i,t){var n=i[0],e=i.level;return n&&e&&v(n,e,t),n}function v(t,n,e){if(i.util.isArray(t))i.each(t,function(i,t){v(t,n,e)});else if("object"==typeof t)if(t.i)t.k=f(t.i.substr(0,n+1),e)+t.i.substr(n+1);else for(var a in t)v(t[a],n,e)}function m(i){var t;try{t=i.contentDocument}catch(n){}if(!t&&i.contentWindow){try{var e=i.contentWindow.document;"object"==typeof e&&(t=e)}catch(n){}if(!t)return null}var a=1;try{t.location&&(a=0)}catch(n){}return a?null:t}var g,W,p="_nacc=siteclick&_npurl="+escape(document.URL),x=0,w=!1,y=[],E=document.body,A=i(window),B=window.performance,C=B&&B.timing?B.timing.connectStart:+new Date,N=[function(t,n,e){t+=l(e.start||1),e.bind?i(n).addEvent("click",function(i){r.call(n,t)}):o(t,n,e.all)},function(t,n,e){var a=e.start||1;i(e.query||"a",n).each(function(i,n){o(t+l(a++),n,e.all)})},function(t,n,a){for(var f=1,r=a.level||1,_=[n],c=0;r>c;c++){var s=[];i.each(_,function(t,n){var a=0;"a"==d(n)||/slider-ctrl|ntes-nav-select/.test(n.className)||i.each(n.children,function(i,t){e(t)&&(s.push(t),a++)}),a||s.push(n)}),_=s}i.each(_,function(i,n){o(t+l(f++),n,a.all)})},function(t,n){var e=i(">form",n);e[0]&&e.addEvent("submit",function(){r.call(this,t+"1")})},function(t,n,e){var a=i(e.h,n),f=i(e.b,n);if(a&&f){var r=e.step||10,_=2;o(t+"1",n),a.each(function(i,n){o(t+l(_+i*r),n)}),f.each(function(i,n){o(t+l(_+i*r+1),n)})}},function(t,n,a){var f=a.union||"",r={};if(/^[\s\d,]+$/.test(f)){var _=0;i.each(f.split(/\s*,\s*/),function(i,t){if(t=parseInt(t))for(var n=0;t>n;n++)r[_++]=i})}var c=2;o(t+"1",n);var d=parseInt(a.step)||10,s=i(a.h,n),h=i(a.b,n);s&&h&&(i.each(s,function(i,n){o(t+l(i*d+c),n)}),i.each(h,function(n,a){var f=n*d+c+1,_=a.children;if(0==_.length)_=[a];else for(;1==_.length;)_=_[0].children;var s=0;i.each(_,function(i,n){e(n)&&("undefined"!=typeof r[i]&&(s=r[i]),o(t+l(f+s),n),s++)})}))}];t.prototype={init:function(t,e){t&&5==t.length&&(g=t),W||(W=location.href.indexOf("_aCM")>-1||Math.random()<(e||.1),W&&(i("body").addEvent("click",function(i){c(i.target,E)}),i.ready(function(){function i(){t&&(a("/ntes_u?"+t+"&_nct="+n()+"&_mcn="+x+e),t=0)}var t=p+"&_nch={id}",e="",l="&_msl="+n();A.addEvent("load",function(){e="&_msl="+n()}),a("/ntes_u?"+t+l),A.addEvent("beforeunload",i);var f=navigator.userAgent.toLowerCase();!/compatible/.test(f)&&/firefox/.test(f)&&A.addEvent("unload",i)}),this.retain&&this.area(E,this.retain)))},area:function(i,t,n){for(var e in t){var a=!1,l=t[e];l.level=n||0,/(.*?)=$/.test(e)&&(e=RegExp.$1,a=!0),this.procA(i,e,l,a)}},procA:function(t,n,e,a){var l=this,f=e.level+1;if(a)return void u(t,function(){l.procA(t,n,e)});var o=function(i,t){l.area(i,t,f)},r=0,_=0,c=0;/(.*?)!$/.test(n)&&(n=RegExp.$1,_=1),/(.*?)\*$/.test(n)?(n=RegExp.$1,r=1):/(.*?)\+$/.test(n)&&(n=RegExp.$1,c=1);var d=n?/^#\S+$/.test(n)?i(n):i(n,t):[t];if(d){d.nodeType&&(d=[d]);var h,v=0,m=d.length;for(h=0;m>h;h++){var g=d[h];if(!_||!g.id){var W=r?e[0]:e[v];if(c&&1==e.length&&(W=b(e,v)),W&&g)if(W.i)for(var p=W.s||1,x=0;p>x;x++)W.j=x,this.zone(d[h+x],W);else s(g,o,W);v++}}}},zone:function(i,t){var n=f(t.k||t.i,t.j),e=N[t.f||0],a=t.p||{};i&&e&&(a.dyn?u(i,function(){e(n,i,a)}):s(i,function(i){e(n,i,a)}))},batch:function(i){W?this.area(E,i):this.retain=i}},window._aCM=new t}(NTES),function(){_aCM.init(window._aCMID||"kja01"),setTimeout(function(){_aCM.batch({".ntes-nav-main":[{".ntes-nav-app":[{"":[{i:"111",f:1}]}],".ntes-nav-entry-wide":[{"":[{i:"121"}]}],".c-fl":[0,0,0,0,{".ntes-nav-login-title":[{i:"131"}],">.ntes-nav-select":[{i:"132",f:1}]},0,{"*#js_login_suggest_wrap":[{i:"141",f:1}],"#js_N_navLogout":[{i:"142"}]}],".ntes-nav-inside>li":[{">.ntes-nav-select":[{i:"151",f:1}]},{">.ntes-nav-select":[{i:"161",f:1}]},{">.ntes-nav-select":[{i:"171",f:1}]},{">.ntes-nav-select":[{i:"181",f:1}]},{">.ntes-nav-select":[{i:"191",f:1}]},{">.ntes-nav-select":[{i:"1A1",f:1}]},{">.ntes-nav-select":[{i:"1B1",f:1}]},{">.ntes-nav-select":[{i:"1C1",f:1}]}]}],".N-nav-channel":[{"":[{"":[{i:"211",f:1}]}]}],".top-area":[{">h1":[{"":[{i:"311"}]}],">.top-search":[{"":[{i:"321",f:3}]}]}],".nav":[{"":[{"":[{i:"411",f:1}]}]}],".main-banner":[{a:[{"":[{i:"511"}]},0,0,0,0,0,0,0,0,0,{"":[{i:"571"}]}],".banner_main":[{"":[{i:"521"}]},0,0,0,0,{"":[{i:"581"}]}],".show":[{">a":[{i:"531"}],".banner_main":[{i:"532"}]}],".ad":[{">a":[{i:"541"}],".banner_main":[{i:"542"}]}],".banner1":[{">a":[{i:"551"}],".banner_main":[{i:"552"}]}],".banner2":[{">a":[{i:"561"}],".banner_main":[{i:"562"}]}]}],"#scrollbar":[{"ul>li.list_item":[{">.nl_detail":[{i:"611"}]},{">.nl_detail":[{i:"621"}]},{">.nl_detail":[{i:"631"}]},{">.nl_detail":[{i:"641"}]},{">.nl_detail":[{i:"651"}]},{">.nl_detail":[{i:"661"}]},{">.nl_detail":[{i:"671"}]},{">.nl_detail":[{i:"681"}]},{">.nl_detail":[{i:"691"}]},{">.nl_detail":[{i:"6A1"}]},{">.nl_detail":[{i:"6B1"}]},{">.nl_detail":[{i:"6C1"}]},{">.nl_detail":[{i:"6D1"}]},{">.nl_detail":[{i:"6E1"}]},{">.nl_detail":[{i:"6F1"}]},{">.nl_detail":[{i:"6G1"}]},{">.nl_detail":[{i:"6H1"}]},{">.nl_detail":[{i:"6I1"}]},{">.nl_detail":[{i:"6J1"}]},{">.nl_detail":[{i:"6K1"}]},{">.nl_detail":[{i:"6L1"}]},{">.nl_detail":[{i:"6M1"}]},{">.nl_detail":[{i:"6N1"}]},{">.nl_detail":[{i:"6O1"}]},{">.nl_detail":[{i:"6P1"}]},{">.nl_detail":[{i:"6Q1"}]},{">.nl_detail":[{i:"6R1"}]},{">.nl_detail":[{i:"6S1"}]},{">.nl_detail":[{i:"6T1"}]},{">.nl_detail":[{i:"6U1"}]},{">.nl_detail":[{i:"6V1"}]},{">.nl_detail":[{i:"6W1"}]},{">.nl_detail":[{i:"6X1"}]},{">.nl_detail":[{i:"6Y1"}]},{">.nl_detail":[{i:"6Z1"}]},{">.nl_detail":[{i:"6a1"}]},{">.nl_detail":[{i:"6b1"}]},{">.nl_detail":[{i:"6c1"}]},{">.nl_detail":[{i:"6d1"}]},{">.nl_detail":[{i:"6e1"}]},{">.nl_detail":[{i:"6f1"}]},{">.nl_detail":[{i:"6g1"}]},{">.nl_detail":[{i:"6h1"}]},{">.nl_detail":[{i:"6i1"}]},{">.nl_detail":[{i:"6j1"}]}]}],".hot-list":[{">.hot_title>h3":[{"":[{i:"711"}]}],">.hot-news>div.hot_board":[{">.img_box":[{i:"721"}],">.hb_detail":[{i:"722",f:1}]},{">.img_box":[{i:"731"}],">.hb_detail":[{i:"732",f:1}]},{">.img_box":[{i:"741"}],">.hb_detail":[{i:"742",f:1}]},{">.img_box":[{i:"751"}],">.hb_detail":[{i:"752",f:1}]},{">.img_box":[{i:"761"}],">.hb_detail":[{i:"762",f:1}]},{">.img_box":[{i:"771"}],">.hb_detail":[{i:"772",f:1}]},{">.img_box":[{i:"781"}],">.hb_detail":[{i:"782",f:1}]},{">.img_box":[{i:"791"}],">.hb_detail":[{i:"792",f:1}]},{">.img_box":[{i:"7A1"}],">.hb_detail":[{i:"7A2",f:1}]},{">.img_box":[{i:"7B1"}],">.hb_detail":[{i:"7B2",f:1}]},{">.img_box":[{i:"7C1"}],">.hb_detail":[{i:"7C2",f:1}]},{">.img_box":[{i:"7D1"}],">.hb_detail":[{i:"7D2",f:1}]},{">.img_box":[{i:"7E1"}],">.hb_detail":[{i:"7E2",f:1}]},{">.img_box":[{i:"7F1"}],">.hb_detail":[{i:"7F2",f:1}]},{">.img_box":[{i:"7G1"}],">.hb_detail":[{i:"7G2",f:1}]},{">.img_box":[{i:"7H1"}],">.hb_detail":[{i:"7H2",f:1}]},{">.img_box":[{i:"7I1"}],">.hb_detail":[{i:"7I2",f:1}]},{">.img_box":[{i:"7J1"}],">.hb_detail":[{i:"7J2",f:1}]},{">.img_box":[{i:"7K1"}],">.hb_detail":[{i:"7K2",f:1}]},{">.img_box":[{i:"7L1"}],">.hb_detail":[{i:"7L2",f:1}]},{">.img_box":[{i:"7M1"}],">.hb_detail":[{i:"7M2",f:1}]},{">.img_box":[{i:"7N1"}],">.hb_detail":[{i:"7N2",f:1}]},{">.img_box":[{i:"7O1"}],">.hb_detail":[{i:"7O2",f:1}]},{">.img_box":[{i:"7P1"}],">.hb_detail":[{i:"7P2",f:1}]},{">.img_box":[{i:"7Q1"}],">.hb_detail":[{i:"7Q2",f:1}]},{">.img_box":[{i:"7R1"}],">.hb_detail":[{i:"7R2",f:1}]},{">.img_box":[{i:"7S1"}],">.hb_detail":[{i:"7S2",f:1}]},{">.img_box":[{i:"7T1"}],">.hb_detail":[{i:"7T2",f:1}]},{">.img_box":[{i:"7U1"}],">.hb_detail":[{i:"7U2",f:1}]},{">.img_box":[{i:"7V1"}],">.hb_detail":[{i:"7V2",f:1}]}],"#loadMore":[{"div.hot_board":[{i:"7W1",f:1},{i:"7W2",f:1},{i:"7W3",f:1},{i:"7W4",f:1},{i:"7W5",f:1},{i:"7W6",f:1},{i:"7W7",f:1},{i:"7W8",f:1},{i:"7W9",f:1},{i:"7WA",f:1},{i:"7WB",f:1},{i:"7WC",f:1},{i:"7WD",f:1},{i:"7WE",f:1},{i:"7WF",f:1},{i:"7WG",f:1},{i:"7WH",f:1},{i:"7WI",f:1},{i:"7WJ",f:1},{i:"7WK",f:1},{i:"7WL",f:1},{i:"7WM",f:1},{i:"7WN",f:1},{i:"7WO",f:1},{i:"7WP",f:1},{i:"7WQ",f:1},{i:"7WR",f:1},{i:"7WS",f:1},{i:"7WT",f:1},{i:"7WU",f:1},{i:"7WV",f:1},{i:"7WW",f:1},{i:"7WX",f:1},{i:"7WY",f:1},{i:"7WZ",f:1},{i:"7Wa",f:1},{i:"7Wb",f:1},{i:"7Wc",f:1},{i:"7Wd",f:1},{i:"7We",f:1},{i:"7Wf",f:1},{i:"7Wg",f:1},{i:"7Wh",f:1},{i:"7Wi",f:1},{i:"7Wj",f:1},{i:"7Wk",f:1},{i:"7Wl",f:1},{i:"7Wm",f:1},{i:"7Wn",f:1},{i:"7Wo",f:1},{i:"7Wp",f:1},{i:"7Wq",f:1},{i:"7Ws",f:1},{i:"7Wt",f:1},{i:"7Wu",f:1},{i:"7Wv",f:1},{i:"7Ww",f:1},{i:"7Wx",f:1},{i:"7Wy",f:1}],".hot_expand2":[{i:"7Wr",f:1}]}],">.hot-news>a":[{"":[{i:"7X1"}]}]}],".rg-column":[{".bc_topic":[{"":[{i:"811"}]}],".bc_detail":[{"":[{i:"821",f:1}]}],".text_ad":[{li:[{i:"831",s:4}]}],".smart_topic":[{"":[{i:"841"}]}],".smart_detail":[{">a":[{i:"851"}],">.border_none":[{i:"852"}],">.another_column":[0,{i:"853"}]}],".border_none":[0,{">.ac_title":[{i:"861",f:1}],">.img_box":[{i:"862"}]}],".another_column":[0,0,0,{">.ac_title":[{i:"871",f:1}],">.img_box":[{i:"872"}]},{">.ac_title":[{i:"881",f:1}],">.img_box":[{i:"882"}]},{">.ac_title":[{i:"891"}],">.img_box":[{i:"892"}]},{">.ac_title":[{i:"8A1"}],">.img_box":[{i:"8A2"}]}],".off_line_detail":[{"":[{i:"8B1",f:1}]}]}],".right_module":[{"":[{"":[{i:"911"}]}]}],".footer-channel":[{"":[{"":[{i:"A11"}]}]}],".footer-content":[{p:[{"":[{i:"B11"}]},{"":[{i:"B21"}]},{"":[{i:"B31",f:1}]},{"":[{i:"B41"}]}],".passport-entry":[{">.lofter":[{i:"B51"}],">.mail":[{i:"B52"}],">.rss":[{i:"B53"}],">.ic_cloudapp_ft":[{i:"B54"}],">.ic_newsapp_ft":[{i:"B55"}]}],".top_search":[{"":[{i:"B61",f:3}]}],".hot-keys":[{"":[{i:"B71",f:1}]}]}],".ntes_foot_link":[{"":[{"":[{i:"C11",f:1}]}]}]})},50)}();</script>
+
+<!--360广告统计-->
+<script src="//static.ws.126.net/163/f2e/modules/netsposter/js/netsposter2019_main-9af9104974.js"></script>
+
+<!--360广告统计结束-->
+<!-- PC广告组件 -->
+<script src="https://static.ws.126.net/163/f2e/modules/adtracker2022/adtracker2022.c0c4bb11.js"></script>
+<script src="https://static.ws.126.net/163/f2e/tech/index2016/js/foot~5a95967cfcd40.js"></script>
+</body>
+</html>

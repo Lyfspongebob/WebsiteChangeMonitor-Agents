@@ -1,0 +1,91 @@
+你这次日志里**没有生成 `outputs/charts/` 和 `outputs/reports/` 是正常行为**，原因是工作流里有“仅在检测到变更时才继续”的分支。
+
+从代码看：`diff_node` 如果 `changed=False`（你日志里就是 `changed=False report=None`），流程会直接走 `reflect`，不会执行 `analyze -> visualize -> report`。因此只会有抓取快照（`outputs/snapshots/`），不会产出图表和报告。README 写的是“发现变化后自动生成图表/报告”，并不是每次运行都生成。
+
+你之前 4/16 的报错 `Object of type date is not JSON serializable` 发生在 `analyze` 阶段（`insert_analytics_result` JSON 序列化），而现在 4/20 已经不再报错，说明该问题已被修复；只是这次没有检测到页面变化，所以没进入分析和报告链路。
+
+可手动添加“天气网站”到数据库的 SQL（你可直接执行）：
+
+```sql
+INSERT INTO sources (name, url, css_selector, check_interval_minutes, enabled)
+VALUES ('中国天气网-北京天气', 'http://www.weather.com.cn/weather/101010100.shtml', 'body', 30, 1);
+```
+
+如果你想“测试时每次都生成图表/报告”，可选做法：
+1) 换一个内容更新更频繁的页面；
+2) 暂时把 `diff_node` 的阈值策略放宽（或强制 `changed=True` 用于联调）；
+3) 清空该 source 历史快照后再跑一次（会被当作首次快照变更）。
+
+
+
+你这个问题非常关键，我先把**当前行为**说清楚：
+
+1) `python -m app.main --interval-minutes 30` 的真实含义是：
+- 调度器每 **30 分钟触发一次** `run_once`
+- 每次 `run_once` 会遍历所有 `enabled=1` 的 source
+- 对每个 source 只做“**当前快照 vs 上一次快照**”的对比（不是统计这30分钟内所有变化轨迹）
+
+2) 什么时候会产出 charts/reports：
+- 只有某个 source 在本轮判定 `is_changed=True`，才会继续走 analyze/visualize/report
+- 若 `is_changed=False`，就不会生成图表和报告（这就是你之前看到只有 snapshots 的原因）
+
+3) 你表里的 `check_interval_minutes=5`：
+- 目前主程序是全局 `--interval-minutes` 调度，**并没有按每个 source 的 check_interval_minutes 单独调度**（至少从现有主流程看是这样）
+
+---
+
+你想要的“更像产品级”的能力（我完全同意）应当是：
+- 持续监测变化
+- 累积变化历史
+- 生成明显的可视化统计报表（趋势、频率、波动、Top变化源等）
+
+我建议按这个方案升级（下一步可直接实现）：
+
+### 升级方案（可实施）
+A. **按 source 独立调度**
+- 使用 `sources.check_interval_minutes` 做单独 job
+- 5分钟源就每5分钟抓，30分钟源就每30分钟抓
+
+B. **新增“周期聚合分析”**
+- 新增一个聚合作业（例如每1小时）
+- 聚合最近24h/7d 的 `change_events`、`snapshots`
+- 生成全局与单源统计图（变化次数趋势、diff_ratio分布、变化最频繁站点、时段热力）
+
+C. **报告从“单次变化报告”升级为“周期分析报告”**
+- 每小时/每天输出一份 markdown + 图表
+- 保留当前“单次变化即时报告”能力
+
+D. **减少无意义变更（噪声过滤）**
+- 对导航、时间戳、广告块做文本清洗
+- 提升“显著变化”判定质量，避免频繁误报
+
+---
+
+如果你认可，我下一步可以直接落地代码改造。请你先 **toggle to Act mode**，我会按上面方案实现第一版（优先做 A+B，保证你能看到稳定的可视化数据分析输出）。
+
+
+
+已按你的新要求完成实现，核心是“**固定窗口采集（默认40分钟）+ 窗口结束后统一AI分析出图+AI生成Markdown报告**”。
+
+本次改造内容：
+1) 新增 `app/main.py` 的窗口模式：
+   - `--run-window-session --duration-minutes 40`：启动后按每个 source 的 `check_interval_minutes` 周期抓取（若为空则用 `--interval-minutes` 兜底），持续40分钟。
+   - 窗口结束后自动触发窗口分析流程。
+2) 新增 `app/services/window_ai.py`：
+   - 从数据库读取窗口期变更数据（`change_events`）
+   - 导出窗口原始文本到 `outputs/analysis/window_*_data.txt`
+   - 调用 DeepSeek 生成 Python 可视化代码并落地执行（生成图片到 `outputs/charts/`）
+   - 再调用 DeepSeek 生成中文 Markdown 报告到 `outputs/reports/window_*_ai_report.md`
+   - 若 AI 画图代码失败，会自动回退到本地 matplotlib 兜底出图（保证有图）
+3) 数据库访问层增强（`app/db.py`）：
+   - 新增窗口统计查询函数：
+     - `get_window_source_change_stats(...)`
+     - `get_window_change_events(...)`
+   - 输出目录新增 `outputs/analysis/`
+
+你要的结果路径现在是：
+- 窗口原始分析文本：`outputs/analysis/`
+- AI/兜底生成图表：`outputs/charts/`
+- AI生成Markdown报告：`outputs/reports/`
+
+另外已完成语法级自检（`py_compile`）通过。你现在直接运行上面的命令即可进入40分钟窗口采集与最终统一分析产出流程。

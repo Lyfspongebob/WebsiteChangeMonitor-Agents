@@ -1,0 +1,2544 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1400,  user-scalable=no" />
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-transform">
+        <meta name="keywords" content="证券时报,证券时报网,证券时报快讯,时报快讯,证券时报电子版,信息披露,资本市场信息披露平台,今日股市,股市最新消息新闻,中国股市,实时股市">
+            <meta name="description" content="证券时报，证券时报网，由人民日报社主管主办，是证券市场权威信息披露媒体，也是中国资本市场的重要信息披露平台。提供全天候7*24小时财经证券类资讯，内容丰富，包括时报快讯、股市新闻、财经资讯、基金净值、债券、期货、上市公司公告等，为用户提供全方位、最新鲜的财经信息。打造了"信披168"综合服务专区，资本市场投教"星火计划"，是权威、全面的资本市场服务平台。">
+                    <title>证券时报官方网站-中国资本市场信息披露平台</title>
+        <link rel='icon' href='https://static-web.stcn.com/static/images/favicon.ico' type='image/x-icon'/>
+    <link rel="stylesheet" href="https://static-web.stcn.com/static/v3/styles/common.min.css?v=20260330">
+                    <link rel="stylesheet" href="https://static-web.stcn.com/static/v3/styles/index.min.css?v=2026040202">
+<link rel="stylesheet" href="https://static-web.stcn.com/static/styles/chuangtou.css" />
+<link rel="stylesheet" href="https://static-web.stcn.com/static/styles/clarify.css?v=20260330" />
+<meta name="csrf-param" content="_csrf-stcn_web">
+    <meta name="csrf-token" content="YvTGz1BabBVIlgJqyXXGmzUElZ6iVeprqbAMgE7PFWdVtpd_1PUZLE3RErY_L-G5GmGrBD6mfaq0FJO9ZPVc8w==">
+        <script src="https://static-web.stcn.com/static/v3/scripts/tailwindcss-3.4.17.min.js"></script>
+    <script>
+                window.IS_LOGIN = false;                tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#c7000b",
+                        primaryDark: "#960009",
+                        primaryLight: "#fbe9ea",
+                        accent: "#ff9900",
+                        mainText: "#1E2534",
+                    },
+                },
+            },
+            plugins: [
+                function ({ addComponents }) {
+                    addComponents({
+                        ".w-common": {
+                            width: "100%",
+                            maxWidth: "1400px",
+                        },
+                    });
+                },
+            ],
+        };
+    </script>
+    </head>
+<body class=" bg-[#fafafa]" >
+
+
+
+<!-- 首页头部通栏广告 -->
+<div class="wide-add">
+    <div class="swiper-wrapper">
+                <a href="https://tp.stcn.com/activities-html/2026/jinyinjiang/2026-sign-up/index.html" target="_blank" class="swiper-slide" style="background: url('https://static-web.stcn.com/upload/2026/0414/15/69ddf038a41f6c601852.jpg') center center no-repeat;background-size: cover;"></a>
+                <a href="https://tp.stcn.com/activities-html/2026/jinchangjiang/2026-sign-up/index.html" target="_blank" class="swiper-slide" style="background: url('https://static-web.stcn.com/upload/2026/0417/16/69e1f463e9d9c6d40581.png') center center no-repeat;background-size: cover;"></a>
+                <a href="https://www.stcn.com/xinpi/index.html" target="_blank" class="swiper-slide" style="background: url('https://static-web.stcn.com/upload/2026/0401/16/69ccddf10fb103fa70e1.jpg') center center no-repeat;background-size: cover;"></a>
+            </div>
+</div>
+<!-- 首页顶部广告 -->
+
+<!-- 顶部信息栏 -->
+<!-- 顶部信息栏（结构与 views/article/index-v3.html 对齐） -->
+<div class="w-full h-[52px] bg-[#f2f2f2]">
+    <div class="w-common flex h-full m-auto space-x-2">
+        <div class="flex-1 h-full space-x-[8px] flex items-center">
+            <img src="https://static-web.stcn.com/static/v3/images/rmrb-icon.png" alt="" class="w-[11.1%] max-w-[80px] h-auto" />
+            <span class="text-mainText text-[12px]">主管主办</span>
+            <span class="text-mainText text-[12px] ml-[6px]">证券市场信息披露媒体</span>
+            <img src="https://static-web.stcn.com/static/v3/images/slogan.png" alt="" class="ml-[6px] w-[28.8%] max-w-[207px] h-auto" />
+        </div>
+        <div class="flex-1 h-full flex justify-end space-x-[12px]">
+            <div class="flex items-center relative w-[45.2%] max-w-[326px]">
+                <form action="/article/search.html" target="_blank" class="w-full">
+                    <input type="text" name="keyword" placeholder="股票代码 / 简称 / 关键词"
+                           class="w-full h-[24px] rounded-[12px] bg-white pl-3 pr-[40px] text-sm outline-none fs-[12px]" />
+                    <img src="https://static-web.stcn.com/static/v3/images/search-icon.png" alt="搜索"
+                         class="absolute right-[13px] top-1/2 -translate-y-1/2 w-[18px] h-[18px]"
+                         onclick="this.closest('form').submit();">
+                </form>
+            </div>
+            <div class="flex items-center text-mainText text-[14px] relative group/menu">
+                <!-- Mobile Menu Toggle（与 index-v3.html 一致：原型中始终隐藏） -->
+                <div class="hidden p-2 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div>
+                <!-- Links Wrapper -->
+                <div class="whitespace-nowrap flex items-center/menu:flex">
+                    <a href="javascript:;" class="relative cursor-pointer group">
+                        公众号
+                        <div class="absolute top-full left-[50%] -translate-x-1/2 hidden group-hover:block w-[100px] h-[100px] z-50">
+                            <img src="https://static-web.stcn.com/static/images/qr.png" alt="" class="w-full h-full">
+                        </div>
+                    </a>
+                    <i class="w-px h-[16px] bg-current mx-4"></i>
+                    <a href="https://epaper.stcn.com/" target="_blank" class="relative cursor-pointer group">电子报</a>
+                    <i class="w-px h-[16px] bg-current mx-4"></i>
+                    <a href="/public/download.html" target="_blank" class="relative cursor-pointer group">客户端</a>
+                    <i class="w-px h-[16px] bg-current mx-4"></i>
+                    <!-- 登录信息（由 header_login_html_v3.php 动态输出） -->
+                      <!-- 登录信息（未登录） -->
+  <a login-btn class="cursor-pointer max-md:text-center">登录</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 顶部导航栏 -->
+<!-- 顶部导航栏 -->
+<div class="bg-white w-full h-[56px] shadow-[0_0_12px_rgba(0,0,0,0.03)]">
+    <div class="flex items-center justify-between space-x-24 w-common m-auto h-full">
+        <div class="flex items-center justify-between">
+            <a href="/" class="mr-[23px]">
+                <img src="https://static-web.stcn.com/static/images/zqsb.png" alt="" class="w-[42px] h-[42px]">
+            </a>
+            <a href="/">
+                <img src="https://static-web.stcn.com/static/images/stcn.png" alt="" class="w-[67px] h-[37px]">
+            </a>
+        </div>
+        <div class="main-nav-bar flex-1 flex items-center h-full text-[20px] text-mainText relative">
+                                                                <!-- 无子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a） -->
+                    <div class="flex-1 relative z-2 active flex items-center justify-center block h-full">
+                        <a href="/" target="_blank" class="h-[40px] w-full flex items-center justify-center">
+                            首页                        </a>
+                    </div>
+                                                                                <!-- 无子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a） -->
+                    <div class="flex-1 relative z-2  flex items-center justify-center block h-full">
+                        <a href="/article/list/kx.html" target="_blank" class="h-[40px] w-full flex items-center justify-center">
+                            快讯                        </a>
+                    </div>
+                                                                                <!-- 有子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a + drop 同级） -->
+                    <div class="flex-1 relative z-2  flex items-center justify-center block h-full group"
+                         data-items="要闻:%2Farticle%2Flist%2Fyw.html,金融:%2Farticle%2Flist%2Ffinance.html,评论:%2Farticle%2Flist%2Fcomment.html,产经:%2Farticle%2Flist%2Fcj.html,创投:%2Fchuangtou%2Findex.html,滚动:%2Farticle%2Flist%2Fgd.html"
+                         >
+                        <a href="/article/list/xw.html" target="_blank"
+                           class="h-[40px] w-full flex items-center justify-center">
+                            新闻                            <svg class="w-[9px] h-[5px] ml-[8px] transition-transform duration-300 group-hover:rotate-180"
+                                 viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L4.5 4L8 1" stroke="currentColor" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                                                    <div class="drop"></div>
+                                            </div>
+                                                                                <!-- 无子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a） -->
+                    <div class="flex-1 relative z-2  flex items-center justify-center block h-full">
+                        <a href="/live/media.html" target="_blank" class="h-[40px] w-full flex items-center justify-center">
+                            视频                        </a>
+                    </div>
+                                                                                <!-- 有子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a + drop 同级） -->
+                    <div class="flex-1 relative z-2  flex items-center justify-center block h-full group"
+                         data-items="A股:%2Farticle%2Flist%2Fa_stock.html,公司:%2Farticle%2Flist%2Fcompany.html,新股:%2Farticle%2Fxg.html,基金:%2Farticle%2Flist%2Ffund.html,港美股:%2Farticle%2Fgmg.html"
+                         >
+                        <a href="/article/list/investment.html" target="_blank"
+                           class="h-[40px] w-full flex items-center justify-center">
+                            投资                            <svg class="w-[9px] h-[5px] ml-[8px] transition-transform duration-300 group-hover:rotate-180"
+                                 viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L4.5 4L8 1" stroke="currentColor" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                                                    <div class="drop"></div>
+                                            </div>
+                                                                                <!-- 无子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a） -->
+                    <div class="flex-1 relative z-2  flex items-center justify-center block h-full">
+                        <a href="/article/data.html" target="_blank" class="h-[40px] w-full flex items-center justify-center">
+                            数据                        </a>
+                    </div>
+                                                                                <!-- 无子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a） -->
+                    <div class="flex-1 relative z-2  flex items-center justify-center block h-full">
+                        <a href="/xinpi/index.html" target="_blank" class="h-[40px] w-full flex items-center justify-center">
+                            信披+                        </a>
+                    </div>
+                                                                                <!-- 无子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a） -->
+                    <div class="flex-1 relative z-2  flex items-center justify-center block h-full">
+                        <a href="/article/list/zt.html" target="_blank" class="h-[40px] w-full flex items-center justify-center">
+                            专题                        </a>
+                    </div>
+                                                                                                <!-- 有子菜单的导航项（结构与 views/article/index-v3.html 对齐：外层容器 + 内层 a + drop 同级） -->
+                    <div class="flex-1 relative z-2  flex items-center justify-center block h-full group"
+                         data-items="人民鉴真:%2Farticle%2Fcq.html,投关服务:%2Fxinpi%2Findex.html,投教服务:%2Fedu%2Findex.html,其他服务:%2Farticle%2Fservice.html%23qtfw"
+                         >
+                        <a href="/article/service.html" target="_blank"
+                           class="h-[40px] w-full flex items-center justify-center">
+                            服务                            <svg class="w-[9px] h-[5px] ml-[8px] transition-transform duration-300 group-hover:rotate-180"
+                                 viewBox="0 0 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L4.5 4L8 1" stroke="currentColor" stroke-width="2"
+                                      stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </a>
+                                                    <div class="drop !right-[-50px]"></div>
+                                            </div>
+                                    </div>
+    </div>
+</div>
+<!-- 导航栏下拉弹窗（用于特殊样式，如地方省份的大网格） -->
+<div class="main-nav-bar-popup">
+    <div class="main-nav-bar-popup-inner"></div>
+</div>
+
+<!-- 大头条 -->
+<!-- 大头条（结构与 views/article/index-v3.html 对齐：桌面字号与横向三列，无 max-md 断点） -->
+<div class="mainText text-center w-common m-auto mt-[22px] leading-[69px] text-[44px] big-title">
+    <a href="/article/detail/3766092.html" target="_blank" class="">习近平同沙特王储兼首相穆罕默德通电话</a>
+</div>
+
+<!-- 新设计：主要焦点区域（Hero Section） -->
+<!-- 轮播区（结构与 views/article/index-v3.html 对齐：桌面固定栅格，无 max-md 断行） -->
+<div class="flex w-common m-auto mt-[30px]">
+    <div class="index-top-left-swiper flex flex-col w-[700px] bg-white shadow-[0px_0px_15px_0px_rgba(0,0,0,0.05)] rounded-[8px]">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                                <a href="https://www.stcn.com/topic/detail/569.html" target="_blank" class="swiper-slide" data-title="从外卖“飞来”到机器人“上门”丨中国服务业进化">
+                    <img src="https://static-web.stcn.com/upload/2026/0420/17/69e5ef18df78138c0a92.png?x-oss-process=image/resize,m_fill,w_676,h_380" alt="从外卖“飞来”到机器人“上门”丨中国服务业进化" />
+                </a>
+                                <a href="https://www.stcn.com/topic/detail/556.html" target="_blank" class="swiper-slide" data-title="专题丨聚焦美以伊战事">
+                    <img src="https://static-web.stcn.com/upload/2026/0331/00/69caa35d664024bdfac2.jpg?x-oss-process=image/resize,m_fill,w_676,h_380" alt="专题丨聚焦美以伊战事" />
+                </a>
+                                <a href="https://www.stcn.com/topic/detail/568.html" target="_blank" class="swiper-slide" data-title="专题丨直击消博会">
+                    <img src="https://static-web.stcn.com/upload/2026/0414/11/69ddb4cb857920cf6b52.png?x-oss-process=image/resize,m_fill,w_676,h_380" alt="专题丨直击消博会" />
+                </a>
+                                <a href="https://www.stcn.com/live/video-detail/22062.html" target="_blank" class="swiper-slide" data-title="Hi，老板丨福莱新材夏厚君：像班主任一样当老板">
+                    <img src="https://static-web.stcn.com/upload/2026/0417/11/69e1a97c322665768b3a.jpg?x-oss-process=image/resize,m_fill,w_676,h_380" alt="Hi，老板丨福莱新材夏厚君：像班主任一样当老板" />
+                </a>
+                                <a href="https://www.stcn.com/topic/detail/566.html" target="_blank" class="swiper-slide" data-title="专题丨人民财讯·大观——专访李迅雷">
+                    <img src="https://static-web.stcn.com/upload/2026/0417/11/69e1a39f4e53987f43b0.jpg?x-oss-process=image/resize,m_fill,w_676,h_380" alt="专题丨人民财讯·大观——专访李迅雷" />
+                </a>
+                            </div>
+        </div>
+        <div class="swiper-bottom flex items-center justify-between">
+            <div class="swiper-title text-[20px]"></div>
+            <div class="swiper-pagination">
+                                <span class="active"></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                            </div>
+        </div>
+    </div>
+    <div class="flex flex-1 space-x-[39px] ml-[40px]">
+        <ul class="flex flex-col flex-grow space-y-[31px] pt-[20px] text-[#000] text-[20px] leading-[28px]">
+                        <li class="h-[55px] ellipsis-2">
+                <a href="/article/detail/3766057.html" target="_blank">利好来了！上海发布推动产业互联网平台赋能产业发展行动方案</a>
+            </li>
+                        <li class="h-[55px] ellipsis-2">
+                <a href="/article/detail/3765756.html" target="_blank">又变了！欧美市场全线杀跌！美伊谈判重大变数</a>
+            </li>
+                        <li class="h-[55px] ellipsis-2">
+                <a href="/article/detail/3765746.html" target="_blank">尾盘异动！立讯精密放量涨停，圣阳股份开板</a>
+            </li>
+                        <li class="h-[55px] ellipsis-2">
+                <a href="/article/detail/3765428.html" target="_blank">多晶硅期货主力合约涨停，光伏行业重磅驱动</a>
+            </li>
+                        <li class="h-[55px] ellipsis-2">
+                <a href="/article/detail/3765429.html" target="_blank">锂电发力，重仓基金表现占优！配置力度进一步强化？</a>
+            </li>
+                    </ul>
+        <div class="flex-[0_0_228px] h-[448px]">
+            <ul class="flex flex-col space-y-[26px]">
+                                                <li class="relative w-[228px] h-[122px]">
+                                        <div class="swiper w-full h-full overflow-hidden index-top-right-swiper-1">
+                        <div class="swiper-wrapper">
+                                                                                            <a href="https://www.stcn.com/topic/detail/566.html" target="_blank" class="swiper-slide">
+                                    <img src="https://static-web.stcn.com/upload/2026/0408/14/69d5f552642fd6e41503.jpg?x-oss-process=image/resize,m_fill,w_228,h_122" alt="" class="w-full h-full object-cover rounded-[3px]" />
+                                </a>
+                                                                <a href="https://www.stcn.com/topic/detail/564.html" target="_blank" class="swiper-slide">
+                                    <img src="https://static-web.stcn.com/upload/2026/0401/17/69cce9d73763d9a2f741.jpg?x-oss-process=image/resize,m_fill,w_228,h_122" alt="" class="w-full h-full object-cover rounded-[3px]" />
+                                </a>
+                                                                                    </div>
+                    </div>
+                </li>
+                                                <li class="relative w-[228px] h-[122px]">
+                                        <div class="swiper w-full h-full overflow-hidden index-top-right-swiper-2">
+                        <div class="swiper-wrapper">
+                                                                                            <a href="https://www.stcn.com/topic/detail/553.html" target="_blank" class="swiper-slide">
+                                    <img src="https://static-web.stcn.com/upload/2026/0407/15/69d4b1b3721f5072e581.png?x-oss-process=image/resize,m_fill,w_228,h_122" alt="" class="w-full h-full object-cover rounded-[3px]" />
+                                </a>
+                                                                <a href="https://www.stcn.com/topic/detail/562.html" target="_blank" class="swiper-slide">
+                                    <img src="https://static-web.stcn.com/upload/2026/0330/21/69ca75682c47b5ad7048.jpg?x-oss-process=image/resize,m_fill,w_228,h_122" alt="" class="w-full h-full object-cover rounded-[3px]" />
+                                </a>
+                                                                                    </div>
+                    </div>
+                </li>
+                                                <li class="relative w-[228px] h-[122px]">
+                                        <div class="swiper w-full h-full overflow-hidden index-top-right-swiper-3">
+                        <div class="swiper-wrapper">
+                                                                                            <a href="https://www.stcn.com/live/list.html?cate=1" target="_blank" class="swiper-slide">
+                                    <img src="https://static-web.stcn.com/upload/2026/0407/12/69d48731c28696349d58.jpg?x-oss-process=image/resize,m_fill,w_228,h_122" alt="" class="w-full h-full object-cover rounded-[3px]" />
+                                </a>
+                                                                <a href="https://www.stcn.com/edu/zb.html" target="_blank" class="swiper-slide">
+                                    <img src="https://static-web.stcn.com/upload/2026/0330/21/69ca758e63b46da528e0.jpg?x-oss-process=image/resize,m_fill,w_228,h_122" alt="" class="w-full h-full object-cover rounded-[3px]" />
+                                </a>
+                                                                                    </div>
+                    </div>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+<!-- 轮播区 -->
+
+<!-- 第一块 -->
+<div class="w-common m-auto mt-[40px] pb-[41px]">
+    <div class="block-1 flex space-x-[40px]">
+        <div class="w-[968px]">
+            <!-- 指数区域-->
+            <!-- 指数区域-->
+<div class="stock-swiper mb-[30px] w-[968px] h-[95px] bg-white rounded-[8px] shadow-[0px_0px_15px_0px_rgba(0,0,0,0.05)]">
+    <div class="swiper charts-box" id="hq-charts" url="/candlestick/index-time-trend.html">
+        <div class="swiper-wrapper">
+                        <div class="swiper-slide charts-box-item">
+                                <a href="/quotes/index/sh000001.html" target="_blank">
+                    <div class="charts-box-item-name" data-name>上证指数</div>
+                    <div class="charts-box-item-info">
+                        <div class="charts-box-item-left">
+                            <div class="charts-box-item-left-num" data-num></div>
+                            <div class="charts-box-item-left-ratio" data-ratio></div>
+                        </div>
+                        <div class="charts-box-item-right" data-code="sh000001"></div>
+                    </div>
+                </a>
+                            </div>
+                        <div class="swiper-slide charts-box-item">
+                                <a href="/quotes/index/sz399001.html" target="_blank">
+                    <div class="charts-box-item-name" data-name>深证成指</div>
+                    <div class="charts-box-item-info">
+                        <div class="charts-box-item-left">
+                            <div class="charts-box-item-left-num" data-num></div>
+                            <div class="charts-box-item-left-ratio" data-ratio></div>
+                        </div>
+                        <div class="charts-box-item-right" data-code="sz399001"></div>
+                    </div>
+                </a>
+                            </div>
+                        <div class="swiper-slide charts-box-item">
+                                <a href="/quotes/index/sh000680.html" target="_blank">
+                    <div class="charts-box-item-name" data-name>科创综指</div>
+                    <div class="charts-box-item-info">
+                        <div class="charts-box-item-left">
+                            <div class="charts-box-item-left-num" data-num></div>
+                            <div class="charts-box-item-left-ratio" data-ratio></div>
+                        </div>
+                        <div class="charts-box-item-right" data-code="sh000680"></div>
+                    </div>
+                </a>
+                            </div>
+                        <div class="swiper-slide charts-box-item">
+                                <a href="/quotes/index/sz399006.html" target="_blank">
+                    <div class="charts-box-item-name" data-name>创业板指</div>
+                    <div class="charts-box-item-info">
+                        <div class="charts-box-item-left">
+                            <div class="charts-box-item-left-num" data-num></div>
+                            <div class="charts-box-item-left-ratio" data-ratio></div>
+                        </div>
+                        <div class="charts-box-item-right" data-code="sz399006"></div>
+                    </div>
+                </a>
+                            </div>
+                        <div class="swiper-slide charts-box-item">
+                                <a href="/quotes/index/sh000905.html" target="_blank">
+                    <div class="charts-box-item-name" data-name>中证500</div>
+                    <div class="charts-box-item-info">
+                        <div class="charts-box-item-left">
+                            <div class="charts-box-item-left-num" data-num></div>
+                            <div class="charts-box-item-left-ratio" data-ratio></div>
+                        </div>
+                        <div class="charts-box-item-right" data-code="sh000905"></div>
+                    </div>
+                </a>
+                            </div>
+                        <div class="swiper-slide charts-box-item">
+                                <a href="/quotes/index/bj899050.html" target="_blank">
+                    <div class="charts-box-item-name" data-name>北证50</div>
+                    <div class="charts-box-item-info">
+                        <div class="charts-box-item-left">
+                            <div class="charts-box-item-left-num" data-num></div>
+                            <div class="charts-box-item-left-ratio" data-ratio></div>
+                        </div>
+                        <div class="charts-box-item-right" data-code="bj899050"></div>
+                    </div>
+                </a>
+                            </div>
+                        <div class="swiper-slide charts-box-item">
+                                <div class="charts-box-item-name" data-name>恒生指数</div>
+                <div class="charts-box-item-info">
+                    <div class="charts-box-item-left">
+                        <div class="charts-box-item-left-num" data-num></div>
+                        <div class="charts-box-item-left-ratio" data-ratio></div>
+                    </div>
+                    <div class="charts-box-item-right" data-code="hangseng"></div>
+                </div>
+                            </div>
+                        <div class="swiper-slide charts-box-item">
+                                <div class="charts-box-item-name" data-name>证券时报价值100</div>
+                <div class="charts-box-item-info">
+                    <div class="charts-box-item-left">
+                        <div class="charts-box-item-left-num" data-num></div>
+                        <div class="charts-box-item-left-ratio" data-ratio></div>
+                    </div>
+                    <div class="charts-box-item-right" data-code="931687"></div>
+                </div>
+                            </div>
+                    </div>
+    </div>
+</div>
+<!-- 指数区域-->
+            <!-- 指数区域-->
+            <div class="flex space-x-[25px]">
+                <!-- 要闻头条（原版 IndexRecommendWidget 推荐流逻辑）-->
+                <!-- 要闻头条-->
+<div class="w-[472px]">
+    <div class="bbox">
+        <div class="box-title">
+            <div class="box-title-icon">要闻推荐</div>
+        </div>
+        <div class="box-content">
+            <div class="cc-list fs-18">
+                <ul class="under-line">
+                                                                    <li class="top">
+                                                        <a href="/article/detail/3766926.html" target="_blank" title="人民鉴真丨平安银行：管理层变动系谣言，已报案">人民鉴真丨平安银行：管理层变动系谣言，已报案</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3766878.html" target="_blank" title="热搜炸了！爱奇艺官宣AI艺人库 多位明星称未授权">热搜炸了！爱奇艺官宣AI艺人库 多位明星称未授权</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3766058.html" target="_blank" title="不涨价！华为Pura 90系列发布，余承东：很有诚意">不涨价！华为Pura 90系列发布，余承东：很有诚意</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3766067.html" target="_blank" title="美国拦截了一艘中国驶往伊朗的油轮？外交部回应">美国拦截了一艘中国驶往伊朗的油轮？外交部回应</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3766054.html" target="_blank" title="一线城市豪宅热销 专家：楼市企稳基础仍需夯实">一线城市豪宅热销 专家：楼市企稳基础仍需夯实</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3766024.html" target="_blank" title="排雷！霍尔木兹海峡，再传大消息！">排雷！霍尔木兹海峡，再传大消息！</a>
+                        </li>
+                                                            </ul>
+            </div>
+            <div class="cc-list fs-18">
+                <ul class="under-line">
+                                                                    <li class="top">
+                                                        <a href="/article/detail/3765868.html" target="_blank" title="先拿壳再装资产！启明创投探路VC/PE退出新模式">先拿壳再装资产！启明创投探路VC/PE退出新模式</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3765607.html" target="_blank" title="伊朗外交部：从伊朗移除浓缩铀从来不是谈判选项">伊朗外交部：从伊朗移除浓缩铀从来不是谈判选项</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3765570.html" target="_blank" title="60国3400品牌参展消博会，外资缘何踊跃探路中国">60国3400品牌参展消博会，外资缘何踊跃探路中国</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3765545.html" target="_blank" title="日本东北部沿海发生7.4级地震 已发布海啸警报">日本东北部沿海发生7.4级地震 已发布海啸警报</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3765434.html" target="_blank" title="最高法正抓紧起草涉人工智能纠纷案件意见">最高法正抓紧起草涉人工智能纠纷案件意见</a>
+                        </li>
+                                                <li class="">
+                                                        <a href="/article/detail/3765310.html" target="_blank" title="霍尔木兹海峡未能开放 这些油气股跌回开战前">霍尔木兹海峡未能开放 这些油气股跌回开战前</a>
+                        </li>
+                                                            </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 要闻头条-->
+                <!-- 要闻头条-->
+                <!-- 决策参考-->
+                <!-- 决策参考-->
+<div class="w-[472px]">
+    <div class="bbox">
+        <div class="box-title">
+            <div class="box-title-icon">决策参考</div>
+        </div>
+        <div class="box-content">
+            <div class="cc-list fs-18">
+                                <div class="poster-tt clearfix">
+                    <a href="/article/detail/3766145.html" target="_blank">
+                                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e604b97fa15.png?x-oss-process=image/resize,m_fill,w_88,h_68" alt="" />
+                                        </a>
+                    <div class="l ellipsis-2">
+                        <a href="/article/detail/3766145.html" target="_blank" title="揭秘涨停丨株冶集团、中国卫星封单资金超5亿元">揭秘涨停丨株冶集团、中国卫星封单资金超5亿元</a>
+                    </div>
+                </div>
+                <ul class="under-line">
+                                        <li>
+                        <a href="/article/detail/3766134.html" target="_blank" title="4月机构调研火爆：22股获百家扎堆 19股净利翻倍">4月机构调研火爆：22股获百家扎堆 19股净利翻倍</a>
+                    </li>
+                                        <li>
+                        <a href="/article/detail/3766141.html" target="_blank" title="主力资金丨东山精密等4股遭主力大幅出逃">主力资金丨东山精密等4股遭主力大幅出逃</a>
+                    </li>
+                                        <li>
+                        <a href="/article/detail/3766070.html" target="_blank" title="​天齐锂业一季度净利润同比预增超15倍">​天齐锂业一季度净利润同比预增超15倍</a>
+                    </li>
+                                        <li>
+                        <a href="/article/detail/3766056.html" target="_blank" title="突发！603922，实控人失联+失信+限高！">突发！603922，实控人失联+失信+限高！</a>
+                    </li>
+                                    </ul>
+                            </div>
+            <div class="cc-list fs-18">
+                                <div class="poster-tt clearfix">
+                    <a href="/article/detail/3765842.html" target="_blank">
+                                        <img src="https://static-web.stcn.com/upload/jcck/default/default_22.jpg?x-oss-process=image/resize,m_fill,h_68,w_88" alt="" />
+                                        </a>
+                    <div class="l ellipsis-2">
+                        <a href="/article/detail/3765842.html" target="_blank" title="数据复盘丨124股获主力资金净流入超1亿元">数据复盘丨124股获主力资金净流入超1亿元</a>
+                    </div>
+                </div>
+                <ul class="under-line">
+                                        <li>
+                        <a href="/article/detail/3765876.html" target="_blank" title="国盛证券一季度净利润同比下降97.91%">国盛证券一季度净利润同比下降97.91%</a>
+                    </li>
+                                        <li>
+                        <a href="/article/detail/3765769.html" target="_blank" title="穿越10年牛熊！9只长牛基金揭秘：三大制胜密码">穿越10年牛熊！9只长牛基金揭秘：三大制胜密码</a>
+                    </li>
+                                        <li>
+                        <a href="/article/detail/3765708.html" target="_blank" title="游资动向丨神剑股份、西部材料齐创历史新高">游资动向丨神剑股份、西部材料齐创历史新高</a>
+                    </li>
+                                        <li>
+                        <a href="/article/detail/3765347.html" target="_blank" title="稀土板块走高，有研新材涨停，中稀有色等拉升">稀土板块走高，有研新材涨停，中稀有色等拉升</a>
+                    </li>
+                                    </ul>
+                            </div>
+        </div>
+    </div>
+</div>
+<!-- 决策参考-->
+                <!-- 决策参考-->
+            </div>
+            <!-- 信披平台-->
+            <!-- 信披平台-->
+<div class="flex flex-col xinpi-box">
+    <div class="xinpi-box-top flex justify-between items-center">
+        <img src="https://static-web.stcn.com/static/v3/images/xinpi-box-title.png" alt="" class="w-[362px] h-[48px]" />
+        <form action="/xinpi/report.html" target="_blank" class="relative w-[325px]">
+            <input type="text" name="stockshow" placeholder="股票代码 / 简称 " class="w-full h-[28px] rounded-[14px] bg-white pl-3 pr-[40px] text-sm outline-none" />
+            <img src="https://static-web.stcn.com/static/v3/images/search-icon.png" alt="搜索" class="absolute right-[13px] top-1/2 -translate-y-1/2 w-[18px] h-[18px]" onclick="this.closest('form').submit();" />
+        </form>
+    </div>
+    <div class="flex flex-1 items-start justify-between space-x-[12px] p-[0_12px]">
+        <div class="flex-[0_1_50%] p-[22px_15px] h-full bg-white rounded-[8px] overflow-hidden">
+            <div class="xinpi-box-tag">热门公告</div>
+            <ul class="flex flex-col space-y-[14px] mt-[18px] text-[16px] text-[#1D3151]">
+                                <li class="overflow-hidden text-ellipsis">
+                    <a href="http://xp.stcn.com/index/pdf?id=1101018922&stock_code=300067&type=rm" class="overflow-hidden whitespace-nowrap" target="_blank" title="安诺其：董事会关于本次交易是否构成重大资产重组、关联交易及重组上市的说明">
+                        安诺其：董事会关于本次交易是否构成重大资产重组、关联交易及重组上市的说明                    </a>
+                </li>
+                                <li class="overflow-hidden text-ellipsis">
+                    <a href="http://xp.stcn.com/index/pdf?id=1100789251&stock_code=301200&type=rm" class="overflow-hidden whitespace-nowrap" target="_blank" title="大族数控：2026年一季度报告">
+                        大族数控：2026年一季度报告                    </a>
+                </li>
+                                <li class="overflow-hidden text-ellipsis">
+                    <a href="http://xp.stcn.com/index/pdf?id=1100788235&stock_code=000810&type=rm" class="overflow-hidden whitespace-nowrap" target="_blank" title="创维数字：2026年一季度报告">
+                        创维数字：2026年一季度报告                    </a>
+                </li>
+                                <li class="overflow-hidden text-ellipsis">
+                    <a href="http://xp.stcn.com/index/pdf?id=1100782951&stock_code=002414&type=rm" class="overflow-hidden whitespace-nowrap" target="_blank" title="高德红外：2026年一季度报告">
+                        高德红外：2026年一季度报告                    </a>
+                </li>
+                                <li class="overflow-hidden text-ellipsis">
+                    <a href="http://xp.stcn.com/index/pdf?id=1100782177&stock_code=603922&type=rm" class="overflow-hidden whitespace-nowrap" target="_blank" title="金鸿顺：金鸿顺关于实际控制人被列为失信被执行人的公告">
+                        金鸿顺：金鸿顺关于实际控制人被列为失信被执行人的公告                    </a>
+                </li>
+                                <li class="overflow-hidden text-ellipsis">
+                    <a href="http://xp.stcn.com/index/pdf?id=1096926611&stock_code=600064&type=rm" class="overflow-hidden whitespace-nowrap" target="_blank" title="南京高科：南京高科2026年第1季度房地产业务主要经营数据公告">
+                        南京高科：南京高科2026年第1季度房地产业务主要经营数据公告                    </a>
+                </li>
+                            </ul>
+        </div>
+        <div class="flex-[0_1_50%] p-[22px_15px] h-full bg-white rounded-[8px]">
+            <div class="xinpi-box-tag">公告分类</div>
+            <div class="flex justify-between flex-wrap mt-[18px] mb-[18px] -mb-[20px] text-[#1D3151] text-[16px] font-semibold">
+                <a href="/xinpi/report.html?classify=9" target="_blank" class="mb-[20px]">业绩报告</a>
+                <a href="/xinpi/report.html?classify=1" target="_blank" class="mb-[20px]">年报</a>
+                <a href="/xinpi/report.html?classify=2" target="_blank" class="mb-[20px]">一季报</a>
+                <a href="/xinpi/report.html?classify=3" target="_blank" class="mb-[20px]">半年报</a>
+                <a href="/xinpi/report.html?classify=4" target="_blank" class="mb-[20px]">三季报</a>
+                <a href="/xinpi/report.html?classify=13" target="_blank" class="mb-[20px]">股权变动</a>
+                <a href="/xinpi/report.html?classify=12" target="_blank" class="mb-[20px]">权益分派与限售股上市</a>
+                <a href="/xinpi/report.html?classify=15" target="_blank" class="mb-[20px]">可转债</a>
+                <a href="/xinpi/report.html?classify=10" target="_blank" class="mb-[20px]">澄清与风险提示</a>
+            </div>
+            <div class="xinpi-box-tag">投关主页</div>
+            <div class="flex flex-wrap mt-[18px] -mr-[6px] -mb-[6px]">
+                                <a class="flex flex-col items-center justify-center w-[104px] h-[44px] bg-[#fafafa] mr-[6px] mb-[6px]" href="/quotes/index.html?stock_code=sz300750" target="_blank">
+                    <div class="text-[#1D3151] text-[16px]">宁德时代</div>
+                    <div class="text-[#999] text-[12px]">300750</div>
+                </a>
+                                <a class="flex flex-col items-center justify-center w-[104px] h-[44px] bg-[#fafafa] mr-[6px] mb-[6px]" href="/quotes/index.html?stock_code=sz300394" target="_blank">
+                    <div class="text-[#1D3151] text-[16px]">天孚通信</div>
+                    <div class="text-[#999] text-[12px]">300394</div>
+                </a>
+                                <a class="flex flex-col items-center justify-center w-[104px] h-[44px] bg-[#fafafa] mr-[6px] mb-[6px]" href="/quotes/index.html?stock_code=sh600519" target="_blank">
+                    <div class="text-[#1D3151] text-[16px]">贵州茅台</div>
+                    <div class="text-[#999] text-[12px]">600519</div>
+                </a>
+                                <a class="flex flex-col items-center justify-center w-[104px] h-[44px] bg-[#fafafa] mr-[6px] mb-[6px]" href="/quotes/index.html?stock_code=sz300502" target="_blank">
+                    <div class="text-[#1D3151] text-[16px]">新易盛</div>
+                    <div class="text-[#999] text-[12px]">300502</div>
+                </a>
+                                <a class="flex flex-col items-center justify-center w-[104px] h-[44px] bg-[#fafafa] mr-[6px] mb-[6px]" href="/quotes/index.html?stock_code=sh600522" target="_blank">
+                    <div class="text-[#1D3151] text-[16px]">中天科技</div>
+                    <div class="text-[#999] text-[12px]">600522</div>
+                </a>
+                                <a class="flex flex-col items-center justify-center w-[104px] h-[44px] bg-[#fafafa] mr-[6px] mb-[6px]" href="/quotes/index.html?stock_code=sz300308" target="_blank">
+                    <div class="text-[#1D3151] text-[16px]">中际旭创</div>
+                    <div class="text-[#999] text-[12px]">300308</div>
+                </a>
+                                <a class="flex flex-col items-center justify-center w-[104px] h-[44px] bg-[#fafafa] mr-[6px] mb-[6px]" href="/quotes/index.html?stock_code=sz002028" target="_blank">
+                    <div class="text-[#1D3151] text-[16px]">思源电气</div>
+                    <div class="text-[#999] text-[12px]">002028</div>
+                </a>
+                                <a class="flex flex-col items-center justify-center w-[104px] h-[44px] bg-[#fafafa] mr-[6px] mb-[6px]" href="/quotes/index.html?stock_code=sh688012" target="_blank">
+                    <div class="text-[#1D3151] text-[16px]">中微公司</div>
+                    <div class="text-[#999] text-[12px]">688012</div>
+                </a>
+                            </div>
+        </div>
+    </div>
+</div>
+<!-- 信披平台-->
+            <!-- 信披平台-->
+        </div>
+        <div class="w-[392px]">
+            <!-- 人民财讯-->
+            <!-- 人民财讯-->
+<div class="bbox">
+    <div class="box-title no-prefix">
+        <div class="box-title-icon rmcx-icon">
+            <img src="https://static-web.stcn.com/static/v3/images/rmcx-icon.png" alt="" />
+        </div>
+        <a href="/article/list/kx.html" target="_blank">更多</a>
+    </div>
+    <div class="box-content">
+        <div class="index-quick-news-list-wrapper">
+            <ul class="index-quick-news-list">
+                                <li>
+                    <span>19:29</span>
+                    <a class="ellipsis-2" href="/article/detail/3766950.html" target="_blank" title="乔锋智能：公司相关数控机床应用于液冷散热、人形机器人领域的销售规模较小">乔锋智能：公司相关数控机床应用于液冷散热、人形机器人领域的销售规模较小</a>
+                </li>
+                                <li>
+                    <span>19:28</span>
+                    <a class="ellipsis-2" href="/article/detail/3766943.html" target="_blank" title="九鼎新材：2025年净利润同比增长206.51% 拟10派0.15元">九鼎新材：2025年净利润同比增长206.51% 拟10派0.15元</a>
+                </li>
+                                <li>
+                    <span>19:26</span>
+                    <a class="ellipsis-2" href="/article/detail/3766930.html" target="_blank" title="风语筑：2025年亏损1837.49万元 亏损同比收窄">风语筑：2025年亏损1837.49万元 亏损同比收窄</a>
+                </li>
+                                <li>
+                    <span>19:26</span>
+                    <a class="ellipsis-2" href="/article/detail/3766944.html" target="_blank" title="中国民航局副局长梁楠会见吉尔吉斯斯坦国家民航局局长波斯托诺夫">中国民航局副局长梁楠会见吉尔吉斯斯坦国家民航局局长波斯托诺夫</a>
+                </li>
+                                <li>
+                    <span>19:24</span>
+                    <a class="ellipsis-2" href="/article/detail/3766942.html" target="_blank" title="以色列安全内阁开会讨论美伊谈判和以黎停火等问题">以色列安全内阁开会讨论美伊谈判和以黎停火等问题</a>
+                </li>
+                                <li>
+                    <span>19:24</span>
+                    <a class="ellipsis-2" href="/article/detail/3766936.html" target="_blank" title="东方明珠：拟转让兆驰股份不超6000万股股份">东方明珠：拟转让兆驰股份不超6000万股股份</a>
+                </li>
+                                <li>
+                    <span>19:24</span>
+                    <a class="ellipsis-2" href="/article/detail/3766939.html" target="_blank" title="中关村机器人产业创新中心陪同潍柴集团调研北航具身智能机器人研究院">中关村机器人产业创新中心陪同潍柴集团调研北航具身智能机器人研究院</a>
+                </li>
+                                <li>
+                    <span>19:22</span>
+                    <a class="ellipsis-2" href="/article/detail/3766934.html" target="_blank" title="陈燕斌任中国石油化工集团有限公司副总经理、党组成员">陈燕斌任中国石油化工集团有限公司副总经理、党组成员</a>
+                </li>
+                                <li>
+                    <span>19:21</span>
+                    <a class="ellipsis-2" href="/article/detail/3766932.html" target="_blank" title="龚正会见美国旧金山市市长罗伟，并共同签署两市新一轮合作交流备忘录">龚正会见美国旧金山市市长罗伟，并共同签署两市新一轮合作交流备忘录</a>
+                </li>
+                                <li>
+                    <span>19:21</span>
+                    <a class="ellipsis-2" href="/article/detail/3766927.html" target="_blank" title="天地数码：2025年净利润同比增长17.17% 拟10派6.5元">天地数码：2025年净利润同比增长17.17% 拟10派6.5元</a>
+                </li>
+                                <li>
+                    <span>19:18</span>
+                    <a class="ellipsis-2" href="/article/detail/3766928.html" target="_blank" title="翔宇医疗与安阳市人民医院达成战略合作 共建脑机接口康复技术创新联合体">翔宇医疗与安阳市人民医院达成战略合作 共建脑机接口康复技术创新联合体</a>
+                </li>
+                                <li>
+                    <span>19:15</span>
+                    <a class="ellipsis-2" href="/article/detail/3766922.html" target="_blank" title="安诺其：拟购买算力服务公司烽云信息100%股权 21日复牌">安诺其：拟购买算力服务公司烽云信息100%股权 21日复牌</a>
+                </li>
+                                <li>
+                    <span>19:14</span>
+                    <a class="ellipsis-2" href="/article/detail/3766915.html" target="_blank" title="协和电子：2025年净利润同比减少6.4% 拟10派5元">协和电子：2025年净利润同比减少6.4% 拟10派5元</a>
+                </li>
+                                <li>
+                    <span>19:13</span>
+                    <a class="ellipsis-2" href="/article/detail/3766898.html" target="_blank" title="云中马：控股股东一致行动人拟合计减持不超1.5%公司股份">云中马：控股股东一致行动人拟合计减持不超1.5%公司股份</a>
+                </li>
+                                <li>
+                    <span>19:12</span>
+                    <a class="ellipsis-2" href="/article/detail/3766918.html" target="_blank" title="纳尔股份：拟1500万元—3000万元回购股份">纳尔股份：拟1500万元—3000万元回购股份</a>
+                </li>
+                                <li>
+                    <span>19:07</span>
+                    <a class="ellipsis-2" href="/article/detail/3766896.html" target="_blank" title="重庆商业投资集团有限公司原董事长范光明接受审查调查">重庆商业投资集团有限公司原董事长范光明接受审查调查</a>
+                </li>
+                                <li>
+                    <span>19:07</span>
+                    <a class="ellipsis-2" href="/article/detail/3766894.html" target="_blank" title="纳尔股份：终止购买南通纳尔材料科技有限公司33.5542%股权并募集配套资金事项">纳尔股份：终止购买南通纳尔材料科技有限公司33.5542%股权并募集配套资金事项</a>
+                </li>
+                                <li>
+                    <span>19:05</span>
+                    <a class="ellipsis-2" href="/article/detail/3766886.html" target="_blank" title="市场监管总局：食品安全监督抽检检出43批次样品不合格">市场监管总局：食品安全监督抽检检出43批次样品不合格</a>
+                </li>
+                                <li>
+                    <span>19:04</span>
+                    <a class="ellipsis-2" href="/article/detail/3766876.html" target="_blank" title="​宁德时代：股东询价转让初步定价410.34元/股">​宁德时代：股东询价转让初步定价410.34元/股</a>
+                </li>
+                                <li>
+                    <span>19:01</span>
+                    <a class="ellipsis-2" href="/article/detail/3766574.html" target="_blank" title="上海：便利科研物品通关与数据跨境流动">上海：便利科研物品通关与数据跨境流动</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+<!-- 人民财讯-->
+            <!-- 人民财讯-->
+            <!-- 人民鉴真-->
+            <!-- 人民鉴真-->
+<div class="rmjz-box">
+    <div class="rmjz-box-title"></div>
+    <div class="py-[28px] px-[22px]">
+        <ul class="flex flex-col space-y-[35px] text-[#1D3151] text-[16px] font-semibold">
+                        <li class="hide-icon">
+                <a href="/article/detail/3766926.html" target="_blank" class="ellipsis-2">人民鉴真丨平安银行：管理层变动系谣言，已报案</a>
+            </li>
+                        <li class="hide-icon">
+                <a href="/article/detail/3758750.html" target="_blank" class="ellipsis-2">人民鉴真46期丨金螳螂：与越南Sun Group所签备忘录不涉任何具体项目及金额</a>
+            </li>
+                    </ul>
+        <div class="jz-btn flex">
+            <a href="javascript:;" class="flex-1 want-clarify-btn"></a>
+            <a href="javascript:;" class="flex-1 want-prove-btn"></a>
+        </div>
+        <div class="mt-[10px] text-center text-[#d70000] text-[16px]">
+            鉴 真 热 线：0755-83506465
+        </div>
+    </div>
+</div>
+<!-- 人民鉴真-->
+            <!-- 人民鉴真-->
+        </div>
+    </div>
+</div>
+<!-- 第一块 -->
+
+<!-- 视频区域 -->
+<!-- 视频区域（结构与 views/article/index-v3.html 对齐） -->
+<div class="w-full bg-[#f0f0f0]">
+    <div class="flex space-x-[40px] w-common m-auto pt-[33px]">
+        <div class="w-[968px]">
+            <div class="bbox">
+                <div class="box-title">
+                    <div class="box-title-icon switch-tab">
+                        <span data-extra-visible="true" class="active">视频</span>
+                        <span data-extra-visible="true">直播</span>
+                    </div>
+                    <div class="box-tab-more switch-tab-extra-item">
+                        <a href="/live/video.html?cate=1" target="_blank">独家视频 </a>
+                        <a href="/live/video.html?cate=2" target="_blank">投教视频 </a>
+                        <a href="/live/video.html?cate=3" target="_blank">创投视频 </a>
+                        <a href="/live/video.html?cate=4" target="_blank">港美股视频 </a>
+                    </div>
+                    <div class="box-tab-more switch-tab-extra-item">
+                        <a href="/live/list.html?cate=1" target="_blank">时报会客厅 </a>
+                        <a href="/live/list.html?cate=6" target="_blank">投教活动 </a>
+                        <a href="/live/list.html?cate=8" target="_blank">创投活动 </a>
+                    </div>
+                    <a href="/live/video.html" target="_blank" class="box-tab-extra-more">更多</a>
+                    <a href="/live/list.html" target="_blank" class="box-tab-extra-more">更多</a>
+                </div>
+                <div class="box-content clearfix">
+                    <!-- 视频 -->
+                    <ul class="live-video-list switch-tab-content active clearfix video">
+                                                <li class="min-w-0 h-[404px]">
+                            <a href="/live/video-detail/22144.html" target="_blank" title="“闪电”超越人类记录夺冠，荣耀终端工程师：明年争取还拿第一，A股机器人概念多股涨停">
+                                <div class="live-video-list-poster">
+                                    <img class="poster" src="https://static-web.stcn.com/upload/2026/0420/11/69e5a0eeadedef5a6340.png?x-oss-process=image/resize,w_285" alt="“闪电”超越人类记录夺冠，荣耀终端工程师：明年争取还拿第一，A股机器人概念多股涨停" />
+                                    <div class="play-btn"></div>
+                                </div>
+                                <div class="live-video-list-info">
+                                    <div class="live-video-list-title ellipsis-2">“闪电”超越人类记录夺冠，荣耀终端工程师：明年争取还拿第一，A股机器人概念多股涨停</div>
+                                    <div class="live-video-list-bottom clearfix">
+                                        <div class="name">04-20 14:12</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li class="min-w-0 h-[404px]">
+                            <a href="/live/video-detail/22139.html" target="_blank" title="雷军被堵车里维权？小米徐洁云回应：现场是车友朋友们，绝不会放任凭空造谣的恶劣行径">
+                                <div class="live-video-list-poster">
+                                    <img class="poster" src="https://static-web.stcn.com/upload/2026/0420/10/69e58fbf647d14b6731d.png?x-oss-process=image/resize,w_285" alt="雷军被堵车里维权？小米徐洁云回应：现场是车友朋友们，绝不会放任凭空造谣的恶劣行径" />
+                                    <div class="play-btn"></div>
+                                </div>
+                                <div class="live-video-list-info">
+                                    <div class="live-video-list-title ellipsis-2">雷军被堵车里维权？小米徐洁云回应：现场是车友朋友们，绝不会放任凭空造谣的恶劣行径</div>
+                                    <div class="live-video-list-bottom clearfix">
+                                        <div class="name">04-20 14:12</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li class="min-w-0 h-[404px]">
+                            <a href="/live/video-detail/22141.html" target="_blank" title="小登看数据：一季报“早鸟” 真的能躺赢吗?">
+                                <div class="live-video-list-poster">
+                                    <img class="poster" src="https://static-web.stcn.com/upload/2026/0420/10/69e59536c4bf892bd468.png?x-oss-process=image/resize,w_285" alt="小登看数据：一季报“早鸟” 真的能躺赢吗?" />
+                                    <div class="play-btn"></div>
+                                </div>
+                                <div class="live-video-list-info">
+                                    <div class="live-video-list-title ellipsis-2">小登看数据：一季报“早鸟” 真的能躺赢吗?</div>
+                                    <div class="live-video-list-bottom clearfix">
+                                        <div class="name">04-20 11:44</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                                <li class="min-w-0 h-[404px]">
+                            <a href="/live/video-detail/22136.html" target="_blank" title="美伊海军在阿曼湾交锋，霍尔木兹海峡仍受阻，国际油价大幅走高">
+                                <div class="live-video-list-poster">
+                                    <img class="poster" src="https://static-web.stcn.com/upload/2026/0420/09/69e583ce7738d56e4da8.png?x-oss-process=image/resize,w_285" alt="美伊海军在阿曼湾交锋，霍尔木兹海峡仍受阻，国际油价大幅走高" />
+                                    <div class="play-btn"></div>
+                                </div>
+                                <div class="live-video-list-info">
+                                    <div class="live-video-list-title ellipsis-2">美伊海军在阿曼湾交锋，霍尔木兹海峡仍受阻，国际油价大幅走高</div>
+                                    <div class="live-video-list-bottom clearfix">
+                                        <div class="name">04-20 10:17</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                                            </ul>
+                    <!-- 直播 -->
+                    <div class="switch-tab-content">
+                        <ul class="mb-20 live-video-list active clearfix">
+                                                        <li class="min-w-0">
+                                <div class="live-video-list-poster h-[174px]">
+                                    <a href="/live/detail/1298.html" target="_blank">
+                                        <img src="https://static-web.stcn.com/upload/2026/0417/15/69e1e7cf23cfbd1365e4.png?x-oss-process=image/resize,m_fill,w_309,h_174" alt="中国建筑（601668.SH）2025年年度业绩说明会" />
+                                    </a>
+                                    <div class="media-state replay"></div>
+                                </div>
+                                <div class="live-video-list-title">
+                                    <a class="ellipsis-3" href="/live/detail/1298.html" target="_blank">中国建筑（601668.SH）2025年年度业绩说明会</a>
+                                </div>
+                                <div class="live-video-list-bottom clearfix">
+                                    <div class="name">业绩说明会 04-20 16:00</div>
+                                    <div class="focus-btn " data-id="1298" data-url="/live/focus-live.html"></div>                                </div>
+                            </li>
+                                                        <li class="min-w-0">
+                                <div class="live-video-list-poster h-[174px]">
+                                    <a href="/live/detail/1296.html" target="_blank">
+                                        <img src="https://static-web.stcn.com/upload/2026/0417/09/69e1874b78a9753c9a24.png?x-oss-process=image/resize,m_fill,w_309,h_174" alt="西南证券2025年年度业绩说明会" />
+                                    </a>
+                                    <div class="media-state replay"></div>
+                                </div>
+                                <div class="live-video-list-title">
+                                    <a class="ellipsis-3" href="/live/detail/1296.html" target="_blank">西南证券2025年年度业绩说明会</a>
+                                </div>
+                                <div class="live-video-list-bottom clearfix">
+                                    <div class="name">业绩说明会 04-17 15:00</div>
+                                    <div class="focus-btn " data-id="1296" data-url="/live/focus-live.html"></div>                                </div>
+                            </li>
+                                                        <li class="min-w-0">
+                                <div class="live-video-list-poster h-[174px]">
+                                    <a href="/live/detail/1297.html" target="_blank">
+                                        <img src="https://static-web.stcn.com/upload/2026/0417/09/69e187ac2f56b37efcb9.jpg?x-oss-process=image/resize,m_fill,w_309,h_174" alt="安井食品2025年年度业绩说明会" />
+                                    </a>
+                                    <div class="media-state replay"></div>
+                                </div>
+                                <div class="live-video-list-title">
+                                    <a class="ellipsis-3" href="/live/detail/1297.html" target="_blank">安井食品2025年年度业绩说明会</a>
+                                </div>
+                                <div class="live-video-list-bottom clearfix">
+                                    <div class="name">业绩说明会 04-17 15:00</div>
+                                    <div class="focus-btn " data-id="1297" data-url="/live/focus-live.html"></div>                                </div>
+                            </li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 时报热榜-->
+        <!-- 时报热榜-->
+<div class="w-[392px]">
+    <div class="flex justify-between items-center">
+        <div class="sbrb-tt">
+            <img src="https://static-web.stcn.com/static/v3/images/sbrb.png" alt="" />
+        </div>
+        <span class="sbrb-refresh-btn" data-refresh="refresh-list" data-target-list="index-hot-list" data-refresh-url="/article/index-hot-list.html">换一换</span>
+    </div>
+    <div class="sbrb-list">
+        <ul id="index-hot-list">
+            <!-- 热榜数据通过JavaScript动态加载 -->
+            <li>
+                <a href=""><div class="list-icon first">1</div>加载中...</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- 时报热榜-->
+    </div>
+</div>
+<!-- 视频区域 -->
+<!-- 视频区域 -->
+
+<!-- 热门板块、股票情报、工具箱、专题策划 -->
+<div class="flex space-x-[40px] w-common m-auto pt-[42px]">
+    <div class="flex space-x-[30px] w-[968px]">
+        <div class="w-[469px]">
+            <!-- 热门板板-->
+            <!-- 热门板板-->
+<div class="bbox">
+    <div class="box-title">
+        <div class="box-title-icon">热门板块</div>
+    </div>
+    <div class="box-content" id="hot-block-wrapper">
+
+    </div>
+</div>
+<!-- 热门板板-->
+            <!-- 热门板板-->
+            <!-- 自选股-->
+            <!-- 自选股-->
+<div class="bbox">
+    <div class="box-title">
+        <div class="box-title-icon">自选股</div>
+        <a href="/user-center/my-stocks.html" target="_blank" class="need-login-link">更多</a>
+    </div>
+    <div class="box-content" id="self-stock-wrapper"></div>
+    <div class="add-self-stock-btn" data-url="">一键添加自选</div>
+</div>
+<!-- 自选股-->
+            <!-- 自选股-->
+            <!-- 工具箱 -->
+            <!-- 工具箱 -->
+<div class="bbox">
+    <div class="box-title">
+        <div class="box-title-icon">工具箱</div>
+    </div>
+    <div class="box-content">
+        <div class="index-tools-box">
+                        <a href="/dc/jcgj.html" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/hushengangzijin.png" alt="沪深港资金" />
+                沪深港资金            </a>
+                        <a href="/dc/jcgj.html?tabIndex=1" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/rongzhizhuiji.png" alt="融资追击" />
+                融资追击            </a>
+                        <a href="/dc/jcgj.html?tabIndex=2" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/longhubangdan.png" alt="龙虎榜单" />
+                龙虎榜单            </a>
+                        <a href="/dc/jcgj.html?tabIndex=3" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/choumadongxiang.png" alt="筹码动向" />
+                筹码动向            </a>
+                        <a href="/dc/xgzj.html" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/xinguzhiji.png" alt="新股直击" />
+                新股直击            </a>
+                        <a href="/article/list/hq.html" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/hangqingzongmao.png" alt="行情总貌" />
+                行情总貌            </a>
+                        <a href="/dc/jyyd.html?type=mbcj_hsag" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/meibijiaoyi.png" alt="每笔交易" />
+                每笔交易            </a>
+                        <a href="/dc/jzxj.html" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/jingzhixuanji.png" alt="净值选基" />
+                净值选基            </a>
+                        <a href="/dc/yjld.html" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/chigudongxiang.png" alt="持股动向" />
+                持股动向            </a>
+                        <a href="/dc/yjld.html?type=xsgjj" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/xianshougujiejin.png" alt="限售股解禁" />
+                限售股解禁            </a>
+                        <a href="/dc/yjld.html?type=gqzy" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/guquanzhiya.png" alt="股权质押" />
+                股权质押            </a>
+                        <a href="/dc/jyyd.html?type=dzjy" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/dazongjiaoyi.png" alt="大宗交易" />
+                大宗交易            </a>
+                        <a href="/dc/sdcb.html?type=fhsz" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/fenhongsongzhuan.png" alt="分红转送" />
+                分红转送            </a>
+                        <a href="/dc/jgfx.html" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/jigoudiaoyan.png" alt="机构调研" />
+                机构调研            </a>
+                        <a href="/dc/jgfx.html?type=ylyctg" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/yingliyuce.png" alt="盈利预测" />
+                盈利预测            </a>
+                        <a href="/dc/sdcb.html" target="_blank">
+                <img src="https://static-web.stcn.com/static/v3/images/tool-box/shuducaibao.png" alt="数读财报" />
+                数读财报            </a>
+                    </div>
+    </div>
+</div>
+<!-- 工具箱 -->
+            <!-- 工具箱 -->
+        </div>
+        <!-- 股票情报 -->
+        <!-- 股票情报 -->
+<div class="w-[469px]">
+    <div class="bbox">
+        <div class="box-title">
+            <div class="box-title-icon">股票情报</div>
+            <a href="/article/list/investment.html" target="_blank">更多</a>
+        </div>
+        <div class="box-content">
+                        <div class="img-card">
+                <a href="/article/detail/3766924.html" target="_blank">
+                    <img src="https://static-web.stcn.com/upload/2026/0420/19/W020220826800469093226.png?x-oss-process=image/resize,m_fill,w_469,h_354" alt="国内推理GPU独角兽曦望获超10亿元融资" />
+                </a>
+                <a class="img-card-title" href="/article/detail/3766924.html" target="_blank" title="国内推理GPU独角兽曦望获超10亿元融资">
+                    <span class="ellipsis-2">国内推理GPU独角兽曦望获超10亿元融资</span>
+                </a>
+            </div>
+                        <div class="flex space-x-[8px]">
+                                <a class="flex-1 flex flex-col" href="/article/detail/3766879.html" target="_blank" title="A股突现重大资产重组新模式！如何闯关“借壳暗礁”？">
+                    <img src="https://static-web.stcn.com/upload/2026/0420/19/69e605dc9a63a.png?x-oss-process=image/resize,m_fill,w_151,h_114" alt="A股突现重大资产重组新模式！如何闯关“借壳暗礁”？" class="w-full h-[114px] rounded-[8px]" />
+                    <span class="mt-[8px] mainText text-[14px] font-semibold ellipsis-3 lh-[20px]">A股突现重大资产重组新模式！如何闯关“借壳暗礁”？</span>
+                    <span class="mt-[10px] text-[#a5a5a5] text-[12px]">04-20 19:00</span>
+                </a>
+                                <a class="flex-1 flex flex-col" href="/article/detail/3766147.html" target="_blank" title="受益PCB扩产潮 设备厂商首季业绩大幅增长">
+                    <img src="https://static-web.stcn.com/upload/2026/0420/18/W020220826355287209808.png?x-oss-process=image/resize,m_fill,w_151,h_114" alt="受益PCB扩产潮 设备厂商首季业绩大幅增长" class="w-full h-[114px] rounded-[8px]" />
+                    <span class="mt-[8px] mainText text-[14px] font-semibold ellipsis-3 lh-[20px]">受益PCB扩产潮 设备厂商首季业绩大幅增长</span>
+                    <span class="mt-[10px] text-[#a5a5a5] text-[12px]">04-20 18:53</span>
+                </a>
+                                <a class="flex-1 flex flex-col" href="/article/detail/3766148.html" target="_blank" title="校企AI双向赋能 “AI筑梦 智启校园”人工智能终端进校园活动启幕">
+                    <img src="https://static-web.stcn.com/upload/2026/0420/18/69e5f74f99e7740bd68f.png?x-oss-process=image/resize,m_fill,w_151,h_114" alt="校企AI双向赋能 “AI筑梦 智启校园”人工智能终端进校园活动启幕" class="w-full h-[114px] rounded-[8px]" />
+                    <span class="mt-[8px] mainText text-[14px] font-semibold ellipsis-3 lh-[20px]">校企AI双向赋能 “AI筑梦 智启校园”人工智能终端进校园活动启幕</span>
+                    <span class="mt-[10px] text-[#a5a5a5] text-[12px]">04-20 18:53</span>
+                </a>
+                            </div>
+            <div class="m-[26px_0] w-full h-[1px] bg-[#ebebeb]"></div>
+            <ul class="stock-intelligence">
+                                <li>
+                    <a href="/article/detail/3766151.html" target="_blank" title="两连板天通股份：不生产光模块及商业卫星">两连板天通股份：不生产光模块及商业卫星</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766153.html" target="_blank" title="翠微股份一季度业绩延续亏损 实现营业收入5.43亿元">翠微股份一季度业绩延续亏损 实现营业收入5.43亿元</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766157.html" target="_blank" title="琉富科技与华丰股份达成合作 共同推出算电协同平台HPC Cloud">琉富科技与华丰股份达成合作 共同推出算电协同平台HPC Cloud</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766158.html" target="_blank" title="富临精工副董事长李鹏程：积极构建磷酸铁锂产业生态闭环 稳步迈向“铁锂龙头”">富临精工副董事长李鹏程：积极构建磷酸铁锂产业生态闭环 稳步迈向“铁锂龙头”</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766124.html" target="_blank" title="惠天热电全资子公司银行账户部分资金被冻结 称不会对公司日常生产经营产生重大影响">惠天热电全资子公司银行账户部分资金被冻结 称不会对公司日常生产经营产生重大影响</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766125.html" target="_blank" title="氯碱化工2025年净利润同比增长9.56% 持续优化生产结构">氯碱化工2025年净利润同比增长9.56% 持续优化生产结构</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766126.html" target="_blank" title="飞猪：五一假期出境游相关商品预订量同比增长50%">飞猪：五一假期出境游相关商品预订量同比增长50%</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3765961.html" target="_blank" title="第四届灼耀年度峰会在沪举行 聚焦硬科技与新周期下产业变革">第四届灼耀年度峰会在沪举行 聚焦硬科技与新周期下产业变革</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3765919.html" target="_blank" title="上海汽配2025年扣非后净利增长8.06% CO2阀集成模块布局落地">上海汽配2025年扣非后净利增长8.06% CO2阀集成模块布局落地</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3765881.html" target="_blank" title="黄山谷捷：2025年收入同比增长17.03% 积极拓展海外重点市场">黄山谷捷：2025年收入同比增长17.03% 积极拓展海外重点市场</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3765950.html" target="_blank" title="胜宏科技暗盘上涨65%">胜宏科技暗盘上涨65%</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3765951.html" target="_blank" title="一天飙涨超100%！有机构浮盈或达480倍！">一天飙涨超100%！有机构浮盈或达480倍！</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3765952.html" target="_blank" title="Pura90系列单机平均成本上涨1500元！余承东首次公开谈手机定价：扛不住也可能涨！">Pura90系列单机平均成本上涨1500元！余承东首次公开谈手机定价：扛不住也可能涨！</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+<!-- 股票情报 -->
+        <!-- 股票情报 -->
+    </div>
+    <div class="w-[392px]">
+        <!-- 新股申购 -->
+        <!-- 新股申购 -->
+<div class="xingudongtai-table-wrapper">
+    <div class="xingudongtai-table-title">
+        <img src="https://static-web.stcn.com/static/v3/images/xingudongtai-table-title-text.png" alt="" class="tt" />
+        <span class="mr-auto text-[14px] text-[#999]">（2026-04-20 周一）</span>
+        <a href="/article/xgsg.html" target="_blank">
+            <img src="https://static-web.stcn.com/static/images/arrow.png" alt="" class="w-[8px] h-[16px]" />
+        </a>
+    </div>
+    <div class="xingudongtai-table-scroll">
+        <div class="xingudongtai-table">
+                        <div class="xingudongtai-table-item">
+                <div class="xingudongtai-table-item-left">
+                    <span>申购</span>
+                </div>
+                <div class="xingudongtai-table-item-right">
+                                        <div>
+                                                <span>
+                            中科仪 920186                        </span>
+                                                <span>
+                            理奇智能 301599                        </span>
+                                            </div>
+                                    </div>
+            </div>
+                                    <div class="xingudongtai-table-item">
+                <div class="xingudongtai-table-item-left">
+                    <span>上市</span>
+                </div>
+                <div class="xingudongtai-table-item-right">
+                                        <div>
+                                                <span>
+                                                        <a href="/quotes/index/bj920191.html" target="_blank">瑞尔竞达 920191</a>
+                                                    </span>
+                                                <span>
+                                                        --                                                    </span>
+                                            </div>
+                                    </div>
+            </div>
+                                    <div class="xingudongtai-table-item">
+                <div class="xingudongtai-table-item-left">
+                    <span>公布<br />中签结果</span>
+                </div>
+                <div class="xingudongtai-table-item-right">
+                                        <div>
+                                                <span>
+                            海昌智能 920156                        </span>
+                                                <span>
+                            --                        </span>
+                                            </div>
+                                    </div>
+            </div>
+                    </div>
+    </div>
+</div>
+<!-- 新股申购 -->
+        <!-- 新股申购 -->
+        <!-- 报眼 -->
+        <!-- 报眼 -->
+<div class="baoyan-box clearfix mt-[16px]">
+    <div class="baoyan-box-gallery l">
+        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                <a href="http://epaper.stcn.com/con/202604/20/content_2911222.html" target="_blank">
+                    <img src="http://epaper.stcn.com/pic/202604/20/7eeafe79-3a47-481d-92d0-e89e1b8aa595.jpg?x-oss-process=image/resize,m_fill,w_301,h_482" alt="" />
+                </a>
+            </div>
+                    </div>
+    </div>
+    <div class="baoyan-box-thumbs r">
+        <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                <img src="http://epaper.stcn.com/pic/202604/20/7eeafe79-3a47-481d-92d0-e89e1b8aa595.jpg?x-oss-process=image/resize,m_fill,w_74,h_118" alt="" />
+            </div>
+                    </div>
+    </div>
+</div>
+<!-- 报眼 -->
+        <!-- 报眼 -->
+        <!-- 专题策划 -->
+        <!-- 专题策划（结构与 views/article/index-v3.html 对齐；多条数据仍 foreach） -->
+<div class="zhuanticehua-box mt-[20px]">
+    <div class="zhuanticehua-box-title">
+        <img src="https://static-web.stcn.com/static/v3/images/zhuanticehua-titlte-text.png" alt="" class="tt" />
+        <a href="/article/list/zt.html">
+            <img src="https://static-web.stcn.com/static/images/arrow.png" alt="" class="w-[8px] h-[16px]" />
+        </a>
+    </div>
+        <a href="/topic/detail/567.html">
+        <img src="https://static-web.stcn.com/upload/2026/0410/16/69d8aee96597c5cd01a3.jpg?x-oss-process=image/resize,m_fill,w_395,h_101" alt="" class="w-[395px] h-[101px]" />
+    </a>
+        <div class="w-full p-[10px]">
+        <div class="p-[0_16px] text-left w-full text-[#353b50] text-[20px] font-semibold zhuanticehua-top-title">
+            <a href="/topic/detail/567.html">专题丨聚焦创业板改革再出发，增设第四套上市标准</a>
+        </div>
+                <div class="m-[6px_0_8px_0] w-full h-[1px] bg-[#f4f4f4]"></div>
+        <ul class="flex flex-col space-y-[8px] text-[#333] text-[16px] text-left">
+                        <li class="p-[0_16px] overflow-hidden whitespace-nowrap text-ellipsis">
+                <a href="/article/detail/3764226.html">创业板改革强化全链条监管 从源头提升上市公司质量</a>
+            </li>
+                        <li class="p-[0_16px] overflow-hidden whitespace-nowrap text-ellipsis">
+                <a href="/article/detail/3752981.html">创业板全链条优化制度供给 全生命周期助力科创企业</a>
+            </li>
+                        <li class="p-[0_16px] overflow-hidden whitespace-nowrap text-ellipsis">
+                <a href="/article/detail/3749336.html">试点地方政府推送信息 让优质企业脱颖而出</a>
+            </li>
+                        <li class="p-[0_16px] overflow-hidden whitespace-nowrap text-ellipsis">
+                <a href="/article/detail/3749325.html">创业板ETF批量创新高 短期资金流向现分歧</a>
+            </li>
+                    </ul>
+            </div>
+</div>
+<!-- 专题策划 -->
+        <!-- 专题策划 -->
+        <!-- 辟谣专区入口 -->
+        <a href="/article/list/py.html" target="_blank">
+            <img src="https://static-web.stcn.com/static/v3/images/py.png" alt="" class="mt-[20px] w-full rounded-[8px]"/>
+        </a>
+    </div>
+</div>
+<!-- 热门板块、股票情报、工具箱、专题策划 -->
+
+<!-- 各频道栏目 -->
+<div class="w-common m-auto pb-[42px]">
+    <div class="channel-list">
+        <div class="channel-list-item">
+    <div class="channel-list-item-title">
+        <div>要闻</div>
+        <a href="/article/list/yw.html" target="_blank"></a>
+    </div>
+        <div class="channel-list-item-top-li">
+        <a href="/article/detail/3765320.html" target="_blank">
+            <img src="https://static-web.stcn.com/upload/2026/0420/14/69e5c6b7ca69b89b124d.jpg?x-oss-process=image/resize,m_fill,w_335,h_250" alt="商业航天+免税升级，海南推动服务业发展“放大招”" />
+        </a>
+        <div class="channel-list-item-top-li-title">
+            <a class="ellipsis-2" href="/article/detail/3765320.html" target="_blank" title="商业航天+免税升级，海南推动服务业发展“放大招”">商业航天+免税升级，海南推动服务业发展“放大招”</a>
+        </div>
+    </div>
+    <ul>
+                <li>
+            <a href="/article/detail/3765345.html" target="_blank" title="一个蛋糕为何引出35.97亿元罚单（经济聚焦）">一个蛋糕为何引出35.97亿元罚单（经济聚焦）</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765346.html" target="_blank" title="我是“闪电”，生来爱奔跑">我是“闪电”，生来爱奔跑</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765333.html" target="_blank" title="超大规模市场优势如何成为发展优势（读者点题·共同关注）">超大规模市场优势如何成为发展优势（读者点题·共同关注）</a>
+        </li>
+            </ul>
+    </div>
+        <div class="channel-list-item">
+    <div class="channel-list-item-title">
+        <div>数据</div>
+        <a href="/article/data.html" target="_blank"></a>
+    </div>
+        <div class="channel-list-item-top-li">
+        <a href="/article/detail/3765205.html" target="_blank">
+            <img src="https://static-web.stcn.com/upload/wechat/20260420/69e5aa49a2e7e.png?x-oss-process=image/resize,m_fill,w_335,h_250" alt="8连板，最新“涨停王”出炉！业绩连亏股浮出，最低营收仅145万元" />
+        </a>
+        <div class="channel-list-item-top-li-title">
+            <a class="ellipsis-2" href="/article/detail/3765205.html" target="_blank" title="8连板，最新“涨停王”出炉！业绩连亏股浮出，最低营收仅145万元">8连板，最新“涨停王”出炉！业绩连亏股浮出，最低营收仅145万元</a>
+        </div>
+    </div>
+    <ul>
+                <li>
+            <a href="/article/detail/3765053.html" target="_blank" title="价格飙涨650%，通信细分板块，多股涨停">价格飙涨650%，通信细分板块，多股涨停</a>
+        </li>
+                <li>
+            <a href="/article/detail/3764665.html" target="_blank" title="早新闻 | 美伊谈判，最新消息！国产光纤，全球爆单">早新闻 | 美伊谈判，最新消息！国产光纤，全球爆单</a>
+        </li>
+                <li>
+            <a href="/article/detail/3764666.html" target="_blank" title="周末刷屏！荣耀“闪电”成大黑马，核心概念股出炉">周末刷屏！荣耀“闪电”成大黑马，核心概念股出炉</a>
+        </li>
+            </ul>
+    </div>
+        <div class="channel-list-item">
+    <div class="channel-list-item-title">
+        <div>基金</div>
+        <a href="/article/list/fund.html" target="_blank"></a>
+    </div>
+        <div class="channel-list-item-top-li">
+        <a href="/article/detail/3765322.html" target="_blank">
+            <img src="https://static-web.stcn.com/upload/wechat/20260420/69e5c65e9006e.png?x-oss-process=image/resize,m_fill,w_335,h_250" alt="股票ETF上周资金净流出近500亿元" />
+        </a>
+        <div class="channel-list-item-top-li-title">
+            <a class="ellipsis-2" href="/article/detail/3765322.html" target="_blank" title="股票ETF上周资金净流出近500亿元">股票ETF上周资金净流出近500亿元</a>
+        </div>
+    </div>
+    <ul>
+                <li>
+            <a href="/article/detail/3765349.html" target="_blank" title="一季报披露窗口期 公募调研聚焦高景气赛道">一季报披露窗口期 公募调研聚焦高景气赛道</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765299.html" target="_blank" title="本周24只新基金启动募集，权益类仍占主导">本周24只新基金启动募集，权益类仍占主导</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765307.html" target="_blank" title="北证50指数基金集体“松绑”，规模上限提至15亿元，有产品业绩近翻倍">北证50指数基金集体“松绑”，规模上限提至15亿元，有产品业绩近翻倍</a>
+        </li>
+            </ul>
+    </div>
+        <div class="channel-list-item">
+    <div class="channel-list-item-title">
+        <div>金融</div>
+        <a href="/article/list/finance.html" target="_blank"></a>
+    </div>
+        <div class="channel-list-item-top-li">
+        <a href="/article/detail/3764718.html" target="_blank">
+            <img src="https://static-web.stcn.com/upload/2026/0420/08/69e5770d772131db4ca7.jpg?x-oss-process=image/resize,m_fill,w_335,h_250" alt="发卡量锐减 银行信用卡打响存量突围战" />
+        </a>
+        <div class="channel-list-item-top-li-title">
+            <a class="ellipsis-2" href="/article/detail/3764718.html" target="_blank" title="发卡量锐减 银行信用卡打响存量突围战">发卡量锐减 银行信用卡打响存量突围战</a>
+        </div>
+    </div>
+    <ul>
+                <li>
+            <a href="/article/detail/3765140.html" target="_blank" title="境外证券投资者保护制度与实践经验借鉴研究">境外证券投资者保护制度与实践经验借鉴研究</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765137.html" target="_blank" title="山东省北交所市场发展概况及对策建议研究">山东省北交所市场发展概况及对策建议研究</a>
+        </li>
+                <li>
+            <a href="/article/detail/3764944.html" target="_blank" title="中东局势周末风云突变，现货黄金一度失守4750美元">中东局势周末风云突变，现货黄金一度失守4750美元</a>
+        </li>
+            </ul>
+    </div>
+    </div>
+    <div class="mt-[30px] channel-list">
+        <div class="channel-list-item">
+    <div class="channel-list-item-title">
+        <div>评论</div>
+        <a href="/article/list/pl.html" target="_blank"></a>
+    </div>
+        <div class="channel-list-item-top-li">
+        <a href="/article/detail/3764715.html" target="_blank">
+            <img src="https://static-web.stcn.com/upload/2026/0420/08/69e5768ccaccacb8740f.jpg?x-oss-process=image/resize,m_fill,w_335,h_250" alt="人形机器人“半马”快过人类 实现“替人干活”需更多大考" />
+        </a>
+        <div class="channel-list-item-top-li-title">
+            <a class="ellipsis-2" href="/article/detail/3764715.html" target="_blank" title="人形机器人“半马”快过人类 实现“替人干活”需更多大考">人形机器人“半马”快过人类 实现“替人干活”需更多大考</a>
+        </div>
+    </div>
+    <ul>
+                <li>
+            <a href="/article/detail/3765348.html" target="_blank" title="国产机器人超越人类半马纪录，靠什么（体谈）">国产机器人超越人类半马纪录，靠什么（体谈）</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765350.html" target="_blank" title="读书不妨“杂”一点（文思）">读书不妨“杂”一点（文思）</a>
+        </li>
+                <li>
+            <a href="/article/detail/3764832.html" target="_blank" title="用有效投资打开发展新维度（评论员观察）">用有效投资打开发展新维度（评论员观察）</a>
+        </li>
+            </ul>
+    </div>
+        <div class="channel-list-item">
+    <div class="channel-list-item-title">
+        <div>产经</div>
+        <a href="/article/list/cj.html" target="_blank"></a>
+    </div>
+        <div class="channel-list-item-top-li">
+        <a href="/article/detail/3764597.html" target="_blank">
+            <img src="https://static-web.stcn.com/upload/2026/0420/07/69e568f75a6f64de97a2.jpg?x-oss-process=image/resize,m_fill,w_335,h_250" alt="危机中寻新机：中国新能源车企积极扎根泰国" />
+        </a>
+        <div class="channel-list-item-top-li-title">
+            <a class="ellipsis-2" href="/article/detail/3764597.html" target="_blank" title="危机中寻新机：中国新能源车企积极扎根泰国">危机中寻新机：中国新能源车企积极扎根泰国</a>
+        </div>
+    </div>
+    <ul>
+                <li>
+            <a href="/article/detail/3766103.html" target="_blank" title="国内成品油价或迎来年内首次下调">国内成品油价或迎来年内首次下调</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765451.html" target="_blank" title="德国推动为工业AI监管松绑，中国研发已“反向输出”">德国推动为工业AI监管松绑，中国研发已“反向输出”</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765442.html" target="_blank" title="“小阳春”热度延续，深圳二手房市场正转向“量稳价稳”新阶段">“小阳春”热度延续，深圳二手房市场正转向“量稳价稳”新阶段</a>
+        </li>
+            </ul>
+    </div>
+        <div class="channel-list-item">
+    <div class="channel-list-item-title">
+        <div>创投</div>
+        <a href="/chuangtou/index.html" target="_blank"></a>
+    </div>
+        <div class="channel-list-item-top-li">
+        <a href="/article/detail/3765326.html" target="_blank">
+            <img src="https://static-web.stcn.com/upload/202204/stcn_news_media/W020220421262680684762.png?x-oss-process=image/resize,m_fill,w_335,h_250" alt="上海天使会已聚集数百名天使投资人 联合投资中近六成处于天使轮前" />
+        </a>
+        <div class="channel-list-item-top-li-title">
+            <a class="ellipsis-2" href="/article/detail/3765326.html" target="_blank" title="上海天使会已聚集数百名天使投资人 联合投资中近六成处于天使轮前">上海天使会已聚集数百名天使投资人 联合投资中近六成处于天使轮前</a>
+        </div>
+    </div>
+    <ul>
+                <li>
+            <a href="/article/detail/3765355.html" target="_blank" title="继大疆之后，深圳“四小龙”智能派再获美团等数亿元融资">继大疆之后，深圳“四小龙”智能派再获美团等数亿元融资</a>
+        </li>
+                <li>
+            <a href="/article/detail/3765059.html" target="_blank" title="具身头部玩家营收迈入“十亿俱乐部”，只卖硬件不够了">具身头部玩家营收迈入“十亿俱乐部”，只卖硬件不够了</a>
+        </li>
+                <li>
+            <a href="/article/detail/3764796.html" target="_blank" title="天使投资人谈张雪：“热爱、专注、死磕，他想做的事一定能做成”">天使投资人谈张雪：“热爱、专注、死磕，他想做的事一定能做成”</a>
+        </li>
+            </ul>
+    </div>
+        <div class="channel-list-item">
+    <div class="channel-list-item-title">
+        <div>ESG</div>
+        <a href="/article/list/zk.html" target="_blank"></a>
+    </div>
+        <div class="channel-list-item-top-li">
+        <a href="/article/detail/3764546.html" target="_blank">
+            <img src="https://static-web.stcn.com/upload/2026/0420/07/69e562760118909ce3a4.jpg?x-oss-process=image/resize,m_fill,w_335,h_250" alt="机器人产业ESG 迎来具身智能新命题" />
+        </a>
+        <div class="channel-list-item-top-li-title">
+            <a class="ellipsis-2" href="/article/detail/3764546.html" target="_blank" title="机器人产业ESG 迎来具身智能新命题">机器人产业ESG 迎来具身智能新命题</a>
+        </div>
+    </div>
+    <ul>
+                <li>
+            <a href="/article/detail/3753663.html" target="_blank" title="75欧元CBAM证书价格背后 实为碳减排成本转嫁">75欧元CBAM证书价格背后 实为碳减排成本转嫁</a>
+        </li>
+                <li>
+            <a href="/article/detail/3744293.html" target="_blank" title="绿色信贷高速增长背后：ESG如何拓展利润空间">绿色信贷高速增长背后：ESG如何拓展利润空间</a>
+        </li>
+                <li>
+            <a href="/article/detail/3743617.html" target="_blank" title="绿链成势 央企供应链低碳转型全面提速">绿链成势 央企供应链低碳转型全面提速</a>
+        </li>
+            </ul>
+    </div>
+    </div>
+</div>
+<!-- 各频道栏目 -->
+
+<!-- 证券时报数字媒体集群 -->
+<div class="jq">
+    <div class="jq-title"></div>
+    <div class="flex w-common m-auto mt-[40px] space-x-[47px]">
+        <div class="w-[435.3333px]">
+            <!--券商中国-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/qszg.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/qszg.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/qszg-text.png" alt="" />
+            </div>
+            <a href="/article/wx/qszg.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3766057.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e5f98f3af36.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3766057.html" target="_blank" title="利好来了！上海，重大发布！">利好来了！上海，重大发布！</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766058.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e5f99bbc29d.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3766058.html" target="_blank" title="不涨价！华为Pura 90系列发布，余承东：定价很有诚意">不涨价！华为Pura 90系列发布，余承东：定价很有诚意</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766067.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e5f9b4bbbb8.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3766067.html" target="_blank" title="美国拦截了一艘中国驶往伊朗的油轮？外交部回应">美国拦截了一艘中国驶往伊朗的油轮？外交部回应</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+            <!--数据宝-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/sjb.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/sjb.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/sjb-text.png" alt="" />
+            </div>
+            <a href="/article/wx/sjb.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3766145.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e604b97fa15.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3766145.html" target="_blank" title="揭秘涨停丨2股封单资金均超5亿元">揭秘涨停丨2股封单资金均超5亿元</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766134.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e60486781f4.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3766134.html" target="_blank" title="002297，6连板！4月机构调研火爆：22股获百家扎堆，19股净利翻倍（附股）">002297，6连板！4月机构调研火爆：22股获百家扎堆，19股净利翻倍（附股）</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3766141.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e604a0c3fac.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3766141.html" target="_blank" title="主力资金丨4股遭主力大幅出逃">主力资金丨4股遭主力大幅出逃</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+            <!--创业资本汇-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/cyzbh.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/cyzbh.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/cyzbh-text.png" alt="" />
+            </div>
+            <a href="/article/wx/cyzbh.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3765868.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e5f128d3653.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3765868.html" target="_blank" title="先拿壳再装资产！详解启明创投探路VC/PE退出新模式">先拿壳再装资产！详解启明创投探路VC/PE退出新模式</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3764096.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260419/69e4c2377cf39.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3764096.html" target="_blank" title="允许单个项目全额亏损，济南政府引导基金跟进！">允许单个项目全额亏损，济南政府引导基金跟进！</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3764089.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260419/69e4c24524bba.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3764089.html" target="_blank" title="“英伟达挑战者”AI芯片独角兽，要IPO了！">“英伟达挑战者”AI芯片独角兽，要IPO了！</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="w-[435.3333px]">
+            <!--e公司-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/egs.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/egs.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/egs-text.png" alt="" />
+            </div>
+            <a href="/article/wx/egs.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3765532.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/2026/0420/16/69e5dbea0ae56.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3765532.html" target="_blank" title="“80后”券商首席转型上市公司高管！最新身家25亿元！">“80后”券商首席转型上市公司高管！最新身家25亿元！</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3765216.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/2026/0420/12/69e5ab64e0a7e.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3765216.html" target="_blank" title="特斯拉：目前没有在上海超级工厂量产人形机器人计划">特斯拉：目前没有在上海超级工厂量产人形机器人计划</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3765217.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/2026/0420/12/69e5ab5f4c0fa.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3765217.html" target="_blank" title="1分钟，垂直涨停！A股两大板块，多股连板！">1分钟，垂直涨停！A股两大板块，多股连板！</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+            <!--国际金融报-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/gjjrb.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/gjjrb.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/gjjrb-text.png" alt="" />
+            </div>
+            <a href="/article/wx/gjjrb.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3765570.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/2026/0420/16/69e5e00b8da358019e4b.jpg?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3765570.html" target="_blank" title="60国3400品牌参展消博会，外资缘何踊跃“探路”中国市场">60国3400品牌参展消博会，外资缘何踊跃“探路”中国市场</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3763677.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260419/69e44ec627a5d.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3763677.html" target="_blank" title="美20日起将退超万亿关税">美20日起将退超万亿关税</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3760782.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260417/69e22efbd1747.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3760782.html" target="_blank" title="创业板指再创近11年新高，通信12天涨25%！追还是不追？">创业板指再创近11年新高，通信12天涨25%！追还是不追？</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+            <!--期货日报-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/qhrb.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/qhrb.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/qhrb-text.png" alt="" />
+            </div>
+            <a href="/article/wx/qhrb.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3764604.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e564c510cfc.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3764604.html" target="_blank" title="140年来最强厄尔尼诺来袭，对哪些品种有影响？">140年来最强厄尔尼诺来袭，对哪些品种有影响？</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3764611.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260420/69e564bdb22ce.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3764611.html" target="_blank" title="国际油价开盘大涨7%，本周原油价格波动或加大">国际油价开盘大涨7%，本周原油价格波动或加大</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3763627.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260419/69e417a8c608e.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3763627.html" target="_blank" title="时隔三年再征求意见，期货公司监管新规释放什么信号？来看解读→">时隔三年再征求意见，期货公司监管新规释放什么信号？来看解读→</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+        </div>
+        <div class="w-[435.3333px]">
+            <!--北证资讯-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/bzzx.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/bzzx.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/bzzx-text.png" alt="" />
+            </div>
+            <a href="/article/wx/bzzx.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3755682.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/2026/0416/19/69e0c7e47cd19.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3755682.html" target="_blank" title="和创科技联合创始人胡奎：下一个风口是AI应用落地">和创科技联合创始人胡奎：下一个风口是AI应用落地</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3741261.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/2026/0410/20/69d8e63d99a4b.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3741261.html" target="_blank" title="北交所“功率半导体部件第一股”来了！上市首日大涨120%！">北交所“功率半导体部件第一股”来了！上市首日大涨120%！</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3729509.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260407/69d4b383978e8.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3729509.html" target="_blank" title="这家新三板挂牌“小巨人”，将被A股公司“收入囊中”！">这家新三板挂牌“小巨人”，将被A股公司“收入囊中”！</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+            <!--全景网-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/qj.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/qj.png" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/qj-text.png" alt="" />
+            </div>
+            <a href="/article/wx/qj.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3763550.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260418/69e3708028231.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3763550.html" target="_blank" title="这家锂业龙头拥有多处金矿？时隔3月董秘澄清！丨传闻求证">这家锂业龙头拥有多处金矿？时隔3月董秘澄清！丨传闻求证</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3689332.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260320/69bd435da1410.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3689332.html" target="_blank" title="杰理科技北交所过会：一场技术与市场的双向奔赴丨A股融资快报">杰理科技北交所过会：一场技术与市场的双向奔赴丨A股融资快报</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3686129.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260319/69bbd8e9384e3.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3686129.html" target="_blank" title="隆源股份：新能源压铸“小巨人”的进阶之路，北交所上市开启成长新篇章 | IPO黄金眼">隆源股份：新能源压铸“小巨人”的进阶之路，北交所上市开启成长新篇章 | IPO黄金眼</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+            <!--新财富-->
+            <div class="bbox">
+    <div class="box-title logo-title">
+        <div class="box-title-logo-icon">
+            <img src="https://static-web.stcn.com/static/images/logos/xcf.png" alt="" />
+            <div class="popup">
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/saoyisao.png" alt="" class="sys" />
+                </div>
+                <div>
+                    <img src="https://static-web.stcn.com/static/images/guanzhuwomen.png" alt="" class="gzwm" />
+                </div>
+                <div class="popup-qr">
+                    <img src="https://static-web.stcn.com/static/images/wx_qr_code/xcf.jpg" alt="" />
+                </div>
+            </div>
+        </div>
+        <div class="logo-title-right">
+            <div>
+                <img src="https://static-web.stcn.com/static/v3/images/logos/xcf-text.png" alt="" />
+            </div>
+            <a href="/article/wx/xcf.html" target="_blank">更多</a>
+        </div>
+    </div>
+    <div class="box-content">
+        <div class="jq-news-list">
+            <ul>
+                                <li>
+                    <a href="/article/detail/3735182.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260409/69d7753651826.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3735182.html" target="_blank" title="净利3亿，估值420亿！宇树科技冲刺IPO，王兴兴持股23.82%、控制近七成表决权！腾讯阿里入股一年浮盈近3倍 | 原创">净利3亿，估值420亿！宇树科技冲刺IPO，王兴兴持股23.82%、控制近七成表决权！腾讯阿里入股一年浮盈近3倍 | 原创</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3732334.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260408/69d5fd41ea0d3.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3732334.html" target="_blank" title="2026新财富杂志最佳投行结果重磅发布！">2026新财富杂志最佳投行结果重磅发布！</a>
+                </li>
+                                <li>
+                    <a href="/article/detail/3701029.html" target="_blank">
+                        <img src="https://static-web.stcn.com/upload/wechat/20260326/69c4fd4150110.png?x-oss-process=image/resize,m_fill,w_114,h_88" alt="" />
+                    </a>
+                    <a href="/article/detail/3701029.html" target="_blank" title="金价跳水，紫金矿业市值缩水2400亿！280亿加拿大金矿+182亿赤峰黄金，逆势扩张还是高位豪赌？">金价跳水，紫金矿业市值缩水2400亿！280亿加拿大金矿+182亿赤峰黄金，逆势扩张还是高位豪赌？</a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+<!-- 证券时报数字媒体集群 -->
+
+<!-- 中间广告 -->
+<div class="w-common m-auto" style="margin-bottom: 40px">
+        <a href="http://www.stcn.com/xinpi/index.html" target="_blank" class="add">
+        <img src="https://static-web.stcn.com/upload/2022/1001/22/633853ba1055b3107cae.png" alt="" width="100%" />
+    </a>
+</div>
+<!-- 中间广告 -->
+
+<!-- 交易所 -->
+<div class="flex w-common m-auto mt-[40px] space-x-[47px]">
+    <!--左边公告-->
+    <div class="w-[435.3333px]">
+    <div class="bbox">
+        <div class="box-title">
+            <div class="box-title-icon">深市</div>
+            <a href="/xinpi/list.html?type=szse" target="_blank">更多</a>
+        </div>
+        <div class="box-content">
+            <div class="cc-list fs-18">
+                <ul>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1101018922&stock_code=300067&type=rm" target="_blank" title="安诺其：董事会关于本次交易是否构成重大资产重组、关联交易及重组上市的说明">安诺其：董事会关于本次交易是否构成重大资产重组、关联交易及重组上市的说明</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1100789251&stock_code=301200&type=rm" target="_blank" title="大族数控：2026年一季度报告">大族数控：2026年一季度报告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1100788235&stock_code=000810&type=rm" target="_blank" title="创维数字：2026年一季度报告">创维数字：2026年一季度报告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1100782951&stock_code=002414&type=rm" target="_blank" title="高德红外：2026年一季度报告">高德红外：2026年一季度报告</a>
+                    </li>
+                                        <li>
+                        <a href="https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-18/7b77b0be-5ff4-40a9-85d8-d965a13b7666.PDF" target="_blank" title="天宇股份：关于全资子公司药品获得批准的公告">天宇股份：关于全资子公司药品获得批准的公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://disc.static.szse.cn/disc/disk03/finalpage/2026-04-18/4a668d53-310f-49f3-9f3d-f4c003517c34.PDF" target="_blank" title="国创高新：资产重组业绩承诺实现情况说明的审核报告">国创高新：资产重组业绩承诺实现情况说明的审核报告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097248687&stock_code=000955&type=rm" target="_blank" title="欣龙控股：关于公司2025年度不进行利润分配的专项说明">欣龙控股：关于公司2025年度不进行利润分配的专项说明</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097197138&stock_code=002385&type=rm" target="_blank" title="大北农：关于原实际控制人股份继承过户事项的进展公告">大北农：关于原实际控制人股份继承过户事项的进展公告</a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--中间公告-->
+    <div class="w-[435.3333px]">
+    <div class="bbox">
+        <div class="box-title">
+            <div class="box-title-icon">沪市</div>
+            <a href="/xinpi/list.html?type=sse" target="_blank">更多</a>
+        </div>
+        <div class="box-content">
+            <div class="cc-list fs-18">
+                <ul>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1100782177&stock_code=603922&type=rm" target="_blank" title="金鸿顺：金鸿顺关于实际控制人被列为失信被执行人的公告">金鸿顺：金鸿顺关于实际控制人被列为失信被执行人的公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097594595&stock_code=601118&type=rm" target="_blank" title="海南橡胶：关于海南证监局对公司采取责令改正措施的整改报告">海南橡胶：关于海南证监局对公司采取责令改正措施的整改报告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097510954&stock_code=688368&type=rm" target="_blank" title="晶丰明源：上海晶丰明源半导体股份有限公司2025年度利润分配及资本公积转增股本方案公告">晶丰明源：上海晶丰明源半导体股份有限公司2025年度利润分配及资本公积转增股本方案公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097493023&stock_code=600671&type=rm" target="_blank" title="天目药业：杭州天目山药业股份有限公司关于2025年度不进行利润分配的公告">天目药业：杭州天目山药业股份有限公司关于2025年度不进行利润分配的公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097454578&stock_code=600518&type=rm" target="_blank" title="康美药业：康美药业关于计提资产减值准备及核销应付款项的公告">康美药业：康美药业关于计提资产减值准备及核销应付款项的公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097441491&stock_code=600738&type=rm" target="_blank" title="丽尚国潮：丽尚国潮关于公司5%以上股东拟通过协议转让方式内部转让公司股份暨权益变动的提示性公告">丽尚国潮：丽尚国潮关于公司5%以上股东拟通过协议转让方式内部转让公司股份暨权益变动的提示性公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097376471&stock_code=688306&type=rm" target="_blank" title="均普智能：宁波均普智能制造股份有限公司2025年度利润分配方案公告">均普智能：宁波均普智能制造股份有限公司2025年度利润分配方案公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097336215&stock_code=600977&type=rm" target="_blank" title="中国电影：中国电影关于2025年年度利润分配方案及2026年中期利润分配授权事宜的公告">中国电影：中国电影关于2025年年度利润分配方案及2026年中期利润分配授权事宜的公告</a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--右边公告-->
+    <div class="w-[435.3333px]">
+    <div class="bbox">
+        <div class="box-title">
+            <div class="box-title-icon">北交所</div>
+            <a href="/xinpi/list.html?type=bse" target="_blank">更多</a>
+        </div>
+        <div class="box-content">
+            <div class="cc-list fs-18">
+                <ul>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097519992&stock_code=920339&type=rm" target="_blank" title="恒太照明:第二届董事会第三十一次会议决议公告">恒太照明:第二届董事会第三十一次会议决议公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097514030&stock_code=920261&type=rm" target="_blank" title="一诺威:2026年第一次临时股东会决议公告">一诺威:2026年第一次临时股东会决议公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097514022&stock_code=920689&type=rm" target="_blank" title="克莱特:关于2025年年度股东会增加临时提案的公告">克莱特:关于2025年年度股东会增加临时提案的公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097410602&stock_code=920247&type=rm" target="_blank" title="华密新材:2025年年度股东会决议公告">华密新材:2025年年度股东会决议公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097323838&stock_code=920870&type=rm" target="_blank" title="恒进感应:2025年年度权益分派预案公告">恒进感应:2025年年度权益分派预案公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097321026&stock_code=920016&type=rm" target="_blank" title="中草香料:第四届董事会第五次会议决议公告">中草香料:第四届董事会第五次会议决议公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097205001&stock_code=920599&type=rm" target="_blank" title="同力股份:关于持股5%以上股东权益变动触及1%整数倍的提示性公告">同力股份:关于持股5%以上股东权益变动触及1%整数倍的提示性公告</a>
+                    </li>
+                                        <li>
+                        <a href="https://xp.stcn.com/index/pdf?id=1097152343&stock_code=920061&type=rm" target="_blank" title="西磁科技:2025年年度权益分派预案公告">西磁科技:2025年年度权益分派预案公告</a>
+                    </li>
+                                    </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- 交易所 -->
+
+<!-- 活动 -->
+<div class="w-common m-auto">
+    <!--活动-->
+<div class="bbox">
+    <div class="box-title">
+        <div class="box-title-icon">活动</div>
+    </div>
+    <div class="box-content">
+        <div class="brand-swiper clearfix">
+                        <div class="swiper-slide brand-swiper-item">
+                <a href="https://tp.stcn.com/activities-html/2026/jinyinjiang/2026-sign-up/index.html" target="_blank">
+                    <div class="item-poster">
+                        <img src="https://static-web.stcn.com/website/images/jyj2026.jpg?v=20260415" alt="2026证券时报创投机构金鹰奖暨创业企业新苗奖评选" />
+                    </div>
+                    <div class="item-title ellipsis-2">2026证券时报创投机构金鹰奖暨创业企业新苗奖评选</div>
+                    <div class="item-link">
+                        <span>查看活动</span>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide brand-swiper-item">
+                <a href="https://tp.stcn.com/activities-html/2026/jinchangjiang/2026-sign-up/index.html" target="_blank">
+                    <div class="item-poster">
+                        <img src="https://static-web.stcn.com/website/images/jcj.png" alt="金长江奖·2026中国私募基金评选" />
+                    </div>
+                    <div class="item-title ellipsis-2">金长江奖·2026中国私募基金评选</div>
+                    <div class="item-link">
+                        <span>查看活动</span>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide brand-swiper-item">
+                <a href="https://www.stcn.com/topic/detail/525.html" target="_blank">
+                    <div class="item-poster">
+                        <img src="https://static-web.stcn.com/website/images/value2025.jpg" alt="第十九届中国上市公司价值论坛暨2025新质生产力巡礼宜宾行" />
+                    </div>
+                    <div class="item-title ellipsis-2">第十九届中国上市公司价值论坛暨2025新质生产力巡礼宜宾行</div>
+                    <div class="item-link">
+                        <span>查看活动</span>
+                    </div>
+                </a>
+            </div>
+                        <div class="swiper-slide brand-swiper-item">
+                <a href="https://www.stcn.com/topic/detail/523.html" target="_blank">
+                    <div class="item-poster">
+                        <img src="https://static-web.stcn.com/static/images/2025_jrcx.jpg" alt="2025大湾区科技与金融创新发展大会" />
+                    </div>
+                    <div class="item-title ellipsis-2">2025大湾区科技与金融创新发展大会</div>
+                    <div class="item-link">
+                        <span>查看活动</span>
+                    </div>
+                </a>
+            </div>
+                    </div>
+    </div>
+</div>
+<!--活动-->
+    <!--产品-->
+    <!--产品-->
+<div class="bbox">
+    <div class="box-title">
+        <div class="box-title-icon">产品</div>
+    </div>
+    <div class="box-content">
+        <div class="production-list-wrapper">
+            <ul class="production-list clearfix swiper-wrapper">
+                                <li class="swiper-slide">
+                                        <a href="https://qzs.stcn.com/" target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/图片4.png" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" href="https://qzs.stcn.com/" target="_blank">
+                        <div>及时专业财经快讯，深度独家访谈直播</div>
+                    </a>
+                                    </li>
+                                <li class="swiper-slide">
+                                        <a href="https://www.egsea.com/public/download.html" target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/图片5.png" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" href="https://www.egsea.com/public/download.html" target="_blank">
+                        <div>e公司是证券时报旗下专注上市公司资讯的新媒体平台，7x24小时提供标准化快讯。侧重上市公司非公告投资机会解读，深度挖掘有价值信息。</div>
+                    </a>
+                                    </li>
+                                <li class="swiper-slide">
+                                        <a href="https://www.stcn.com/xinpi/index.html" target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/xp_168.jpg" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" href="https://www.stcn.com/xinpi/index.html" target="_blank">
+                        <div>信披168综合服务专区：一站式的信披服务解决方案，六大支持平台，八大增值服务功能</div>
+                    </a>
+                                    </li>
+                                <li class="swiper-slide">
+                                        <a href="https://www.stcn.com/edu/starfire.html" target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/tj_xhjh.jpg" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" href="https://www.stcn.com/edu/starfire.html" target="_blank">
+                        <div>资本市场投教&quot;星火计划&quot;是由深交所、上交所、北交所、投服中心作为指导单位，深圳证监局作为特别支持单位，证券时报作为发起单位的多位一体投资者教育平台。</div>
+                    </a>
+                                    </li>
+                                <li class="swiper-slide">
+                                        <a href="https://www.egsea.com/super-secretary/index" target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/图片6.png" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" href="https://www.egsea.com/super-secretary/index" target="_blank">
+                        <div>e公司《超级董秘》，让上市公司董秘一键发布企业资讯，舆情信息分级精准提醒，可视化财报自定义，帮上市公司随时做好投资者关系管理。</div>
+                    </a>
+                                    </li>
+                                <li class="swiper-slide">
+                                        <a href="https://rs.p5w.net/" target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/图片7.png" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" href="https://rs.p5w.net/" target="_blank">
+                        <div>帮助客户随时随地开启路演直播，实现投融资对接，提升投资者关系管理价值，全方位、零距离展示企业形象，提高证券发行和融资效率。</div>
+                    </a>
+                                    </li>
+                                <li class="swiper-slide">
+                                        <a href="https://www.p5w.net/special/202203/qj2022/index.html" target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/product-qj.jpg" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" href="https://www.p5w.net/special/202203/qj2022/index.html" target="_blank">
+                        <div>全景25周年——全新升级的新版全景服务平台-董办云正式发布。&quot;四大解决方案+三大全新功能&quot;，助力上市公司在资本市场蓝海征途中行稳致远。</div>
+                    </a>
+                                    </li>
+                                <li class="swiper-slide">
+                                        <a href="https://www.p5w.net/special/202203/publiccize/" target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/图片9.png" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" href="https://www.p5w.net/special/202203/publiccize/" target="_blank">
+                        <div>满足不同层次和类型的业绩说明会的需求，以智慧服务开启新时代高质量投资者关系管理新范式，搭建传递公司投资价值的全新展台。</div>
+                    </a>
+                                    </li>
+                                <li class="swiper-slide">
+                                        <a target="_blank">
+                        <img src="https://static-web.stcn.com/static/images/index-product-imgs/tupian12.png" alt="" />
+                    </a>
+                    <div class="text-bg"></div>
+                    <a class="text" target="_blank">
+                        <div>新财富杂志社是人民日报社主管主办的证券时报控股企业，定位于以评价和研究引领的财经媒体平台，数据库覆盖机构管理的资产超过90万亿元。</div>
+                    </a>
+                                    </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+<!--产品-->
+</div>
+<!-- 活动 -->
+
+<div class="page-footer">
+    <div class="w1400 m-auto">
+        <div class="footer-top clearfix">
+            <div class="productions-services">
+                <div class="tt">
+                    <img src="https://static-web.stcn.com/static/images/block-icon.png" alt="">产品矩阵
+                </div>
+                <div class="clearfix">
+                    <ul>
+                        <li>
+                            <a href="https://www.stcn.com/" target="_blank">证券时报</a>
+                            <a href="https://qzs.stcn.com/" target="_blank">券商中国</a>
+                        </li>
+                        <li>
+                            <a href="https://www.egsea.com/" target="_blank">e公司</a>
+                            <a href="javascript:;">数据宝</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">北证资讯</a>
+                            <a href="javascript:;">创业资本汇</a>
+                            <!--              <a href="javascript:;">信托百佬汇</a>-->
+                        </li>
+                        <li>
+                            <a href="https://www.p5w.net/" target="_blank">全景财经</a>
+                            <a href="https://www.xcfmgz.com/index.html" target="_blank">新财富杂志</a>
+                            <!--              <a href="https://qzs.stcn.com/" target="_blank">券中社</a>-->
+                            <!--              <a href="http://www.ifnews.com/" target="_blank">国际金融报</a>-->
+                        </li>
+                        <li>
+                            <a href="http://www.ifnews.com/" target="_blank">国际金融报</a>
+                            <a href="http://www.qhrb.com.cn/" target="_blank">期货日报</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="friend-links">
+                <div class="tt">
+                    <img src="https://static-web.stcn.com/static/images/link-icon.png" alt="">友情链接
+                </div>
+                <div class="clearfix">
+                    <ul>
+                        <li>
+                            <a href="http://www.pbc.gov.cn/" target="_blank">中国人民银行</a>
+                        </li>
+                        <li>
+                            <a href="http://www.csrc.gov.cn/" target="_blank">中国证券监督管理委员会</a>
+                        </li>
+                        <li>
+                            <a href="http://www.cbirc.gov.cn/cn/view/pages/index/index.html" target="_blank">国家金融监督管理总局</a>
+                        </li>
+                        <li>
+                            <a href="https://www.sac.net.cn/" target="_blank">中国证券业协会</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="http://www.sse.com.cn/" target="_blank">上海证券交易所</a>
+                        </li>
+                        <li>
+                            <a href="http://www.szse.cn/" target="_blank">深圳证券交易所</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bse.cn/" target="_blank">北京证券交易所</a>
+                        </li>
+                        <li>
+                            <a href="http://www.cffex.com.cn/" target="_blank">中国金融期货交易所</a>
+                        </li>
+                        <li>
+                            <a href="https://www.shfe.com.cn/" target="_blank">上海期货交易所</a>
+                        </li>
+                        <li>
+                            <a href="https://www.csindex.com.cn/" target="_blank">中证指数有限公司</a>
+                        </li>
+                        <li>
+                            <a href="http://www.chinaclear.cn/" target="_blank">中国证券登记结算有限责任公司</a>
+                        </li>
+                        <li>
+                            <a href="https://www.qhee.com/?qhqd=zqsb" target="_blank">深圳前海股权交易中心</a>
+                        </li>
+
+                        <!--            <li>-->
+                        <!--              <a href="https://www.chnfund.com/" target="_blank">中国基金报</a>-->
+                        <!--            </li>-->
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="http://www.people.cn/" target="_blank">人民网</a>
+                        </li>
+                        <li>
+                            <a href="https://www.p5w.net/" target="_blank">全景网</a>
+                        </li>
+                        <li>
+                            <a href="https://www.xcfmgz.com/index.html" target="_blank">新财富杂志</a>
+                        </li>
+                        <li>
+                            <a href="http://www.ifnews.com/" target="_blank">国际金融报网</a>
+                        </li>
+                        <li>
+                            <a href="http://www.qhrb.com.cn/" target="_blank">期货日报网</a>
+                        </li>
+                        <li>
+                            <a href="https://www.caixin.com/" target="_blank">财新网</a>
+                        </li>
+                        <li>
+                            <a href="https://new.qq.com/ch/finance/" target="_blank">腾讯财经</a>
+                        </li>
+                        <li>
+                            <a href="https://www.hexun.com/" target="_blank">和讯网</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <a href="https://www.eastmoney.com/" target="_blank">东方财富网</a>
+                        </li>
+                        <li>
+                            <a href="https://finance.sina.com.cn/" target="_blank">新浪财经</a>
+                        </li>
+                        <li>
+                            <a href="https://money.163.com/" target="_blank">网易财经</a>
+                        </li>
+                        <li>
+                            <a href="http://www.jrj.com.cn/" target="_blank">金融界</a>
+                        </li>
+                        <li>
+                            <a href="https://cnfol.com/" target="_blank">中金在线</a>
+                        </li>
+                        <li>
+                            <a href="http://www.hongzhoukan.com/" target="_blank">证券市场红周刊</a>
+                        </li>
+                        <li>
+                            <a href="http://www.jwview.com/" target="_blank">中新经纬</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="qr">
+                <div class="tt">
+                    <img src="https://static-web.stcn.com/static/images/qr-icon.png" alt="">
+                    扫码关注我们
+                </div>
+                <div>
+                    <div class="qr-img"><img src="https://static-web.stcn.com/static/images/qr.png" alt=""><div>证券时报公众号</div></div>
+                    <div class="qr-img"><img src="https://static-web.stcn.com/static/images/app-download-qr.png" alt=""><div>证券时报App</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+                                            <div>
+    <div><a href="/public/about-us.html" target="_blank">关于我们</a><span>|</span><a href="/public/service.html" target="_blank">服务条例</a><span>|</span><a href="/public/contact.html" target="_blank">联系我们</a><span>|</span><a href="/public/copyright.html" target="_blank">版权声明</a><span>|</span><a href="/public/site-map.html" target="_blank">网站地图</a><span>|</span><a href="/public/clue.html" data-is-login="false" target="_blank" class="index-jump-clue">线索提交</a></div>
+    <div>备案号：<a href="https://beian.miit.gov.cn/#/Integrated/index" target="_blank">粤ICP备09109218号-7</a><span>|</span><a href="/public/license_2.html" target="_blank">增值电信业务经营许可证：粤B2-20080118</a><span>|</span><a href="/public/license_1.html" target="_blank">互联网新闻信息服务许可证10120170066</a><span>|</span><a href="https://beian.mps.gov.cn/#/query/webSearch?code=44030002008846" target="_blank">粤公网安备44030002008846号</a></div>
+<!--    <div><a href="/public/license_3.html" target="_blank">广播电视节目制作经营许可证：（粤）字第01703号</a><span>|</span><a href="/public/license_4.html" target="_blank">信息网络传播视听节目许可证1908317</a></div>-->
+    <div>违法和不良信息举报电话：0755-83514034 邮箱：<a href="mailto:0">bwb@stcn.com</a> <img src="https://static-web.stcn.com/static/images/wxb-icon.png" width="19" height="17" alt=""><a href="https://www.12377.cn/" target="_blank">中央网信办违法和不良信息举报中心</a><span login-btn>|</span><a href="/user-center/tip-off.html" data-is-login="false"  class="index-jump-report">证券时报网举报中心</a></div>
+    <div>本网站提供之资料或信息，仅供投资者参考，不构成投资建议。</div>
+    <div>深圳证券时报社有限公司版权所有，未经书面授权禁止转载及各种形式的软件开发。</div>
+    <div>Copyright © 2008-2026 Shenzhen Securities Times Co., Ltd. All Rights Reserved</div>
+</div>            </div>
+</div>
+<div class="fixed-tool">
+    <a href="/" class="go-home"></a>
+    <div class="go-top"></div>
+    <a href="/public/download.html" class="go-download"></a>
+</div>
+<div class="mask"></div>
+<div class="window-wrapper">
+    <div class="chuangtou-pop-window join-window clarify-form-bg clarify v3" style="width: 612px; height: 760px;">
+        <div class="close"></div>
+        <div class="tt">
+            <div>我&nbsp;要&nbsp;澄&nbsp;清</div>
+            <div class="line"></div>
+        </div>
+        <div class="clarify-form-wrapper">
+        <form action="/public/clarify.html">
+            <label>
+                <span class="input-label">联系人姓名<span>*</span></span>
+                <input name="user_name" required/>
+            </label>
+            <div class="input-info"></div>
+
+            <label>
+                <span class="input-label">公司/单位/个人<span>*</span></span>
+                <input name="company_name" required></input>
+            </label>
+            <div class="input-info"></div>
+
+            <label>
+                <span class="input-label">联系人职务<span>*</span></span>
+                <input name="job" required/>
+            </label>
+            <div class="input-info required"></div>
+
+            <label>
+                <span class="input-label">澄清内容<span>*</span></span>
+                <textarea name="remark" placeholder="1000字以内" required></textarea>
+            </label>
+            <div class="input-info required"></div>
+
+            <div class="upload-img-label">
+                <span class="input-label">上传图片</span>
+                <div class="upload-img clearfix">
+                    <div class="img-box">
+                        <img src="https://static-web.stcn.com/static/images/clarify/select_img_plus.png" alt="" width="30" height="30">
+                        <input type="file" name="file" multiple accept="image/jpeg,image/jpg,image/png" class="file" />
+                        <div class="result">
+                            <img src="" alt="" class="img">
+                            <div class="remove">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img-tips">
+                * 请选择图片（最大不超过5M，数量不超过9个）
+            </div>
+            <div class="form-btn">提交</div>
+        </form>
+        </div>
+    </div>
+    <div class="chuangtou-pop-window cooperation-window clarify-form-bg prove"  style="width: 612px; height: 760px;">
+        <div class="close"></div>
+        <div class="tt">
+            <div>我 要 求 证</div>
+            <div class="line"></div>
+        </div>
+        <div class="clarify-form-wrapper">
+        <form action="/public/proof.html">
+            <label>
+                <span class="input-label">传闻内容<span>*</span></span>
+                <textarea name="remark" placeholder="1000字以内" required></textarea>
+            </label>
+            <div class="input-info"></div>
+            <label>
+                <span class="input-label">传闻来源<span>*</span></span>
+                <input name="source" required/>
+            </label>
+            <div class="input-info"></div>
+
+            <div class="upload-img-label">
+                <span class="input-label">上传图片</span>
+                <div class="upload-img clearfix">
+                    <div class="img-box">
+                        <img src="https://static-web.stcn.com/static/images/clarify/select_img_plus.png" alt="" width="30" height="30">
+
+                        <input type="file" name="file" multiple accept="image/jpeg,image/jpg,image/png" class="file" />
+                        <div class="result">
+                            <img src="" alt="" class="img">
+                            <div class="remove">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="img-tips">
+                * 请选择图片（最大不超过5M，数量不超过9个）
+            </div>
+            <div class="form-btn">提交</div>
+        </form>
+        </div>
+    </div>
+</div><link rel="stylesheet" href="https://static-web.stcn.com/static/styles/login.css?v=20260330">
+<script type="text/html" class="pop-window-login">
+    <div class="pop-window login-pop-window">
+        <div class="close"></div>
+        <div class="pwd-form-wrapper">
+            <div class="pop-window-title">
+                <img src="https://static-web.stcn.com/static/images/login-logo.png" alt="">
+            </div>
+            <div class="pop-window-body pwd-login-form">
+                <div class="switch-login-type-tab">
+                    <span class="active">密码登录</span>
+                    <span>验证码登录</span>
+                </div>
+                <div class="pop-window-form">
+                    <div class="different-form">
+                        <form data-ali-captch="true" action="/public/login.html" class="pop-window-login-pwd-form">
+                            <input name="phone" type="number" placeholder="请输入手机号码">
+                            <div class="pwd-input">
+                                <input name="pwd" type="password" placeholder="请输入密码">
+                                <div class="forget-pwd-btn">忘记密码</div>
+                            </div>
+                            <div class=verify-image-code-input>
+                                <input name="verifyImgCode" type="text" placeholder="请输入图形验证码">
+                                <img class="verify-img-code" src="/site/captcha.html?v=6405440170e48"/>
+                            </div>
+                            <button class="sub-btn">登录</button>
+                            <div class="sub-btn-tip">
+                              <input type="checkbox" checked="checked" name="privacyChecked" value="1"/>
+                              未注册手机验证后自动登录，注册即代表同意<a href="/public/agreement.html" target="_blank">《用户协议》</a>、<a href="/public/privacy.html" target="_blank">《隐私保护指引》</a>
+                            </div>
+                        </form>
+                        <form data-ali-captch="false" action="/public/login.html" class="pop-window-login-phone-form">
+                            <input name="phone" type="number" placeholder="请输入手机号码" class="login-phone-code-in">
+                            <div class="phone-code-input">
+                                <input name="phoneVerifyCode" placeholder="请输入验证码">
+                                <button type="button" data-ali-captch="true" class="login-send-phone-code-btn send-phone-code-btn" data-url="/public/send-code.html">发送验证码</button>
+                            </div>
+                            <div class=verify-image-code-input>
+                                <input name="verifyImgCode" type="text" placeholder="请输入图形验证码">
+                                <img class="verify-img-code" src="/site/captcha.html?v=6405440170e48"/>
+                            </div>
+                            <button class="sub-btn">登录</button>
+                            <div class="sub-btn-tip">
+                              <input type="checkbox" checked="checked" name="privacyChecked" value="1"/>
+                              未注册手机验证后自动登录，注册即代表同意<a href="/public/agreement.html" target="_blank">《用户协议》</a>、<a href="/public/privacy.html" target="_blank">《隐私保护指引》</a></div>
+                        </form>
+                    </div>
+                </div>
+                <!--<div class="third-account text-center">
+                    <div class="tt"><span>第三方账户登录</span></div>
+                    <a href="javascript:;" class="wb"></a>
+                    <a href="javascript:;" class="qq"></a>
+                    <a href="javascript:;" class="wx"></a>
+                </div>-->
+            </div>
+            <div class="pop-window-body pwd-forget-form" style="display: none">
+                <div class="switch-login-type-tab">
+                    <span class="active">忘记密码</span>
+                </div>
+                <div class="pop-window-form">
+                    <form data-no-privacy-validate="true" data-ali-captch="false" action="/public/reset-pwd.html" class="pop-window-login-phone-form">
+                        <input name="phone" type="number" placeholder="请输入手机号码" class="forget-phone-code-in">
+                        <div class="phone-code-input">
+                            <input name="phoneVerifyCode" placeholder="请输入验证码">
+                            <button data-ali-captch="true" type="button" class="forget-send-phone-code-btn send-phone-code-btn" data-url="/public/send-code.html">发送验证码</button>
+                        </div>
+                        <div class=verify-image-code-input>
+                            <input name="verifyImgCode" type="text" placeholder="请输入图形验证码">
+                            <img class="verify-img-code" src="/site/captcha.html?v=6405440170e48"/>
+                        </div>
+                        <input name="password" type="password" placeholder="请设置密码">
+                        <button class="sub-btn">确定</button>
+                        <div class="sub-btn-tip text-center pwd-form-back-text">返回登录</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wx-login-wrapper" style="display: none">
+            <div class="wx-qr">
+                <div class="text-center">
+                    <img src="https://static-web.stcn.com/static/images/wx-login-logo.png" alt="" class="wx-login-logo">
+                </div>
+                <div class="tt">
+                    <span>使用微信扫一扫登录</span>
+                </div>
+                <div class="text-center qr">
+                    <img src="https://static-web.stcn.com/static/images/qr.png" alt="">
+                </div>
+                <div class="text-center qr-text">证券时报官网</div>
+                <div class="back-text text-center">返回</div>
+            </div>
+        </div>
+    </div>
+</script><div id="captcha-element"></div>
+<div style="display: none">
+    <button id="ali-captcha-verifycode-btn" data-url="/public/captcha-verify.html"></button>
+</div>
+<script src="https://static-web.stcn.com/static/scripts/jquery.min.js"></script>
+<script src="https://static-web.stcn.com/static/scripts/jquery-migrate.min.js"></script>
+<script src="https://static-web.stcn.com/static/scripts/jsencrypt.min.js"></script>
+<script src="https://static-web.stcn.com/static/scripts/lodash.min.js?v=20260318"></script>
+<script src="https://static-web.stcn.com/static/scripts/layer/layer.js"></script>
+<link rel="stylesheet" href="https://static-web.stcn.com/static/scripts/swiper/swiper-bundle.min.css">
+<script src="https://static-web.stcn.com/static/scripts/swiper/swiper-bundle.min.js"></script>
+<script src="https://static-web.stcn.com/static/scripts/echarts-index.min.js"></script>
+<script src="https://static-web.stcn.com/static/scripts/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://static-web.stcn.com/static/scripts/fancybox/fancybox.css">
+<script src="https://static-web.stcn.com/static/scripts/dayjs.min.js"></script>
+<script src="https://static-web.stcn.com/static/v3/scripts/common.js?v=2026040201"></script>
+<script>
+    window.API = {
+        XINPI_HQ: "/public/hq.html",
+        HOT_BLOCK: "/article/hot-plate.html",
+        SELF_STOCK: "/article/my-stocks.html",
+    };
+</script>
+<script src="https://static-web.stcn.com/static/scripts/xinpi.js?v=20260331"></script>
+<script src="https://static-web.stcn.com/static/v3/scripts/index.js?v=2026040201"></script>
+<script src="https://static-web.stcn.com/static/scripts/clarify.js?v=20260330"></script>
+    <script type="text/javascript">document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1281191046'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1281191046' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1281265122'%3E%3C/span%3E%3Cscript src='https://v1.cnzz.com/z_stat.php%3Fid%3D1281265122' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript" src="https://o.alicdn.com/captcha-frontend/aliyunCaptcha/AliyunCaptcha.js"></script>
+<script type="text/javascript">document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1281169049'%3E%3C/span%3E%3Cscript src='https://s9.cnzz.com/z_stat.php%3Fid%3D1281169049' type='text/javascript'%3E%3C/script%3E"));</script>
+<script type="text/javascript">document.write(unescape("%3Cspan style='display:none;' id='cnzz_stat_icon_1281264856'%3E%3C/span%3E%3Cscript src='https://s4.cnzz.com/z_stat.php%3Fid%3D1281264856' type='text/javascript'%3E%3C/script%3E"));</script>
+</body>
+</html>
+
