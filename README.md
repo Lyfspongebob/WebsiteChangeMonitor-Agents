@@ -66,6 +66,44 @@ python -m app.main --run-window-session --duration-minutes 60 --interval-minutes
 - `outputs/charts/`：可视化图表
 - `outputs/reports/`：markdown 报告
 - `outputs/ppt/`：自动生成 PPT
+- `outputs/analysis/`：窗口分析中间文件（AI输入数据、AI生成绘图脚本、图表索引）
+
+### 4.1 各目录详细解释
+
+#### `outputs/snapshots/`
+- 保存每次抓取的原始 HTML 快照（留痕、回溯、排障）。
+- 常见文件名：`source_3_20260420_190656.html`
+
+#### `outputs/charts/`
+- 保存可视化图片（PNG）。
+- 分两类：
+  - 单站点图：`source_*_trend.png` / `source_*_cumulative.png` / `source_*_top.png`
+  - 窗口聚合图：`window_*_by_source.png` / `window_*_diff_ratio_dist.png`
+
+#### `outputs/reports/`
+- 保存 Markdown 报告。
+- 分两类：
+  - 单站点即时报告：`source_*_*.md`
+  - 窗口聚合 AI 报告：`window_*_ai_report.md`
+
+#### `outputs/ppt/`
+- 保存自动生成的 PPT 报告（当前以单站点报告为主）。
+
+#### `outputs/analysis/`
+- 保存窗口分析过程文件（用于“文本喂给 AI -> 出图/出报告”链路）：
+  - `window_*_data.txt`：窗口统计原始文本
+  - `window_*_viz_input.json`：AI绘图输入数据
+  - `window_*_viz.py`：AI生成的绘图脚本
+  - `window_*_charts.json`：绘图结果路径索引
+
+### 4.2 如何判断一次窗口任务是否完整成功
+
+同一个 `window_<start>_<end>` 标签下，若同时存在：
+- `outputs/analysis/window_*_data.txt`
+- `outputs/charts/window_*...png`
+- `outputs/reports/window_*_ai_report.md`
+
+则说明“采集 -> 分析 -> 可视化 -> 报告”全链路已跑通。
 
 ---
 
